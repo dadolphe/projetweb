@@ -2,11 +2,6 @@ Programmation Web
 
 Projets
 
-Consignes
-Les projets se font par groupe de 2
-Il y a 5 sujets possibles, avec chaque fois un cahier des charges pour vous guider sur ce qui est attendu. Lisez bien les différentes consignes avant de commencer à coder
-Une fois que vous avez votre partenaire et que vous avez choisi un sujet, veuillez envoyer un mail à soltysiak.kevin@gmail.com avec votre sujet, et les noms des deux membres de votre groupe
-
 Pour toute question ou clarification, n’hésitez pas durant les heures de projet web, ou à l’adresse soltysiak.kevin@gmail.com 
 
 Critères d'évaluation (par ordre d’importance)

@@ -3,7 +3,11 @@
 one:
   name: MyString
   firstname: MyString
+<<<<<<< HEAD
   promo: 1
+=======
+  promotion: 1
+>>>>>>> 1c7076726fdadea6190eda369b1e862b74e665ab
   mail: MyString
   phonenumber: 1
   avatar: MyString
@@ -11,7 +15,11 @@ one:
 two:
   name: MyString
   firstname: MyString
+<<<<<<< HEAD
   promo: 1
+=======
+  promotion: 1
+>>>>>>> 1c7076726fdadea6190eda369b1e862b74e665ab
   mail: MyString
   phonenumber: 1
   avatar: MyString

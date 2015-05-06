@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150504133104) do
+=======
+ActiveRecord::Schema.define(version: 20150504133116) do
+>>>>>>> 1c7076726fdadea6190eda369b1e862b74e665ab
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,8 +23,13 @@ ActiveRecord::Schema.define(version: 20150504133104) do
   create_table "articles", force: :cascade do |t|
     t.string   "title"
     t.string   "body"
+<<<<<<< HEAD
     t.string   "price"
     t.string   "image"
+=======
+    t.integer  "price"
+    t.string   "images"
+>>>>>>> 1c7076726fdadea6190eda369b1e862b74e665ab
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -28,7 +37,11 @@ ActiveRecord::Schema.define(version: 20150504133104) do
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "firstname"
+<<<<<<< HEAD
     t.integer  "promo"
+=======
+    t.integer  "promotion"
+>>>>>>> 1c7076726fdadea6190eda369b1e862b74e665ab
     t.string   "mail"
     t.integer  "phonenumber"
     t.string   "avatar"
