@@ -7,4 +7,6 @@ class User < ActiveRecord::Base
 	validates :phonenumber, presence: true
 =======
 >>>>>>> 1c7076726fdadea6190eda369b1e862b74e665ab
+
+	has_secure_password
 end
