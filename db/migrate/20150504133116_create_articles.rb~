@@ -3,8 +3,8 @@ class CreateArticles < ActiveRecord::Migration
     create_table :articles do |t|
       t.string :title
       t.string :body
-      t.string :price
-      t.string :image
+      t.integer :price
+      t.string :images
 
       t.timestamps null: false
     end
