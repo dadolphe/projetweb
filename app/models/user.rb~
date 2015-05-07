@@ -1,10 +1,14 @@
 class User < ActiveRecord::Base
-<<<<<<< HEAD
-	validates :name, presence: true
-	validates :firstname, presence: true
+	validates :name, presence: true, length: { maximum: 50 }
+	validates :firstname, presence: true, length: { maximum: 50 }
 	validates :promo, presence: true
-	validates :mail, presence: true
+	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+	validates :mail, presence: true,format: { with: VALID_EMAIL_REGEX }
 	validates :phonenumber, presence: true
-=======
->>>>>>> 1c7076726fdadea6190eda369b1e862b74e665ab
+  	validates :password, length: { minimum: 6 }
+	has_secure_password
+
+	
+
+
 end
