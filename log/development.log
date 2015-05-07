@@ -403,3 +403,27 @@ Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b9
 
 
 Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:50 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-07 11:31:05 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (40.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (18.0ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (25.0ms)
+Completed 200 OK in 701ms (Views: 656.9ms | ActiveRecord: 19.2ms)
+
+
+Started GET "/assets/scaffolds.self-9fa6bda4e2e3fedfa06a29354853ae1989c9f98738b8df24493d7501c0e7ac91.css?body=1" for 127.0.0.1 at 2015-05-07 11:31:06 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 11:31:06 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 11:31:06 +0200
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-07 11:31:09 +0200
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.haml (50.8ms)
+  Rendered articles/new.html.haml within layouts/application (55.1ms)
+Completed 200 OK in 194ms (Views: 90.1ms | ActiveRecord: 99.2ms)
