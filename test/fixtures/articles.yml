@@ -2,22 +2,8 @@
 
 one:
   title: MyString
-  body: MyString
-<<<<<<< HEAD
-  price: MyString
-  image: MyString
-=======
-  price: 1
-  images: MyString
->>>>>>> 1c7076726fdadea6190eda369b1e862b74e665ab
+  body: MyText
 
 two:
   title: MyString
-  body: MyString
-<<<<<<< HEAD
-  price: MyString
-  image: MyString
-=======
-  price: 1
-  images: MyString
->>>>>>> 1c7076726fdadea6190eda369b1e862b74e665ab
+  body: MyText
