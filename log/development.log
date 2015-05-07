@@ -403,3 +403,74 @@ Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b9
 
 
 Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:50 +0200
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-07 11:31:23 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.6ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (14.3ms)
+Completed 200 OK in 207ms (Views: 191.0ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 11:31:24 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 11:31:24 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-07 11:31:24 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-07 11:31:24 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-07 11:31:24 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-07 11:31:24 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 11:31:24 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-05-07 11:31:24 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 11:31:24 +0200
+
+
+Started GET "/assets/scaffolds.self-7ffdaf14bcb32d12cba09308b2218723ffc5439a0f7ff715ac3daa680930df99.css?body=1" for 127.0.0.1 at 2015-05-07 11:31:24 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-07 11:31:26 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 67ms (Views: 57.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-07 11:31:29 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/articles/1" for 127.0.0.1 at 2015-05-07 11:31:47 +0200
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IiShHXo+Rbysqysnttu8YO+/Koz76r4gEU8jVUkCx+A1KGD45uT7UvpIYvNg/4rlDWUcFwngYkrWix09LmPIhw==", "id"=>"1"}
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 1]]
+  [1m[35m (15.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 23ms (ActiveRecord: 16.8ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-07 11:31:47 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.3ms)
