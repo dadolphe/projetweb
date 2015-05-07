@@ -206,3 +206,200 @@ SyntaxError (/home/dadolphe/projetweb/app/models/article.rb:2: syntax error, une
   Rendered /home/dadolphe/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
   Rendered /home/dadolphe/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
   Rendered /home/dadolphe/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (43.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-07 11:29:03 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (53.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (75.5ms)
+Completed 200 OK in 496ms (Views: 414.6ms | ActiveRecord: 69.5ms)
+
+
+Started GET "/assets/scaffolds.self-7ffdaf14bcb32d12cba09308b2218723ffc5439a0f7ff715ac3daa680930df99.css?body=1" for 127.0.0.1 at 2015-05-07 11:29:03 +0200
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 11:29:03 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 11:29:04 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-07 11:29:04 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:04 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:04 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:04 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:04 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:04 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:04 +0200
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-07 11:29:07 +0200
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.haml (79.8ms)
+  Rendered articles/new.html.haml within layouts/application (88.4ms)
+Completed 200 OK in 246ms (Views: 135.0ms | ActiveRecord: 99.6ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2015-05-07 11:29:24 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"di2MkMhor/d7pIatwInvHFjHI0O1cQcOKABNqGUGfCJhIU11VLIRGS1Hz3kWrdmZuh0V2Ed722TvxHPAAmdzRQ==", "article"=>{"title"=>"Doto", "body"=>"wesh wesh"}, "commit"=>"Save"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (81.8ms)[0m  INSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["title", "Doto"], ["body", "wesh wesh"], ["created_at", "2015-05-07 09:29:24.935809"], ["updated_at", "2015-05-07 09:29:24.935809"]]
+  [1m[36m (36.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 238ms (ActiveRecord: 118.8ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-07 11:29:25 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 67ms (Views: 32.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-07 11:29:28 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-07 11:29:30 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (2.2ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-07 11:29:32 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-07 11:29:34 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.self-7ffdaf14bcb32d12cba09308b2218723ffc5439a0f7ff715ac3daa680930df99.css?body=1" for 127.0.0.1 at 2015-05-07 11:29:34 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-07 11:29:34 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:34 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:34 +0200
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 11:29:34 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:34 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 11:29:34 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:34 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:34 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:34 +0200
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-07 11:29:48 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.6ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (15.4ms)
+Completed 200 OK in 187ms (Views: 170.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-07 11:29:48 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:48 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:48 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:48 +0200
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 11:29:48 +0200
+
+
+Started GET "/assets/scaffolds.self-7ffdaf14bcb32d12cba09308b2218723ffc5439a0f7ff715ac3daa680930df99.css?body=1" for 127.0.0.1 at 2015-05-07 11:29:48 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 11:29:48 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:48 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:48 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:48 +0200
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-07 11:29:49 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-07 11:29:49 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:49 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:49 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:49 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:49 +0200
+
+
+Started GET "/assets/scaffolds.self-7ffdaf14bcb32d12cba09308b2218723ffc5439a0f7ff715ac3daa680930df99.css?body=1" for 127.0.0.1 at 2015-05-07 11:29:49 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 11:29:50 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:50 +0200
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 11:29:50 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 11:29:50 +0200
