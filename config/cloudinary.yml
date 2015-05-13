@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: master-dgl6bjk4s
+  api_key: '519329945272517'
+  api_secret: ZPJy-ZtMJojyhY5v8qOTkqUf3Rk
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: master-dgl6bjk4s
+  api_key: '519329945272517'
+  api_secret: ZPJy-ZtMJojyhY5v8qOTkqUf3Rk
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: master-dgl6bjk4s
+  api_key: '519329945272517'
+  api_secret: ZPJy-ZtMJojyhY5v8qOTkqUf3Rk
+  enhance_image_tag: true
+  static_image_support: false
