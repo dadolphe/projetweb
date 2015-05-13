@@ -9,6 +9,32 @@
   </div>
 
   <div class="field">
+    <%= f.label :firstname %><br />
+    <%= f.text_field :firstname, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :promo %><br />
+    <%= f.text_field :promo, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phonenumber %><br />
+    <%= f.telephone_field :phonenumber, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :avatar %><br />
+    <%= f.text_field :avatar, autofocus: true %>
+  </div>
+
+  <div class="field">
     <%= f.label :password %>
     <% if @validatable %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>

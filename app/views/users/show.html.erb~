@@ -1,12 +1,7 @@
--@page_title = "Authentification utilisateur | inscription" %>
-
-%h1 Inscription
-=form_for(:user, :url => {:controller => 'users', action => 'create'}) do |f|
-  %p Nom d'utilisateur : f_text_field :username
-  %p Email : f_text_field :email
-  %p Password confirmation : f.password_field :password_confirmation
-  -f.submit :Signup
-    if @user.errors.any?
-      for message_error in @user.errors.full_messages
-        message_error
-
+<h3>User</h3>
+<p>Firstname: <%= @user.firstname if @user.firstname %></p>
+<p>Name: <%= @user.name if @user.name %></p>
+<p>Promo: <%= @user.promo if @user.promo %></p>
+<p>Email: <%= @user.email if @user.email %></p>
+<p>Phone number: <%= @user.phonenumber if @user.phonenumber %></p>
+<p>Avatar: <%= @user.avatar if @user.avatar %></p>
