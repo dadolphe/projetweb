@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 gem 'devise'
 gem 'bootstrap-sass'
+gem 'rspec'
+
+#gem 'rspec-cells' # pour generate mailer , sinon rspect not found 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use postgresql as the database for Active Record
