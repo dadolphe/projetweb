@@ -12,3 +12,5 @@ mail ds config environment
 service admin : wtf is dat shit
 
 change port production.rb de 5000 à 3000 /!\ mail
+
+= @article.report(current_user,@article.title)
