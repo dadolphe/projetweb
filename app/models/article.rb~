@@ -1,16 +1,7 @@
 class Article < ActiveRecord::Base
+	belongs_to :user
 	validates :title, presence: true
 	validates :body, presence: true
 	validates :price, presence: true
 	validates :price, numericality: { only_integer: true }
-
-
-  def report(user,nomarticle)
-	if user_signed_in?
-		#faire un popup genre : signalement envoyé, votre demande sera traité dans le plus court délai
-		UserMailer.report_email(user,nomarticle).deliver_now
-	end
-  end
-
-
 end
