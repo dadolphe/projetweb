@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>Bonjour,<br>
+       Voici les articles de la semaine :<br>
+	<% @articles.each do |article| %>
+	Titre: <%= article.title %><br>
+	Contenu: <%= article.body %><br>
+	Prix: <%= article.price %><br><br>
+	<% end %>
+    </p>
+  </body>
+</html>

@@ -19,3 +19,5 @@ quid du : si je detruis un user est ce ses articles sont delete ou pas? (cf rela
 
 
 pourquoi y a new et create dans articles_controller.rb, wut?
+
+text field pour les nombres, heu np? oO normal? pas vu de form for adapté pour number, et le number_field rajoute un truc bizarre à droite de la case

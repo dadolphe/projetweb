@@ -4,4 +4,5 @@ class Article < ActiveRecord::Base
 	validates :body, presence: true
 	validates :price, presence: true
 	validates :price, numericality: true
+
 end

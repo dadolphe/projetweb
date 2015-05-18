@@ -2,7 +2,9 @@ source 'https://rubygems.org'
 
 gem 'devise'
 gem 'bootstrap-sass'
-gem 'rspec'
+gem 'rspec-rails'
+gem 'factory_girl_rails'
+gem 'whenever', :require => false
 
 #gem 'rspec-cells' # pour generate mailer , sinon rspect not found 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

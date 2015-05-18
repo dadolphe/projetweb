@@ -2,8 +2,8 @@ source 'https://rubygems.org'
 
 gem 'devise'
 gem 'bootstrap-sass'
-gem 'rspec'
-gem 'pundit' # gem pour les autorisations
+gem 'rspec-rails'
+gem 'factory_girl_rails'
 
 #gem 'rspec-cells' # pour generate mailer , sinon rspect not found 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

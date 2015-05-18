@@ -14,6 +14,9 @@ class ArticlesController < ApplicationController
   # GET /articles.json
   def index
     @articles = Article.all
+    
+ 
+	
   end
 
   # GET /articles/1
@@ -30,6 +33,7 @@ class ArticlesController < ApplicationController
   def edit
 	 
   end
+
 
   def report(user,nomarticle)
 		#faire un popup genre : signalement envoyé, votre demande sera traité dans le plus court délai
