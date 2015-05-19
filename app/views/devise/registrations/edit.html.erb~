@@ -29,12 +29,13 @@
 
   <div class="field">
     <%= f.label :phonenumber %><br />
-    <%= f.number_field :phonenumber, autofocus: true %>
+    <%= f.telephone_field :phonenumber, autofocus: true %>
   </div>
 
   <div class="field">
     <%= f.label :avatar %><br />
-    <%= f.text_field :avatar, autofocus: true %>
+     <%= f.file_field :pic, autofocus: true %>
+     <%= image_tag @user.pic.url(:medium) %>
   </div>
 
 

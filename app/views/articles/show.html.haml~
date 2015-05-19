@@ -21,8 +21,7 @@
 %p 
   %b Signaler l'annonce comme étant abusive:
   
-  %button{:onclick => "alert('Merci du signalement')", :type => "button"} Signaler
-  =button_to "Send Email", url: { controller: "articles", action: "report", :user => current_user, :nomarticle => @article.title}, remote: true, head: :ok
+  = button_to "Send Email", report_article_path(@article)
 
 
 = link_to 'Edit', edit_article_path(@article)
