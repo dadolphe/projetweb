@@ -22,6 +22,11 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.json
   def show
+	@auteur = Article.find(params[:id]).user
+	@pas_lauteur = true
+        if @auteur == current_user
+		@pas_lauteur = false
+	end
   end
 
   # GET /articles/new
@@ -48,7 +53,6 @@ class ArticlesController < ApplicationController
   def create
     	@article = Article.new(article_params)
     	@article.user = current_user
-	#@article = current_user.build_article(article_params)
 
     respond_to do |format|
       if @article.save
@@ -93,6 +97,6 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:title, :body, :price)
+      params.require(:article).permit(:title, :body, :price, {:images => []})
     end
 end

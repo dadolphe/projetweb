@@ -31,7 +31,8 @@
 
   <div class="field">
     <%= f.label :avatar %><br />
-    <%= f.file_field :pic, autofocus: true%>
+    <%= f.file_field :avatar, autofocus: true %>
+    <%= f.hidden_field :avatar_cache %>
   </div>
 
   <div class="field">

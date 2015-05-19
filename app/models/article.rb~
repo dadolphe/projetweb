@@ -4,9 +4,7 @@ class Article < ActiveRecord::Base
 	validates :body, presence: true
 	validates :price, presence: true
 	validates :price, numericality: true
+	
+	mount_uploader :images, ImageUploader
 
-  def report(user,nomarticle)
-		#faire un popup genre : signalement envoyé, votre demande sera traité dans le plus court délai
-		UserMailer.mail_recapitulatif.deliver_now
-  end
 end
