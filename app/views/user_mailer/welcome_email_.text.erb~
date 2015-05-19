@@ -1,0 +1,1 @@
+L'annonce <%= @annonce %> a ete signale par <%= @user.fisrtname %> <%= @user.name %> comme étant abusive.

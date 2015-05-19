@@ -1,5 +1,12 @@
 class Article < ActiveRecord::Base
+	belongs_to :user
 	validates :title, presence: true
 	validates :body, presence: true
->>>>>>> 1c7076726fdadea6190eda369b1e862b74e665ab
+	validates :price, presence: true
+	validates :price, numericality: true
+
+  def report(user,nomarticle)
+		#faire un popup genre : signalement envoyé, votre demande sera traité dans le plus court délai
+		UserMailer.mail_recapitulatif.deliver_now
+  end
 end

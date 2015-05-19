@@ -1,10 +1,22 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!, only: [ :show,:new, :edit, :update, :destroy ]
+  before_filter :require_permission, only: [ :edit, :update, :destroy ]
+  
+  def require_permission
+	if current_user != Article.find(params[:id]).user
+		flash[:alert] = "Action interdite. L\'offre peut seulement être édité/supprimé par son auteur"
+		redirect_to articles_url
+	end
+  end
 
   # GET /articles
   # GET /articles.json
   def index
     @articles = Article.all
+    
+ 
+	
   end
 
   # GET /articles/1
@@ -19,12 +31,21 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1/edit
   def edit
+	 
+  end
+
+
+  def report(user,nomarticle)
+		#faire un popup genre : signalement envoyé, votre demande sera traité dans le plus court délai
+		UserMailer.report_email(user,nomarticle).deliver_now
   end
 
   # POST /articles
   # POST /articles.json
   def create
-    @article = Article.new(article_params)
+    	@article = Article.new(article_params)
+    	@article.user = current_user
+	#@article = current_user.build_article(article_params)
 
     respond_to do |format|
       if @article.save
@@ -69,6 +90,6 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:title, :body)
+      params.require(:article).permit(:title, :body, :price)
     end
 end

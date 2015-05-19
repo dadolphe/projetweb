@@ -80,17 +80,21 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
     port: 587,
-    domain: Rails.application.secrets.domain_name,
+    #domain: "mail.google.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: Rails.application.secrets.email_provider_username,
-    password: Rails.application.secrets.email_provider_password
+    user_name: "ensiieboncoin@gmail.com",
+    password: "Japan6700"
+    #domain: Rails.application.secrets.domain_name,
+    #user_name: Rails.application.secrets.email_provider_username,
+    #password: Rails.application.secrets.email_provider_password
   }
   # ActionMailer Config
-  config.action_mailer.default_url_options = { :host => Rails.application.secrets.domain_name }
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  #cetait 5000 avant jai change pour 3000 /!\
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
 
 end

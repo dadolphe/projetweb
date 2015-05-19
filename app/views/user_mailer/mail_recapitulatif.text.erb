@@ -1,0 +1,9 @@
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+	<% @articles.each do |article| %>
+		<% if  ( Time.now.day.to_i - article.updated_at.day > 6 ) %>
+			Titre: <%= article.title %><br>
+			Contenu: <%= article.body %><br>
+			Prix: <%= article.price %><br><br>
+		<% end %>
+	<% end %>

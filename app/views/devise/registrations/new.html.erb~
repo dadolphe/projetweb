@@ -24,7 +24,15 @@
     <%= f.text_field :promo, autofocus: true %>
   </div>
 
+  <div class="field">
+    <%= f.label :phonenumber %><br />
+    <%= f.telephone_field :phonenumber, autofocus: true %>
+  </div>
 
+  <div class="field">
+    <%= f.label :avatar %><br />
+    <%= f.text_field :avatar, autofocus: true %>
+  </div>
 
   <div class="field">
     <%= f.label :password %>

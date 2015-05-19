@@ -5,6 +5,7 @@ class CreateArticles < ActiveRecord::Migration
       t.string :body
       t.decimal :price
       t.string :images
+      t.integer :user_id	
 
       t.timestamps null: false
     end
