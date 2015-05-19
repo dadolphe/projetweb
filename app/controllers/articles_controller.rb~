@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :set_article, only: [:show, :edit, :update, :destroy]
+  before_action :set_article, only: [:show, :edit, :report, :update, :destroy]
   before_filter :authenticate_user!, only: [ :show,:new, :edit, :update, :destroy ]
   before_filter :require_permission, only: [ :edit, :update, :destroy ]
   
@@ -35,9 +35,12 @@ class ArticlesController < ApplicationController
   end
 
 
-  def report(user,nomarticle)
-		#faire un popup genre : signalement envoyé, votre demande sera traité dans le plus court délai
-		UserMailer.report_email(user,nomarticle).deliver_now
+  def report
+	user = current_user
+	nomarticle = @article.title
+	flash[:alert] = "Signale !"
+	redirect_to root_url
+	UserMailer.report_email(user,nomarticle).deliver_now
   end
 
   # POST /articles

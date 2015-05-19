@@ -3,17 +3,6 @@ class UsersController < ApplicationController
 
 	def index
 		@users = User.all
-		puts "test"
-		puts "test"
-		puts "test"
-		puts "test"
-		puts "test"
-		puts "test"
-		puts "test"
-		puts "test"
-		puts "test"
-		puts "test"
-		puts "test"
 	end
 
 	def show

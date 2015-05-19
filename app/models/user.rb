@@ -10,4 +10,9 @@ class User < ActiveRecord::Base
 	validates :promo, numericality: { only_integer: true }
 	validates :phonenumber, presence: true 
 	validates :phonenumber, numericality: { only_integer: true }
+
+	has_attached_file :pic, :styles => 
+		{ :medium => "300x300>", :thumb => "100x100>" }
+	has_attached_file :attach
+	validates_attachment_content_type :pic, :content_type => %w(image/jpeg image/jpg)
 end
