@@ -34059,3 +34059,2177 @@ Content-Transfer-Encoding: 7bit
 
 ----==_mimepart_555a5bba65186_5c2cd65998900bf--
 
+  [1m[36mArticle Load (188.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (4221.7ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 6847.4ms
+
+Sent mail to masamune31@hotmail.fr (2889.6ms)
+Date: Tue, 19 May 2015 13:42:29 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b21a5c84c2_aab52799816187@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b21a596a80_aab527998160f5";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b21a596a80_aab527998160f5
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+Voici les articles de la semaine :<br>
+Titre: zeazea<br>
+Contenu: ezae<br>
+Prix: 3.0<br><br>
+Titre: tuytu<br>
+Contenu: 23<br>
+Prix: 4.0<br><br>
+
+----==_mimepart_555b21a596a80_aab527998160f5
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+    	Titre: zeazea<br>
+    	Contenu: ezae<br>
+    	Prix: 3.0<br><br>
+    	Titre: tuytu<br>
+    	Contenu: 23<br>
+    	Prix: 4.0<br><br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b21a596a80_aab527998160f5--
+
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (38.3ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 208.5ms
+
+Sent mail to masamune31@hotmail.fr (2354.7ms)
+Date: Tue, 19 May 2015 13:44:02 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b22023f01d_bfc5279981611@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b22023d3dc_bfc5279981601f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b22023d3dc_bfc5279981601f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+Voici les articles de la semaine :<br>
+Titre: zeazea<br>
+Contenu: ezae<br>
+Prix: 3.0<br><br>
+Titre: tuytu<br>
+Contenu: 23<br>
+Prix: 4.0<br><br>
+
+----==_mimepart_555b22023d3dc_bfc5279981601f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+    	Titre: zeazea<br>
+    	Contenu: ezae<br>
+    	Prix: 3.0<br><br>
+    	Titre: tuytu<br>
+    	Contenu: 23<br>
+    	Prix: 4.0<br><br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b22023d3dc_bfc5279981601f--
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-19 13:45:46 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (31.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35m (39.8ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (58.3ms)
+  Rendered layouts/_navigation_links.html.erb (5.1ms)
+  Rendered layouts/_navigation.html.erb (6.8ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 856ms (Views: 773.4ms | ActiveRecord: 44.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-19 13:45:49 +0200
+Processing by ArticlesController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-05-19 13:45:49 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (46.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 130ms (Views: 111.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-05-19 13:45:53 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hao/w1pVxd+uRS0Vg0+wguL0bYQkZr59v8+znFirhUyzkAB0JIc/KgTd4pyNP2ZMrxkUSUHYBVrc8HONaooO1Q==", "user"=>{"email"=>"test2@yopmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "test2@yopmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4  [["current_sign_in_at", "2015-05-19 11:45:53.637497"], ["sign_in_count", 2], ["updated_at", "2015-05-19 11:45:53.638642"], ["id", 1]]
+  [1m[36m (18.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/new
+Completed 302 Found in 524ms (ActiveRecord: 19.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-19 13:45:53 +0200
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/_form.html.haml (6.0ms)
+  Rendered articles/new.html.haml within layouts/application (8.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 105ms (Views: 101.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2015-05-19 13:46:00 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FsZQD+5SI08x5t3EpXA+/MSgLCyvFpALfbpY/Qa1aRx3OI2caLUZk2XnbQ3FvtXZJ0ZUo04W4I+0sgwhJ4i2Tg==", "article"=>{"title"=>"last", "body"=>"maspor", "price"=>"2"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (75.3ms)[0m  [1mINSERT INTO "articles" ("title", "body", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "last"], ["body", "maspor"], ["price", "2.0"], ["user_id", 1], ["created_at", "2015-05-19 11:46:00.488202"], ["updated_at", "2015-05-19 11:46:00.488202"]]
+  [1m[35m (102.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/articles/3
+Completed 302 Found in 318ms (ActiveRecord: 178.5ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-05-19 13:46:00 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (5.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 124ms (Views: 99.7ms | ActiveRecord: 0.8ms)
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (37.9ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.7ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 224.7ms
+
+Sent mail to masamune31@hotmail.fr (3934.5ms)
+Date: Tue, 19 May 2015 13:46:02 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b227a58dd4_e5f527998161bb@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b227a572c1_e5f527998160f6";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b227a572c1_e5f527998160f6
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+Voici les articles de la semaine :<br>
+Titre: zeazea<br>
+Contenu: ezae<br>
+Prix: 3.0<br><br>
+Titre: tuytu<br>
+Contenu: 23<br>
+Prix: 4.0<br><br>
+Titre: last<br>
+Contenu: maspor<br>
+Prix: 2.0<br><br>
+
+----==_mimepart_555b227a572c1_e5f527998160f6
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+    	Titre: zeazea<br>
+    	Contenu: ezae<br>
+    	Prix: 3.0<br><br>
+    	Titre: tuytu<br>
+    	Contenu: 23<br>
+    	Prix: 4.0<br><br>
+    	Titre: last<br>
+    	Contenu: maspor<br>
+    	Prix: 2.0<br><br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b227a572c1_e5f527998160f6--
+
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (37.5ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.7ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 222.6ms
+
+Sent mail to masamune31@hotmail.fr (3927.7ms)
+Date: Tue, 19 May 2015 13:48:02 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b22f29164_f2f52799816168@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b22f27783_f2f5279981606d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b22f27783_f2f5279981606d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+Voici les articles de la semaine :<br>
+Titre: zeazea<br>
+Contenu: ezae<br>
+Prix: 3.0<br><br>
+Titre: tuytu<br>
+Contenu: 23<br>
+Prix: 4.0<br><br>
+Titre: last<br>
+Contenu: maspor<br>
+Prix: 2.0<br><br>
+
+----==_mimepart_555b22f27783_f2f5279981606d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+    	Titre: zeazea<br>
+    	Contenu: ezae<br>
+    	Prix: 3.0<br><br>
+    	Titre: tuytu<br>
+    	Contenu: 23<br>
+    	Prix: 4.0<br><br>
+    	Titre: last<br>
+    	Contenu: maspor<br>
+    	Prix: 2.0<br><br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b22f27783_f2f5279981606d--
+
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (39.1ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.5ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 223.2ms
+
+Sent mail to masamune31@hotmail.fr (2907.8ms)
+Date: Tue, 19 May 2015 13:50:01 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b2369ab946_fea527998161e8@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b2369a9ee5_fea52799816042";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b2369a9ee5_fea52799816042
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+Voici les articles de la semaine :<br>
+Titre: zeazea<br>
+Contenu: ezae<br>
+Prix: 3.0<br><br>
+Titre: tuytu<br>
+Contenu: 23<br>
+Prix: 4.0<br><br>
+Titre: last<br>
+Contenu: maspor<br>
+Prix: 2.0<br><br>
+
+----==_mimepart_555b2369a9ee5_fea52799816042
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+    	Titre: zeazea<br>
+    	Contenu: ezae<br>
+    	Prix: 3.0<br><br>
+    	Titre: tuytu<br>
+    	Contenu: 23<br>
+    	Prix: 4.0<br><br>
+    	Titre: last<br>
+    	Contenu: maspor<br>
+    	Prix: 2.0<br><br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b2369a9ee5_fea52799816042--
+
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-05-19 13:51:22 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (6.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 107ms (Views: 103.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:51:22 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:51:22 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-8d13a4d920e3fd0a2ab1880ce15c5821df898206ba5182050e66ccf94eaa1a9b.css?body=1" for 127.0.0.1 at 2015-05-19 13:51:22 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:51:22 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-19 13:51:22 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-19 13:51:22 +0200
+
+
+Started GET "/assets/scaffolds.self-8398e41cfe09557aca6007d80dc2a5bb31a5e1273eb405fdc4381b83daa2c26d.css?body=1" for 127.0.0.1 at 2015-05-19 13:51:22 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-19 13:51:22 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:51:22 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:51:22 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-19 13:51:22 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:51:22 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-19 13:51:22 +0200
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (38.0ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.7ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 229.2ms
+
+Sent mail to masamune31@hotmail.fr (3654.2ms)
+Date: Tue, 19 May 2015 13:52:02 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b23e25ada7_109152799816183@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b23e259168_10915279981603f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b23e259168_10915279981603f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+Voici les articles de la semaine :<br>
+Titre: zeazea<br>
+Contenu: ezae<br>
+Prix: 3.0<br><br>
+Titre: tuytu<br>
+Contenu: 23<br>
+Prix: 4.0<br><br>
+Titre: last<br>
+Contenu: maspor<br>
+Prix: 2.0<br><br>
+
+----==_mimepart_555b23e259168_10915279981603f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+    	Titre: zeazea<br>
+    	Contenu: ezae<br>
+    	Prix: 3.0<br><br>
+    	Titre: tuytu<br>
+    	Contenu: 23<br>
+    	Prix: 4.0<br><br>
+    	Titre: last<br>
+    	Contenu: maspor<br>
+    	Prix: 2.0<br><br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b23e259168_10915279981603f--
+
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-05-19 13:52:14 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (16.9ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `day_ago' for Tue, 19 May 2015 11:46:00 UTC +00:00:Time):
+    11:   = @article.price
+    12: 
+    13:   %b Derniere update :
+    14:   = @article.updated_at.day_ago
+    15: =======================
+    16: %p 
+    17:   %b Signaler l'annonce comme étant abusive:
+  app/views/articles/show.html.haml:14:in `_app_views_articles_show_html_haml___3706261750982089883_70252900556580'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (21.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (43.1ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-05-19 13:52:26 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `ago' for 19:Fixnum):
+    11:   = @article.price
+    12: 
+    13:   %b Derniere update :
+    14:   = @article.updated_at.day.ago
+    15: =======================
+    16: %p 
+    17:   %b Signaler l'annonce comme étant abusive:
+  app/views/articles/show.html.haml:14:in `_app_views_articles_show_html_haml___3706261750982089883_40308340'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (19.0ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (38.7ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-05-19 13:52:27 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `ago' for 19:Fixnum):
+    11:   = @article.price
+    12: 
+    13:   %b Derniere update :
+    14:   = @article.updated_at.day.ago
+    15: =======================
+    16: %p 
+    17:   %b Signaler l'annonce comme étant abusive:
+  app/views/articles/show.html.haml:14:in `_app_views_articles_show_html_haml___3706261750982089883_40308340'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.7ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (19.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (37.8ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-05-19 13:52:34 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (4.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 74ms (Views: 70.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:52:34 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-8d13a4d920e3fd0a2ab1880ce15c5821df898206ba5182050e66ccf94eaa1a9b.css?body=1" for 127.0.0.1 at 2015-05-19 13:52:34 +0200
+
+
+Started GET "/assets/scaffolds.self-8398e41cfe09557aca6007d80dc2a5bb31a5e1273eb405fdc4381b83daa2c26d.css?body=1" for 127.0.0.1 at 2015-05-19 13:52:34 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-19 13:52:34 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-19 13:52:34 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-19 13:52:34 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:52:34 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:52:34 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:52:34 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:52:34 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-19 13:52:34 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-19 13:52:34 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:52:34 +0200
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-05-19 13:53:49 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (4.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 84ms (Views: 80.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:53:50 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-8d13a4d920e3fd0a2ab1880ce15c5821df898206ba5182050e66ccf94eaa1a9b.css?body=1" for 127.0.0.1 at 2015-05-19 13:53:50 +0200
+
+
+Started GET "/assets/scaffolds.self-8398e41cfe09557aca6007d80dc2a5bb31a5e1273eb405fdc4381b83daa2c26d.css?body=1" for 127.0.0.1 at 2015-05-19 13:53:50 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:53:50 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:53:50 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-19 13:53:50 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-19 13:53:50 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-19 13:53:50 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:53:50 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:53:50 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-19 13:53:50 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:53:50 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-19 13:53:50 +0200
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-05-19 13:53:55 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/home/masamune/etudiant/IPW/projetweb/app/views/articles/show.html.haml:15: syntax error, unexpected ')'
+));}\n  #{_hamlout.format_scri...
+ ^
+/home/masamune/etudiant/IPW/projetweb/app/views/articles/show.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+));}\n</p>\n=====================...
+    ^
+/home/masamune/etudiant/IPW/projetweb/app/views/articles/show.html.haml:16: unknown regexp option - b
+/home/masamune/etudiant/IPW/projetweb/app/views/articles/show.html.haml:16: syntax error, unexpected $undefined
+...once comme étant abusive:</b>\n  <button onclick=\"alert('M...
+...                               ^
+/home/masamune/etudiant/IPW/projetweb/app/views/articles/show.html.haml:16: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...abusive:</b>\n  <button onclick=\"alert('Merci du signalemen...
+...                               ^
+/home/masamune/etudiant/IPW/projetweb/app/views/articles/show.html.haml:27: syntax error, unexpected ',', expecting tSTRING_DEND
+));}\n", 0, false);::Haml::Util.html_...
+        ^
+/home/masamune/etudiant/IPW/projetweb/app/views/articles/show.html.haml:27: syntax error, unexpected keyword_ensure, expecting tSTRING_DEND
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/home/masamune/etudiant/IPW/projetweb/app/views/articles/show.html.haml:27: syntax error, unexpected keyword_end, expecting tSTRING_DEND
+...uffer.upper if @haml_buffer;end;
+...                               ^
+/home/masamune/etudiant/IPW/projetweb/app/views/articles/show.html.haml:30: syntax error, unexpected keyword_end, expecting tSTRING_DEND):
+  app/views/articles/show.html.haml:15: syntax error, unexpected ')'
+  app/views/articles/show.html.haml:16: syntax error, unexpected '}', expecting tSTRING_DEND
+  app/views/articles/show.html.haml:16: unknown regexp option - b
+  app/views/articles/show.html.haml:16: syntax error, unexpected $undefined
+  app/views/articles/show.html.haml:16: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/articles/show.html.haml:27: syntax error, unexpected ',', expecting tSTRING_DEND
+  app/views/articles/show.html.haml:27: syntax error, unexpected keyword_ensure, expecting tSTRING_DEND
+  app/views/articles/show.html.haml:27: syntax error, unexpected keyword_end, expecting tSTRING_DEND
+  app/views/articles/show.html.haml:30: syntax error, unexpected keyword_end, expecting tSTRING_DEND
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.8ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (19.1ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (38.2ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-05-19 13:53:59 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (Inconsistent indentation: 1 space used for indentation, but the rest of the document was indented using 2 spaces.):
+    12: 
+    13:   %b Derniere update :
+    14:   = @article.updated_at
+    15:  <br>
+    16:   = Time.now.day.to_i - @article.updated_at.day
+    17: =======================
+    18: %p 
+  app/views/articles/show.html.haml:15
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (19.1ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (38.9ms)
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (40.6ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.8ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 237.3ms
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-05-19 13:54:02 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (6.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 75ms (Views: 71.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:54:02 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-8d13a4d920e3fd0a2ab1880ce15c5821df898206ba5182050e66ccf94eaa1a9b.css?body=1" for 127.0.0.1 at 2015-05-19 13:54:02 +0200
+
+
+Started GET "/assets/scaffolds.self-8398e41cfe09557aca6007d80dc2a5bb31a5e1273eb405fdc4381b83daa2c26d.css?body=1" for 127.0.0.1 at 2015-05-19 13:54:02 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:54:02 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-19 13:54:02 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-19 13:54:02 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:54:02 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-19 13:54:02 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-19 13:54:02 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:54:02 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:54:02 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:54:02 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-19 13:54:02 +0200
+
+Sent mail to masamune31@hotmail.fr (3153.7ms)
+Date: Tue, 19 May 2015 13:54:01 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b2459ce241_1137527998161cf@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b2459cc5e3_1137527998160c3";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b2459cc5e3_1137527998160c3
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+Voici les articles de la semaine :<br>
+Titre: zeazea<br>
+Contenu: ezae<br>
+Prix: 3.0<br><br>
+Titre: tuytu<br>
+Contenu: 23<br>
+Prix: 4.0<br><br>
+Titre: last<br>
+Contenu: maspor<br>
+Prix: 2.0<br><br>
+
+----==_mimepart_555b2459cc5e3_1137527998160c3
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+    	Titre: zeazea<br>
+    	Contenu: ezae<br>
+    	Prix: 3.0<br><br>
+    	Titre: tuytu<br>
+    	Contenu: 23<br>
+    	Prix: 4.0<br><br>
+    	Titre: last<br>
+    	Contenu: maspor<br>
+    	Prix: 2.0<br><br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b2459cc5e3_1137527998160c3--
+
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-19 13:54:05 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (6.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (2.5ms)
+  Rendered layouts/_navigation.html.erb (4.0ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 76ms (Views: 73.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2015-05-19 13:54:07 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (5.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 87ms (Views: 83.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-19 13:54:08 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (3.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.8ms)
+  Rendered layouts/_navigation.html.erb (2.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 73ms (Views: 71.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-19 13:54:09 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (1.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 72ms (Views: 68.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-19 13:54:55 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.5ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 5.9ms)
+
+ActionView::Template::Error (undefined method `date' for Mon, 18 May 2015 21:19:02 UTC +00:00:Time):
+    11:   = @article.price
+    12: 
+    13:   %b Derniere update :
+    14:   = @article.updated_at.date
+    15:   <br>
+    16:   = Time.now.day.to_i - @article.updated_at.day
+    17: =======================
+  app/views/articles/show.html.haml:14:in `_app_views_articles_show_html_haml__3170324557435138769_70056354650480'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (18.8ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (40.2ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-19 13:54:56 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `date' for Mon, 18 May 2015 21:19:02 UTC +00:00:Time):
+    11:   = @article.price
+    12: 
+    13:   %b Derniere update :
+    14:   = @article.updated_at.date
+    15:   <br>
+    16:   = Time.now.day.to_i - @article.updated_at.day
+    17: =======================
+  app/views/articles/show.html.haml:14:in `_app_views_articles_show_html_haml__3170324557435138769_70056354650480'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (18.9ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (37.3ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-19 13:55:20 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (4.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_navigation.html.erb (2.2ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 229ms (Views: 225.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:55:20 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-8d13a4d920e3fd0a2ab1880ce15c5821df898206ba5182050e66ccf94eaa1a9b.css?body=1" for 127.0.0.1 at 2015-05-19 13:55:20 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:55:20 +0200
+
+
+Started GET "/assets/scaffolds.self-8398e41cfe09557aca6007d80dc2a5bb31a5e1273eb405fdc4381b83daa2c26d.css?body=1" for 127.0.0.1 at 2015-05-19 13:55:20 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:55:20 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-19 13:55:20 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-19 13:55:20 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-19 13:55:20 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:55:20 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:55:20 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-19 13:55:20 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:55:20 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-19 13:55:20 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-19 13:55:34 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (5.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 70ms (Views: 66.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:55:34 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-8d13a4d920e3fd0a2ab1880ce15c5821df898206ba5182050e66ccf94eaa1a9b.css?body=1" for 127.0.0.1 at 2015-05-19 13:55:34 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-19 13:55:34 +0200
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:55:34 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-19 13:55:34 +0200
+
+
+Started GET "/assets/scaffolds.self-8398e41cfe09557aca6007d80dc2a5bb31a5e1273eb405fdc4381b83daa2c26d.css?body=1" for 127.0.0.1 at 2015-05-19 13:55:34 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:55:34 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-19 13:55:34 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-19 13:55:34 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:55:34 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:55:34 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:55:34 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-19 13:55:34 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-19 13:56:19 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (6.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 123ms (Views: 119.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:56:20 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-8d13a4d920e3fd0a2ab1880ce15c5821df898206ba5182050e66ccf94eaa1a9b.css?body=1" for 127.0.0.1 at 2015-05-19 13:56:20 +0200
+
+
+Started GET "/assets/scaffolds.self-8398e41cfe09557aca6007d80dc2a5bb31a5e1273eb405fdc4381b83daa2c26d.css?body=1" for 127.0.0.1 at 2015-05-19 13:56:20 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:56:20 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:56:20 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-19 13:56:20 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-19 13:56:20 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-19 13:56:20 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-19 13:56:20 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-19 13:56:20 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:56:20 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:56:20 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:56:20 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-19 13:59:55 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (6.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_navigation.html.erb (2.2ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 272ms (Views: 219.4ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:55 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-8d13a4d920e3fd0a2ab1880ce15c5821df898206ba5182050e66ccf94eaa1a9b.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:55 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:55 +0200
+
+
+Started GET "/assets/scaffolds.self-8398e41cfe09557aca6007d80dc2a5bb31a5e1273eb405fdc4381b83daa2c26d.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:55 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:55 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:55 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:55 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:55 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:55 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:55 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:55 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:55 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:55 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-19 13:59:56 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (1.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 70ms (Views: 67.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:56 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-8d13a4d920e3fd0a2ab1880ce15c5821df898206ba5182050e66ccf94eaa1a9b.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:56 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:57 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:57 +0200
+
+
+Started GET "/assets/scaffolds.self-8398e41cfe09557aca6007d80dc2a5bb31a5e1273eb405fdc4381b83daa2c26d.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:57 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:57 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:57 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:57 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:57 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:57 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:57 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:57 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:57 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-19 13:59:59 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (2.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 84ms (Views: 80.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:59 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-8d13a4d920e3fd0a2ab1880ce15c5821df898206ba5182050e66ccf94eaa1a9b.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:59 +0200
+
+
+Started GET "/assets/scaffolds.self-8398e41cfe09557aca6007d80dc2a5bb31a5e1273eb405fdc4381b83daa2c26d.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:59 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:59 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:59 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 13:59:59 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:59 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:59 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:59 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:59 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:59 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:59 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 13:59:59 +0200
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-19 14:00:16 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (9.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (3.8ms)
+  Rendered layouts/_navigation.html.erb (7.0ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 119ms (Views: 116.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-05-19 14:00:17 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (13.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 89ms (Views: 84.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-05-19 14:02:28 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (4.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 75ms (Views: 72.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 14:02:28 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-8d13a4d920e3fd0a2ab1880ce15c5821df898206ba5182050e66ccf94eaa1a9b.css?body=1" for 127.0.0.1 at 2015-05-19 14:02:28 +0200
+
+
+Started GET "/assets/scaffolds.self-8398e41cfe09557aca6007d80dc2a5bb31a5e1273eb405fdc4381b83daa2c26d.css?body=1" for 127.0.0.1 at 2015-05-19 14:02:28 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-19 14:02:28 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-19 14:02:28 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 14:02:28 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-19 14:02:28 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 14:02:28 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 14:02:28 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 14:02:28 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-19 14:02:28 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 14:02:28 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-19 14:02:28 +0200
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-05-19 14:05:42 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (6.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 83ms (Views: 79.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 14:05:42 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-8d13a4d920e3fd0a2ab1880ce15c5821df898206ba5182050e66ccf94eaa1a9b.css?body=1" for 127.0.0.1 at 2015-05-19 14:05:42 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-19 14:05:42 +0200
+
+
+Started GET "/assets/scaffolds.self-8398e41cfe09557aca6007d80dc2a5bb31a5e1273eb405fdc4381b83daa2c26d.css?body=1" for 127.0.0.1 at 2015-05-19 14:05:42 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 14:05:42 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-19 14:05:42 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-19 14:05:42 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-19 14:05:42 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-19 14:05:42 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 14:05:42 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 14:05:42 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-19 14:05:42 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-19 14:05:42 +0200
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-19 14:05:52 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (3.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.erb (1.8ms)
+  Rendered layouts/_navigation.html.erb (2.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 71ms (Views: 69.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2015-05-19 14:05:53 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (4.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 75ms (Views: 72.4ms | ActiveRecord: 0.5ms)
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (35.0ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 45.5ms
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (34.1ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 47.1ms
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (40.0ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 52.0ms
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (40.7ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (1.1ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 57.0ms
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (36.1ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (1.1ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 50.5ms
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (39.0ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (1.2ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 56.6ms
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (40.1ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (1.2ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 60.5ms
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (47.8ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (1.6ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 67.8ms
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (39.5ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (1.0ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 56.9ms
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (41.0ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.9ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 57.4ms
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (42.6ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (1.0ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 58.7ms
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (40.2ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.5ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 222.6ms
+
+Sent mail to masamune31@hotmail.fr (2364.9ms)
+Date: Tue, 19 May 2015 14:16:13 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b298d5b4ce_188f61b99424011@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b298d59841_188f61b9942397b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b298d59841_188f61b9942397b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+Voici les articles de la semaine :<br>
+
+----==_mimepart_555b298d59841_188f61b9942397b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+    			Titre: zeazea<br>
+    			Contenu: ezae<br>
+    			Prix: 3.0<br><br>
+    			Titre: tuytu<br>
+    			Contenu: 23<br>
+    			Prix: 4.0<br><br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b298d59841_188f61b9942397b--
+
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (37.2ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.7ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 231.4ms
+
+Sent mail to masamune31@hotmail.fr (2218.8ms)
+Date: Tue, 19 May 2015 14:17:25 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b29d54d4d5_197561b994240df@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b29d54b7a5_197561b99423919";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b29d54b7a5_197561b99423919
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+			Titre: zeazea<br>
+			Contenu: ezae<br>
+			Prix: 3.0<br><br>
+			Titre: tuytu<br>
+			Contenu: 23<br>
+			Prix: 4.0<br><br>
+
+----==_mimepart_555b29d54b7a5_197561b99423919
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+    			Titre: zeazea<br>
+    			Contenu: ezae<br>
+    			Prix: 3.0<br><br>
+    			Titre: tuytu<br>
+    			Contenu: 23<br>
+    			Prix: 4.0<br><br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b29d54b7a5_197561b99423919--
+
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (48.5ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.8ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 216.5ms
+
+Sent mail to masamune31@hotmail.fr (2379.3ms)
+Date: Tue, 19 May 2015 14:17:47 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b29ebd2549_1b1461b9942405f@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b29ebd0b25_1b1461b99423976";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b29ebd0b25_1b1461b99423976
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555b29ebd0b25_1b1461b99423976
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b29ebd0b25_1b1461b99423976--
+
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (37.1ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.8ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 233.3ms
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (39.6ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.9ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 209.2ms
+
+Sent mail to masamune31@hotmail.fr (3375.3ms)
+Date: Tue, 19 May 2015 14:18:02 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b29fa1aeb9_1bbb3eb9946818@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b29fa19650_1bbb3eb99467be";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b29fa19650_1bbb3eb99467be
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555b29fa19650_1bbb3eb99467be
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+    			Titre: zeazea<br>
+    			Contenu: ezae<br>
+    			Prix: 3.0<br><br>
+    			Titre: tuytu<br>
+    			Contenu: 23<br>
+    			Prix: 4.0<br><br>
+    			Titre: last<br>
+    			Contenu: maspor<br>
+    			Prix: 2.0<br><br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b29fa19650_1bbb3eb99467be--
+
+
+Sent mail to masamune31@hotmail.fr (3181.1ms)
+Date: Tue, 19 May 2015 14:18:04 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b29fcb403b_1c3361b99424053@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b29fcb23fc_1c3361b99423917";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b29fcb23fc_1c3361b99423917
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+			Titre: zeazea<br>
+			Contenu: ezae<br>
+			Prix: 3.0<br><br>
+			Titre: tuytu<br>
+			Contenu: 23<br>
+			Prix: 4.0<br><br>
+			Titre: last<br>
+			Contenu: maspor<br>
+			Prix: 2.0<br><br>
+
+----==_mimepart_555b29fcb23fc_1c3361b99423917
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+    			Titre: zeazea<br>
+    			Contenu: ezae<br>
+    			Prix: 3.0<br><br>
+    			Titre: tuytu<br>
+    			Contenu: 23<br>
+    			Prix: 4.0<br><br>
+    			Titre: last<br>
+    			Contenu: maspor<br>
+    			Prix: 2.0<br><br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b29fcb23fc_1c3361b99423917--
+
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (44.1ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.9ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 214.4ms
+
+Sent mail to masamune31@hotmail.fr (2353.2ms)
+Date: Tue, 19 May 2015 14:18:21 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b2a0dc2e7f_1cda61b994240f0@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b2a0dc1063_1cda61b9942390";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b2a0dc1063_1cda61b9942390
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+			Titre: zeazea<br>
+			Contenu: ezae<br>
+			Prix: 3.0<br><br>
+			Titre: tuytu<br>
+			Contenu: 23<br>
+			Prix: 4.0<br><br>
+
+----==_mimepart_555b2a0dc1063_1cda61b9942390
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+    			Titre: zeazea<br>
+    			Contenu: ezae<br>
+    			Prix: 3.0<br><br>
+    			Titre: tuytu<br>
+    			Contenu: 23<br>
+    			Prix: 4.0<br><br>
+    			Titre: last<br>
+    			Contenu: maspor<br>
+    			Prix: 2.0<br><br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b2a0dc1063_1cda61b9942390--
+
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (41.5ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (1.1ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 218.9ms
+
+Sent mail to masamune31@hotmail.fr (2239.6ms)
+Date: Tue, 19 May 2015 14:18:36 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b2a1ca939_1d5f61b9942403b@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b2a1c86e5_1d5f61b9942399b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b2a1c86e5_1d5f61b9942399b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+			Titre: zeazea<br>
+			Contenu: ezae<br>
+			Prix: 3.0<br><br>
+			Titre: tuytu<br>
+			Contenu: 23<br>
+			Prix: 4.0<br><br>
+
+----==_mimepart_555b2a1c86e5_1d5f61b9942399b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+    			Titre: zeazea<br>
+    			Contenu: ezae<br>
+    			Prix: 3.0<br><br>
+    			Titre: tuytu<br>
+    			Contenu: 23<br>
+    			Prix: 4.0<br><br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b2a1c86e5_1d5f61b9942399b--
+
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (42.8ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.7ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 193.7ms
+
+Sent mail to masamune31@hotmail.fr (2463.7ms)
+Date: Tue, 19 May 2015 14:19:08 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b2a3c29b0e_1df061b9942401@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b2a3c28095_1df061b994239f0";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b2a3c28095_1df061b994239f0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555b2a3c28095_1df061b994239f0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b2a3c28095_1df061b994239f0--
+
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (44.9ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.7ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 215.7ms
+
+Sent mail to masamune31@hotmail.fr (3742.3ms)
+Date: Tue, 19 May 2015 14:20:02 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b2a722e876_1eaf3eb9946894@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b2a722d0e0_1eaf3eb994673";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b2a722d0e0_1eaf3eb994673
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555b2a722d0e0_1eaf3eb994673
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b2a722d0e0_1eaf3eb994673--
+
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (38.1ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.5ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 193.6ms
+
+Sent mail to masamune31@hotmail.fr (6025.5ms)
+Date: Tue, 19 May 2015 14:22:02 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b2aea9bcbe_1f533eb99468b8@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b2aea9a457_1f533eb99467b8";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b2aea9a457_1f533eb99467b8
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555b2aea9a457_1f533eb99467b8
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b2aea9a457_1f533eb99467b8--
+
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (38.4ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (1.0ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 191.7ms
+
+Sent mail to masamune31@hotmail.fr (4985.5ms)
+Date: Tue, 19 May 2015 14:24:02 +0200
+From: from@example.com
+To: masamune31@hotmail.fr
+Message-ID: <555b2b625648d_20b43eb99468c7@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555b2b6254c3a_20b43eb9946731";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555b2b6254c3a_20b43eb9946731
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555b2b6254c3a_20b43eb9946731
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555b2b6254c3a_20b43eb9946731--
+

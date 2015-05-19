@@ -9,6 +9,14 @@
 %p
   %b Prix:
   = @article.price
+%p
+  %b Derniere update :
+  = @article.updated_at.to_formatted_s(:long_ordinal)
+%p
+  Il y a 
+  = Time.now.day.to_i - @article.updated_at.day
+  jours.	
+%p
 =======================
 %p 
   %b Signaler l'annonce comme étant abusive:
