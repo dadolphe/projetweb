@@ -16,7 +16,7 @@
     = f.label :price
     = f.text_field :price
   .field
-    = f.label :Imageshue
+    = f.label :Images
     = f.file_field :images, :multiple => true
   .actions
     = f.submit 'Save'
