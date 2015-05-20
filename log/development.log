@@ -30805,3 +30805,1100 @@ Completed 200 OK in 57ms (Views: 55.2ms | ActiveRecord: 0.9ms)
 
 
 Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 21:31:18 +0200
+  [1m[36mUser Load (56.3ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (28.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (38.9ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 1052.3ms
+
+Sent mail to  (2898.0ms)
+Date: Wed, 20 May 2015 22:10:16 +0200
+From: from@example.com
+Message-ID: <555cea282c5_78eeaf998373a8@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cea27b3dbf_78eeaf9983726e";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cea27b3dbf_78eeaf9983726e
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555cea27b3dbf_78eeaf9983726e
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cea27b3dbf_78eeaf9983726e--
+
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (11.3ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 218.2ms
+
+Sent mail to  (2439.7ms)
+Date: Wed, 20 May 2015 22:12:04 +0200
+From: from@example.com
+Message-ID: <555cea946f605_82754d9906855e@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cea946dd86_82754d9906843a";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cea946dd86_82754d9906843a
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555cea946dd86_82754d9906843a
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cea946dd86_82754d9906843a--
+
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (11.5ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 218.6ms
+
+Sent mail to  (2758.9ms)
+Date: Wed, 20 May 2015 22:14:04 +0200
+From: from@example.com
+Message-ID: <555ceb0cb1108_8a78c9998419c5@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555ceb0caf87c_8a78c999841842";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555ceb0caf87c_8a78c999841842
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555ceb0caf87c_8a78c999841842
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555ceb0caf87c_8a78c999841842--
+
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (11.0ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 218.7ms
+
+Sent mail to  (2655.8ms)
+Date: Wed, 20 May 2015 22:16:04 +0200
+From: from@example.com
+Message-ID: <555ceb844a98b_9279639944347c@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555ceb84490da_9279639944338a";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555ceb84490da_9279639944338a
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555ceb84490da_9279639944338a
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555ceb84490da_9279639944338a--
+
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (10.7ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 217.6ms
+
+Sent mail to  (2709.8ms)
+Date: Wed, 20 May 2015 22:18:03 +0200
+From: from@example.com
+Message-ID: <555cebfbc8707_9aab5b9904514@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cebfbc6e6b_9aab5b99045021";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cebfbc6e6b_9aab5b99045021
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555cebfbc6e6b_9aab5b99045021
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cebfbc6e6b_9aab5b99045021--
+
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (11.0ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 215.7ms
+
+Sent mail to  (2917.8ms)
+Date: Wed, 20 May 2015 22:20:04 +0200
+From: from@example.com
+Message-ID: <555cec744f410_a2cc3399447519@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cec744db8c_a2cc3399447489";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cec744db8c_a2cc3399447489
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555cec744db8c_a2cc3399447489
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cec744db8c_a2cc3399447489--
+
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (11.3ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 213.6ms
+
+Sent mail to  (3318.4ms)
+Date: Wed, 20 May 2015 22:22:04 +0200
+From: from@example.com
+Message-ID: <555cecec6d6b_aacce1990477c2@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cecec5539_aacce19904766d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cecec5539_aacce19904766d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555cecec5539_aacce19904766d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cecec5539_aacce19904766d--
+
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (10.7ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 213.7ms
+
+Sent mail to  (2643.0ms)
+Date: Wed, 20 May 2015 22:24:04 +0200
+From: from@example.com
+Message-ID: <555ced641fb70_b2e3b3990685d4@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555ced641e332_b2e3b39906847";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555ced641e332_b2e3b39906847
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555ced641e332_b2e3b39906847
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555ced641e332_b2e3b39906847--
+
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (10.5ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 215.2ms
+
+Sent mail to  (2769.4ms)
+Date: Wed, 20 May 2015 22:26:04 +0200
+From: from@example.com
+Message-ID: <555ceddc88f52_bae4bf98859321@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555ceddc87723_bae4bf988592d2";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555ceddc87723_bae4bf988592d2
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555ceddc87723_bae4bf988592d2
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555ceddc87723_bae4bf988592d2--
+
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (11.2ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 214.5ms
+
+Sent mail to  (2728.3ms)
+Date: Wed, 20 May 2015 22:28:04 +0200
+From: from@example.com
+Message-ID: <555cee541dfef_c2ebb599074737@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cee541c7ef_c2ebb5990746c2";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cee541c7ef_c2ebb5990746c2
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555cee541c7ef_c2ebb5990746c2
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cee541c7ef_c2ebb5990746c2--
+
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (10.6ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 216.5ms
+
+Sent mail to  (2605.5ms)
+Date: Wed, 20 May 2015 22:30:04 +0200
+From: from@example.com
+Message-ID: <555ceecca43e9_f6d6c7988734c9@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555ceecca2967_f6d6c7988733d0";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555ceecca2967_f6d6c7988733d0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555ceecca2967_f6d6c7988733d0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555ceecca2967_f6d6c7988733d0--
+
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (12.1ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.7ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 221.5ms
+
+Sent mail to  (2761.7ms)
+Date: Wed, 20 May 2015 22:32:04 +0200
+From: from@example.com
+Message-ID: <555cef4440eea_118010e99986401d@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cef443f52f_118010e999863976";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cef443f52f_118010e999863976
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555cef443f52f_118010e999863976
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cef443f52f_118010e999863976--
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 22:33:07 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (36.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (23.6ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered layouts/_navigation_links.html.erb (43.6ms)
+  Rendered layouts/_navigation.html.erb (45.6ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 11894ms (Views: 11844.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-20 22:33:19 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-20 22:33:19 +0200
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 22:33:19 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 22:33:19 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 22:33:19 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-20 22:33:19 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-20 22:33:19 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-20 22:33:19 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-20 22:33:19 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 22:33:19 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 22:33:19 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 22:33:19 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-20 22:33:19 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 22:33:20 +0200
+
+
+Started GET "/assets/sf/sf_archery_black-webfont.woff" for 127.0.0.1 at 2015-05-20 22:33:20 +0200
+
+
+Started GET "/assets/Aldo/Aldo_Open-7ca0413c891ba8fcf618927256d8f6cab483d8e9b49c31f46ce24f61d8e4ec1f.otf" for 127.0.0.1 at 2015-05-20 22:33:20 +0200
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2015-05-20 22:33:22 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (45.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (2.5ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 154ms (Views: 106.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articles/2/edit" for 127.0.0.1 at 2015-05-20 22:33:27 +0200
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered articles/_form.html.haml (156.0ms)
+  Rendered articles/edit.html.haml within layouts/application (159.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 228ms (Views: 223.1ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/articles/2" for 127.0.0.1 at 2015-05-20 22:33:37 +0200
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8vH2bYaPZod0WwY+WRwgoBUapbiIy9VJEHUEWO9uUh0eVsbh38DuAsBlbFjoBHvcZbGe0YYDUavtJQa+c/UbBQ==", "article"=>{"title"=>"ahahahezeze", "body"=>"23dsqddsqdqsdsqdsqzeaezezezezzezcqsdsqdsq", "price"=>"2.0z", "remove_image1"=>"0", "image2"=>#<ActionDispatch::Http::UploadedFile:0x007f16b0332db8 @tempfile=#<Tempfile:/tmp/RackMultipart20150520-4518-1bq3c4o.png>, @original_filename="z.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"article[image2]\"; filename=\"z.png\"\r\nContent-Type: image/png\r\n">, "remove_image2"=>"0", "remove_image3"=>"0"}, "commit"=>"Save", "id"=>"2"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered articles/_form.html.haml (11.0ms)
+  Rendered articles/edit.html.haml within layouts/application (13.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 1176ms (Views: 69.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 22:33:38 +0200
+
+
+Started PATCH "/articles/2" for 127.0.0.1 at 2015-05-20 22:33:43 +0200
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qgEqhLVNL8aVqcyElMms+q8qm3jVAKYBx3shF3ZzizNGphoI7AKnQyGXpuIl0feG34GgEdvIIuM6KyPx6ujCKw==", "article"=>{"title"=>"ahahahezeze", "body"=>"23dsqddsqdqsdsqdsqzeaezezezezzezcqsdsqdsq", "price"=>"2.0z", "remove_image1"=>"1", "remove_image2"=>"1", "remove_image3"=>"0"}, "commit"=>"Save", "id"=>"2"}
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  Rendered articles/_form.html.haml (5.8ms)
+  Rendered articles/edit.html.haml within layouts/application (7.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 73ms (Views: 60.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 22:33:43 +0200
+
+
+Started PATCH "/articles/2" for 127.0.0.1 at 2015-05-20 22:33:50 +0200
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYvVonoVapfGooYOvk2pItrwMkEZPq2Rwe7ihjfQD3l1LOUuI1riEnKc7GgPVfJeqlsJKBf2KXM8vuBgq0tGYQ==", "article"=>{"title"=>"ahahahezeze", "body"=>"23dsqddsqdqsdsqdsqzeaezezezezzezcqsdsqdsq", "price"=>"2.0", "remove_image1"=>"1", "remove_image2"=>"1", "remove_image3"=>"0"}, "commit"=>"Save", "id"=>"2"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36m (1.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "articles" SET "image1" = $1, "image2" = $2, "image3" = $3, "updated_at" = $4 WHERE "articles"."id" = $5  [["image1", nil], ["image2", nil], ["image3", "Shin_colored_portrait.png"], ["updated_at", "2015-05-20 20:33:50.700129"], ["id", 2]]
+  [1m[36m (43.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/2
+Completed 302 Found in 141ms (ActiveRecord: 45.4ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2015-05-20 22:33:50 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (5.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 62ms (Views: 56.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 22:33:51 +0200
+
+
+Started GET "/articles/2/edit" for 127.0.0.1 at 2015-05-20 22:33:54 +0200
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered articles/_form.html.haml (5.9ms)
+  Rendered articles/edit.html.haml within layouts/application (7.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 60ms (Views: 57.1ms | ActiveRecord: 0.5ms)
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (10.6ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.5ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 217.9ms
+
+
+Started PATCH "/articles/2" for 127.0.0.1 at 2015-05-20 22:34:04 +0200
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QjuEI7mdtACr3q/Y3o5rlOhXxK0IgSCMjw+/b3hNCrCunLSv4NI8hR/gxb5vljDomPz/xAZJpG5yX72J5NZDqA==", "article"=>{"title"=>"ahahahezeze", "body"=>"23dsqddsqdqsdsqdsqzeaezezezezzezcqsdsqdsq", "price"=>"2.0z", "image1"=>#<ActionDispatch::Http::UploadedFile:0x007f16b1995d08 @tempfile=#<Tempfile:/tmp/RackMultipart20150520-4518-11hcey8.png>, @original_filename="Shin_colored_portrait.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"article[image1]\"; filename=\"Shin_colored_portrait.png\"\r\nContent-Type: image/png\r\n">, "remove_image3"=>"0"}, "commit"=>"Save", "id"=>"2"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered articles/_form.html.haml (4.6ms)
+  Rendered articles/edit.html.haml within layouts/application (5.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 193ms (Views: 54.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 22:34:04 +0200
+
+Sent mail to  (2444.8ms)
+Date: Wed, 20 May 2015 22:34:03 +0200
+From: from@example.com
+Message-ID: <555cefbbdf16c_126e949990418dc@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cefbbdd8ae_126e94999041714";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cefbbdd8ae_126e94999041714
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555cefbbdd8ae_126e94999041714
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cefbbdd8ae_126e94999041714--
+
+
+
+Started PATCH "/articles/2" for 127.0.0.1 at 2015-05-20 22:34:10 +0200
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ourwBSjD6Ads5MdJlCQqH1qdRmqtVWwJPjd5T8K35T9OTcCJcYxggtjarS8lPHFjKjZ9A6Od6OvDZ3upXiysJw==", "article"=>{"title"=>"ahahahezeze", "body"=>"23dsqddsqdqsdsqdsqzeaezezezezzezcqsdsqdsq", "price"=>"2.0", "remove_image1"=>"0", "remove_image3"=>"0"}, "commit"=>"Save", "id"=>"2"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "articles" SET "image1" = $1, "image3" = $2, "updated_at" = $3 WHERE "articles"."id" = $4[0m  [["image1", nil], ["image3", "Shin_colored_portrait.png"], ["updated_at", "2015-05-20 20:34:10.729657"], ["id", 2]]
+  [1m[35m (36.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/articles/2
+Completed 302 Found in 49ms (ActiveRecord: 37.2ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2015-05-20 22:34:10 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (2.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (2.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 78ms (Views: 69.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 22:34:11 +0200
+
+
+Started GET "/articles/2/edit" for 127.0.0.1 at 2015-05-20 22:34:14 +0200
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered articles/_form.html.haml (7.0ms)
+  Rendered articles/edit.html.haml within layouts/application (8.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 80ms (Views: 76.5ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/articles/2" for 127.0.0.1 at 2015-05-20 22:35:06 +0200
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hQT2KD5e2x1tGTCE3NpwnzWX5zNuf9kxp0LgtqicUIZpo8akZxFTmNknWuJtwivjRTzcWmC3XdNaEuJQNAcZng==", "article"=>{"title"=>"ahahahezeze", "body"=>"23dsqddsqdqsdsqdsqzeaezezezezzezcqsdsqdsq", "price"=>"2.0z", "image1"=>#<ActionDispatch::Http::UploadedFile:0x007f16b2a3bb80 @tempfile=#<Tempfile:/tmp/RackMultipart20150520-4518-1begien.png>, @original_filename="Shin_colored_portrait.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"article[image1]\"; filename=\"Shin_colored_portrait.png\"\r\nContent-Type: image/png\r\n">, "remove_image3"=>"0"}, "commit"=>"Save", "id"=>"2"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36m (2.7ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered articles/_form.html.haml (56.3ms)
+  Rendered articles/edit.html.haml within layouts/application (57.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 283ms (Views: 128.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 22:35:07 +0200
+
+
+Started PATCH "/articles/2" for 127.0.0.1 at 2015-05-20 22:35:12 +0200
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6fO1ZbgqwfdpL78cXVajFXiHkgzdcUnDYKN1OpJqaX0FVIXp4WVJct0R1XrsTvhpCCypZdO5zSGd83fcDvEgZQ==", "article"=>{"title"=>"ahahahezeze", "body"=>"23dsqddsqdqsdsqdsqzeaezezezezzezcqsdsqdsq", "price"=>"2.0", "image1_cache"=>"1432154106-4518-7468/Shin_colored_portrait.png", "remove_image1"=>"0", "image2_cache"=>"", "image3_cache"=>"", "remove_image3"=>"0", "image4_cache"=>""}, "commit"=>"Save", "id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+Unpermitted parameters: image1_cache, image2_cache, image3_cache, image4_cache
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "articles" SET "image1" = $1, "image3" = $2, "updated_at" = $3 WHERE "articles"."id" = $4  [["image1", nil], ["image3", "Shin_colored_portrait.png"], ["updated_at", "2015-05-20 20:35:12.382596"], ["id", 2]]
+  [1m[36m (67.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/2
+Completed 302 Found in 80ms (ActiveRecord: 68.7ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2015-05-20 22:35:12 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (3.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 68ms (Views: 62.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 22:35:12 +0200
+
+
+Started GET "/articles/2/edit" for 127.0.0.1 at 2015-05-20 22:35:15 +0200
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  Rendered articles/_form.html.haml (11.8ms)
+  Rendered articles/edit.html.haml within layouts/application (13.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 77ms (Views: 73.1ms | ActiveRecord: 0.6ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (10.9ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.6ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 212.5ms
+
+Sent mail to  (2489.0ms)
+Date: Wed, 20 May 2015 22:36:04 +0200
+From: from@example.com
+Message-ID: <555cf0344b84c_13604f3990278c6@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cf03449ecd_13604f3990277d2";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cf03449ecd_13604f3990277d2
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555cf03449ecd_13604f3990277d2
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cf03449ecd_13604f3990277d2--
+
+
+
+Started PATCH "/articles/2" for 127.0.0.1 at 2015-05-20 22:37:10 +0200
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JmXKEnEfep4AcH/WPJJw6gfBC2KoilnYzMOI7khuum/KwvqeKFDyG7ROFbCNiiuWd2owC6ZC3Toxk4oI1PXzdw==", "article"=>{"title"=>"ahahahezeze", "body"=>"23dsqddsqdqsdsqdsqzeaezezezezzezcqsdsqdsq", "price"=>"2.0z", "image1"=>#<ActionDispatch::Http::UploadedFile:0x007f16b3ddaf10 @tempfile=#<Tempfile:/tmp/RackMultipart20150520-4518-krnean.png>, @original_filename="Shin_colored_portrait.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"article[image1]\"; filename=\"Shin_colored_portrait.png\"\r\nContent-Type: image/png\r\n">, "image1_cache"=>"", "image2_cache"=>"", "image3_cache"=>"", "remove_image3"=>"0", "image4_cache"=>""}, "commit"=>"Save", "id"=>"2"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered articles/_form.html.haml (8.0ms)
+  Rendered articles/edit.html.haml within layouts/application (9.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 249ms (Views: 61.8ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 22:37:10 +0200
+
+
+Started PATCH "/articles/2" for 127.0.0.1 at 2015-05-20 22:37:16 +0200
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yhsbWCKkM+vnLG2XAPzMkx3my4RfLT9BvfsACgviWsgmvCvUe+u7blMSB/Gx5JfvbU3w7VHlu6NAqwLsl3kT0A==", "article"=>{"title"=>"ahahahezeze", "body"=>"23dsqddsqdqsdsqdsqzeaezezezezzezcqsdsqdsq", "price"=>"2.0", "image1_cache"=>"1432154230-4518-7474/Shin_colored_portrait.png", "remove_image1"=>"0", "image2_cache"=>"", "image3_cache"=>"", "remove_image3"=>"0", "image4_cache"=>""}, "commit"=>"Save", "id"=>"2"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "articles" SET "image1" = $1, "image3" = $2, "updated_at" = $3 WHERE "articles"."id" = $4[0m  [["image1", "Shin_colored_portrait.png"], ["image3", "Shin_colored_portrait.png"], ["updated_at", "2015-05-20 20:37:16.412727"], ["id", 2]]
+  [1m[35m (38.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/articles/2
+Completed 302 Found in 61ms (ActiveRecord: 39.3ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2015-05-20 22:37:16 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (2.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 60ms (Views: 53.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 22:37:16 +0200
+
+
+Started GET "/articles/2/edit" for 127.0.0.1 at 2015-05-20 22:37:19 +0200
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  Rendered articles/_form.html.haml (6.2ms)
+  Rendered articles/edit.html.haml within layouts/application (7.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 73ms (Views: 70.7ms | ActiveRecord: 0.4ms)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.erb within layouts/mailer (11.1ms)
+  Rendered user_mailer/mail_recapitulatif.text.erb within layouts/mailer (0.5ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 217.9ms
+
+Sent mail to  (2586.5ms)
+Date: Wed, 20 May 2015 22:38:04 +0200
+From: from@example.com
+Message-ID: <555cf0ac9cd48_141888199010836@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cf0ac9b4ce_141888199010767";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cf0ac9b4ce_141888199010767
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,<br>
+       Voici les articles de la semaine :<br>
+
+----==_mimepart_555cf0ac9b4ce_141888199010767
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+      </head>
+      <body>
+        <p>Bonjour,<br>
+           Voici les articles de la semaine :<br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cf0ac9b4ce_141888199010767--
+

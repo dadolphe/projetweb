@@ -1,3 +1,9 @@
+
+
+convert tout en haml
+
+article supprimé si user delete ( a montrer : D)
+---------
 a fixer :
 secrets ds config (mettre notre mail et tossa)
 
@@ -17,7 +23,6 @@ change port production.rb de 5000 à 3000 /!\ mail
 
 = @article.report(current_user,@article.title)
 attention y a le mdp sur git...trololo
-quid du : si je detruis un user est ce ses articles sont delete ou pas? (cf relation http://guides.rubyonrails.org/association_basics.html pr savoir how to do it)
 
 
 pourquoi y a new et create dans articles_controller.rb, wut?
