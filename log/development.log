@@ -35723,3 +35723,1741 @@ Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 1.0ms)
 
 
 Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:42:31 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:54:37 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab used for indentation, but the rest of the document was indented using 2 spaces.):
+    21:         %td= link_to 'Show', article
+    22:         %td= link_to 'Edit', edit_article_path(article)
+    23:         %td= link_to 'Destroy', article, :method => :delete, :data => { :confirm => 'Are you sure?' }
+    24: 	= will_paginate @articles
+    25: %br
+    26: = link_to 'New Article', new_article_path
+  app/views/articles/index.html.haml:24
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:54:42 +0200
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab used for indentation, but the rest of the document was indented using 2 spaces.):
+    21:         %td= link_to 'Show', article
+    22:         %td= link_to 'Edit', edit_article_path(article)
+    23:         %td= link_to 'Destroy', article, :method => :delete, :data => { :confirm => 'Are you sure?' }
+    24: 	= will_paginate @articles
+    25: %br
+    26: = link_to 'New Article', new_article_path
+  app/views/articles/index.html.haml:24
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:55:02 +0200
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab used for indentation, but the rest of the document was indented using 2 spaces.):
+    21:         %td= link_to 'Show', article
+    22:         %td= link_to 'Edit', edit_article_path(article)
+    23:         %td= link_to 'Destroy', article, :method => :delete, :data => { :confirm => 'Are you sure?' }
+    24: 	= will_paginate @articles
+    25: %br
+    26: = link_to 'New Article', new_article_path
+  app/views/articles/index.html.haml:24
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:55:03 +0200
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab used for indentation, but the rest of the document was indented using 2 spaces.):
+    21:         %td= link_to 'Show', article
+    22:         %td= link_to 'Edit', edit_article_path(article)
+    23:         %td= link_to 'Destroy', article, :method => :delete, :data => { :confirm => 'Are you sure?' }
+    24: 	= will_paginate @articles
+    25: %br
+    26: = link_to 'New Article', new_article_path
+  app/views/articles/index.html.haml:24
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:55:03 +0200
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab used for indentation, but the rest of the document was indented using 2 spaces.):
+    21:         %td= link_to 'Show', article
+    22:         %td= link_to 'Edit', edit_article_path(article)
+    23:         %td= link_to 'Destroy', article, :method => :delete, :data => { :confirm => 'Are you sure?' }
+    24: 	= will_paginate @articles
+    25: %br
+    26: = link_to 'New Article', new_article_path
+  app/views/articles/index.html.haml:24
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:55:04 +0200
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab used for indentation, but the rest of the document was indented using 2 spaces.):
+    21:         %td= link_to 'Show', article
+    22:         %td= link_to 'Edit', edit_article_path(article)
+    23:         %td= link_to 'Destroy', article, :method => :delete, :data => { :confirm => 'Are you sure?' }
+    24: 	= will_paginate @articles
+    25: %br
+    26: = link_to 'New Article', new_article_path
+  app/views/articles/index.html.haml:24
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:55:04 +0200
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab used for indentation, but the rest of the document was indented using 2 spaces.):
+    21:         %td= link_to 'Show', article
+    22:         %td= link_to 'Edit', edit_article_path(article)
+    23:         %td= link_to 'Destroy', article, :method => :delete, :data => { :confirm => 'Are you sure?' }
+    24: 	= will_paginate @articles
+    25: %br
+    26: = link_to 'New Article', new_article_path
+  app/views/articles/index.html.haml:24
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:55:04 +0200
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab used for indentation, but the rest of the document was indented using 2 spaces.):
+    21:         %td= link_to 'Show', article
+    22:         %td= link_to 'Edit', edit_article_path(article)
+    23:         %td= link_to 'Destroy', article, :method => :delete, :data => { :confirm => 'Are you sure?' }
+    24: 	= will_paginate @articles
+    25: %br
+    26: = link_to 'New Article', new_article_path
+  app/views/articles/index.html.haml:24
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:55:04 +0200
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab used for indentation, but the rest of the document was indented using 2 spaces.):
+    21:         %td= link_to 'Show', article
+    22:         %td= link_to 'Edit', edit_article_path(article)
+    23:         %td= link_to 'Destroy', article, :method => :delete, :data => { :confirm => 'Are you sure?' }
+    24: 	= will_paginate @articles
+    25: %br
+    26: = link_to 'New Article', new_article_path
+  app/views/articles/index.html.haml:24
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:55:09 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  Rendered articles/index.html.haml within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab used for indentation, but the rest of the document was indented using 2 spaces.):
+    21:         %td= link_to 'Show', article
+    22:         %td= link_to 'Edit', edit_article_path(article)
+    23:         %td= link_to 'Destroy', article, :method => :delete, :data => { :confirm => 'Are you sure?' }
+    24: 	= will_paginate @articles
+    25: %br
+    26: = link_to 'New Article', new_article_path
+  app/views/articles/index.html.haml:24
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.8ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (18.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (40.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:55:22 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (31.7ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 5.2ms)
+
+ActionView::Template::Error (undefined method `total_pages' for #<Article::ActiveRecord_Relation:0x00000004f75bd0>):
+    21:         %td= link_to 'Show', article
+    22:         %td= link_to 'Edit', edit_article_path(article)
+    23:         %td= link_to 'Destroy', article, :method => :delete, :data => { :confirm => 'Are you sure?' }
+    24:         = will_paginate @articles
+    25: %br
+    26: = link_to 'New Article', new_article_path
+  app/views/articles/index.html.haml:24:in `block in _app_views_articles_index_html_haml__4036085260225003117_41656620'
+  app/views/articles/index.html.haml:18:in `_app_views_articles_index_html_haml__4036085260225003117_41656620'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.8ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (19.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (41.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:55:23 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `total_pages' for #<Article::ActiveRecord_Relation:0x007fdd0036e450>):
+    21:         %td= link_to 'Show', article
+    22:         %td= link_to 'Edit', edit_article_path(article)
+    23:         %td= link_to 'Destroy', article, :method => :delete, :data => { :confirm => 'Are you sure?' }
+    24:         = will_paginate @articles
+    25: %br
+    26: = link_to 'New Article', new_article_path
+  app/views/articles/index.html.haml:24:in `block in _app_views_articles_index_html_haml__4036085260225003117_41656620'
+  app/views/articles/index.html.haml:18:in `_app_views_articles_index_html_haml__4036085260225003117_41656620'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.8ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (18.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (37.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:57:19 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `active' for #<Class:0x007f1b20264750>):
+  app/controllers/articles_controller.rb:19:in `index'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (18.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (39.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:57:21 +0200
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `active' for #<Class:0x007f1b20264750>):
+  app/controllers/articles_controller.rb:19:in `index'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.7ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.9ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (40.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:57:22 +0200
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `active' for #<Class:0x007f1b20264750>):
+  app/controllers/articles_controller.rb:19:in `index'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (19.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.8ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (42.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:58:08 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (60.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (22.6ms)
+  Rendered layouts/_navigation.html.haml (25.8ms)
+  Rendered layouts/_messages.html.haml (1.6ms)
+Completed 200 OK in 319ms (Views: 299.4ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:09 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:09 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:09 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:09 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:09 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:09 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:09 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:09 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:09 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:09 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:09 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:09 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:09 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:58:09 +0200
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2015-05-20 23:58:12 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 2[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (10.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (6.2ms)
+  Rendered layouts/_navigation.html.haml (13.0ms)
+  Rendered layouts/_messages.html.haml (3.2ms)
+Completed 200 OK in 120ms (Views: 117.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2015-05-20 23:58:14 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (8.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (2.9ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 113ms (Views: 109.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2015-05-20 23:58:15 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (1.3ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 2[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (8.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.6ms)
+  Rendered layouts/_navigation.html.haml (4.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 77ms (Views: 74.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2015-05-20 23:58:16 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (5.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (3.0ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2015-05-20 23:58:30 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 0
+  Rendered articles/index.html.haml within layouts/application (9.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.3ms)
+  Rendered layouts/_navigation.html.haml (3.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 74ms (Views: 71.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:30 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:30 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:30 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:30 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:30 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:30 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:30 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:30 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:30 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:30 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:30 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:30 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:30 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:58:30 +0200
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2015-05-20 23:58:31 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 0
+  Rendered articles/index.html.haml within layouts/application (4.7ms)
+  [1m[36mUser Load (6.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (8.3ms)
+  Rendered layouts/_navigation.html.haml (9.2ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 70ms (Views: 61.6ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:31 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:31 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:31 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:31 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:31 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:31 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:31 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:31 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:31 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:31 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:31 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:31 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:31 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:58:31 +0200
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2015-05-20 23:58:38 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (8.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (2.6ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 77ms (Views: 74.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:38 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:38 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:38 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:38 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:38 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:38 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:38 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:38 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:38 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:38 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:38 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:38 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:38 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:58:38 +0200
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 0[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (6.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.7ms)
+  Rendered layouts/_navigation.html.haml (2.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 68ms (Views: 65.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (6.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (2.8ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 71ms (Views: 69.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:58:39 +0200
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2015-05-20 23:58:46 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendered articles/index.html.haml within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    23:         %td= link_to 'Destroy', article, :method => :delete, :data => { :confirm => 'Are you sure?' }
+    24: 
+    25: %br
+    26:     = will_paginate @articles
+    27: = link_to 'New Article', new_article_path
+  app/views/articles/index.html.haml:26
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.0ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (39.8ms)
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2015-05-20 23:58:50 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (10.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (2.9ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 76ms (Views: 73.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:50 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:50 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:50 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:50 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:50 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:50 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:50 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:50 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:50 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:50 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:50 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:50 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:50 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:58:50 +0200
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2015-05-20 23:58:56 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (11.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (5.0ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 78ms (Views: 75.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:56 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:56 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:56 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:56 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:56 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-20 23:58:56 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:56 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:56 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:57 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:57 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:57 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:57 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-20 23:58:57 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:58:57 +0200
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2015-05-20 23:59:02 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (7.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (2.7ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 67ms (Views: 64.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:03 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:03 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:03 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:03 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:03 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:03 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:03 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:03 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:03 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:03 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:03 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:03 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:03 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:59:03 +0200
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2015-05-20 23:59:05 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 2[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (9.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (2.9ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 65ms (Views: 62.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2015-05-20 23:59:06 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (4.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.2ms)
+  Rendered layouts/_navigation.html.haml (3.2ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 74ms (Views: 72.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2015-05-20 23:59:07 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 2[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (5.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (3.0ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 86ms (Views: 84.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2015-05-20 23:59:08 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (5.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (2.8ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 78ms (Views: 76.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2015-05-20 23:59:09 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 2[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (4.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (2.9ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 69ms (Views: 66.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/?page=3" for 127.0.0.1 at 2015-05-20 23:59:12 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 4[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (6.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.3ms)
+  Rendered layouts/_navigation.html.haml (3.3ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 85ms (Views: 81.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:59:12 +0200
+
+
+Started GET "/?page=4" for 127.0.0.1 at 2015-05-20 23:59:14 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (1.4ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 6[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (7.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.1ms)
+  Rendered layouts/_navigation.html.haml (3.0ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 87ms (Views: 82.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:59:15 +0200
+
+
+Started GET "/?page=3" for 127.0.0.1 at 2015-05-20 23:59:16 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 4[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (4.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.7ms)
+  Rendered layouts/_navigation.html.haml (2.6ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 59ms (Views: 56.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2015-05-20 23:59:16 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 2[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (4.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.7ms)
+  Rendered layouts/_navigation.html.haml (2.7ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2015-05-20 23:59:17 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 0[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (6.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (2.7ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 63ms (Views: 60.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-20 23:59:18 +0200
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered articles/_form.html.haml (21.5ms)
+  Rendered articles/new.html.haml within layouts/application (23.8ms)
+  Rendered layouts/_navigation_links.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (1.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 80ms (Views: 78.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2015-05-20 23:59:24 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WLYUq1rjy9qCtVOHP4mLoV2FUxzs0WGSX15nnOip4dFNqbOo0ZXxj9ZshRC/h7vHWakFefb7nZnBfX+RvxsdUw==", "article"=>{"title"=>"zeazea", "body"=>"zezezezeze", "price"=>"2", "image1_cache"=>"", "image2_cache"=>"", "image3_cache"=>"", "image4_cache"=>""}, "commit"=>"Save"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "articles" ("title", "body", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "zeazea"], ["body", "zezezezeze"], ["price", "2.0"], ["user_id", 5], ["created_at", "2015-05-20 21:59:24.878342"], ["updated_at", "2015-05-20 21:59:24.878342"]]
+  [1m[35m (15.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/articles/5
+Completed 302 Found in 48ms (ActiveRecord: 16.5ms)
+
+
+Started GET "/articles/5" for 127.0.0.1 at 2015-05-20 23:59:24 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "5"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered articles/show.html.haml within layouts/application (4.5ms)
+  Rendered layouts/_navigation_links.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+Completed 200 OK in 80ms (Views: 68.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:59:25 +0200
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-20 23:59:26 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (7.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (2.9ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 79ms (Views: 76.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2015-05-20 23:59:28 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 2
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (8.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (3.1ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 81ms (Views: 78.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/?page=3" for 127.0.0.1 at 2015-05-20 23:59:28 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" LIMIT 2 OFFSET 4
+  Rendered articles/index.html.haml within layouts/application (4.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (2.7ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 68ms (Views: 65.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?page=3" for 127.0.0.1 at 2015-05-20 23:59:46 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 8 OFFSET 16[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (9.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (12.2ms)
+  Rendered layouts/_navigation.html.haml (13.2ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 94ms (Views: 78.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:46 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:46 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:46 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:46 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:46 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:46 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:46 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:46 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:46 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:46 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:46 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:46 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:46 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:59:46 +0200
+
+
+Started GET "/?page=3" for 127.0.0.1 at 2015-05-20 23:59:47 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 8 OFFSET 16[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (3.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.7ms)
+  Rendered layouts/_navigation.html.haml (2.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 57ms (Views: 54.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:47 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:47 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:47 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:47 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:47 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-20 23:59:47 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:47 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:47 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:47 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:47 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:47 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:47 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-20 23:59:47 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:59:47 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:59:58 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 8 OFFSET 0[0m
+  Rendered articles/index.html.haml within layouts/application (26.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (24.3ms)
+  Rendered layouts/_navigation.html.haml (28.8ms)
+  Rendered layouts/_messages.html.haml (2.2ms)
+Completed 200 OK in 340ms (Views: 309.4ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:59:59 +0200
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-21 00:00:02 +0200
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered articles/_form.html.haml (54.6ms)
+  Rendered articles/new.html.haml within layouts/application (57.7ms)
+  Rendered layouts/_navigation_links.html.haml (2.2ms)
+  Rendered layouts/_navigation.html.haml (6.3ms)
+  Rendered layouts/_messages.html.haml (1.6ms)
+Completed 200 OK in 150ms (Views: 146.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2015-05-21 00:00:05 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wEdBY84vR2OtJQyg5qEgFa+0l4bHfdNdq8J406VKYrbVWOZgRVl9Nvn82jdmrxBzq5jB491XL1Y14WDe8vieNA==", "article"=>{"title"=>"sdsds", "body"=>"dsds", "price"=>"2", "image1_cache"=>"", "image2_cache"=>"", "image3_cache"=>"", "image4_cache"=>""}, "commit"=>"Save"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "articles" ("title", "body", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "sdsds"], ["body", "dsds"], ["price", "2.0"], ["user_id", 5], ["created_at", "2015-05-20 22:00:05.825042"], ["updated_at", "2015-05-20 22:00:05.825042"]]
+  [1m[36m (51.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 74ms (ActiveRecord: 52.8ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2015-05-21 00:00:05 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered articles/show.html.haml within layouts/application (5.4ms)
+  Rendered layouts/_navigation_links.html.haml (0.9ms)
+  Rendered layouts/_navigation.html.haml (1.7ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 111ms (Views: 98.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 00:00:06 +0200
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-21 00:00:07 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 8 OFFSET 0[0m
+  Rendered articles/index.html.haml within layouts/application (13.2ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.8ms)
+  Rendered layouts/_navigation.html.haml (4.3ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 103ms (Views: 100.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-21 00:00:08 +0200
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered articles/_form.html.haml (4.7ms)
+  Rendered articles/new.html.haml within layouts/application (6.1ms)
+  Rendered layouts/_navigation_links.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (1.5ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 79ms (Views: 63.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2015-05-21 00:00:12 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GsCgRdLfI9E0i16JaC1o+b3Rjk42xuWHshYxsdUhAasP3wdGWakZhGBSiB7oI1ifuf3YKyzsGYwsNSm8gpP9KQ==", "article"=>{"title"=>"ahahaha", "body"=>"eazeaz", "price"=>"2", "image1_cache"=>"", "image2_cache"=>"", "image3_cache"=>"", "image4_cache"=>""}, "commit"=>"Save"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "body", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "ahahaha"], ["body", "eazeaz"], ["price", "2.0"], ["user_id", 5], ["created_at", "2015-05-20 22:00:12.262098"], ["updated_at", "2015-05-20 22:00:12.262098"]]
+  [1m[36m (107.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/7
+Completed 302 Found in 123ms (ActiveRecord: 108.7ms)
+
+
+Started GET "/articles/7" for 127.0.0.1 at 2015-05-21 00:00:12 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "7"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered articles/show.html.haml within layouts/application (1.2ms)
+  Rendered layouts/_navigation_links.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 69ms (Views: 62.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 00:00:12 +0200
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-21 00:00:13 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 8 OFFSET 0[0m
+  Rendered articles/index.html.haml within layouts/application (5.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (2.8ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 65ms (Views: 63.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-21 00:00:18 +0200
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered articles/_form.html.haml (4.2ms)
+  Rendered articles/new.html.haml within layouts/application (5.5ms)
+  Rendered layouts/_navigation_links.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (1.5ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 78ms (Views: 76.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2015-05-21 00:00:23 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YCEZ4J3DU7chOFQmZCraw77aOOFJXSKtsGvfT0kagsB1Pr7jFrVp4nXhgrHkJOqluvZuhFN33qYuSMdCHqh+Qg==", "article"=>{"title"=>"zeaeza", "body"=>"2323", "price"=>"a", "image1_cache"=>"", "image2_cache"=>"", "image3_cache"=>"", "image4_cache"=>""}, "commit"=>"Save"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered articles/_form.html.haml (14.4ms)
+  Rendered articles/new.html.haml within layouts/application (18.5ms)
+  Rendered layouts/_navigation_links.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 92ms (Views: 83.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 00:00:23 +0200
+
+
+Started POST "/articles" for 127.0.0.1 at 2015-05-21 00:00:27 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aS+fwYg7rkiK4yS6E0VT4ofLQHy/jpLmCkgrlB/BO0h8MDjCA02UHd468i2TS2OEg+cWGaWkbu2UazOZSHPHyg==", "article"=>{"title"=>"zeaeza", "body"=>"2323zeze", "price"=>"2", "image1_cache"=>"", "image2_cache"=>"", "image3_cache"=>"", "image4_cache"=>""}, "commit"=>"Save"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "articles" ("title", "body", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "zeaeza"], ["body", "2323zeze"], ["price", "2.0"], ["user_id", 5], ["created_at", "2015-05-20 22:00:27.330585"], ["updated_at", "2015-05-20 22:00:27.330585"]]
+  [1m[35m (37.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/articles/8
+Completed 302 Found in 59ms (ActiveRecord: 37.9ms)
+
+
+Started GET "/articles/8" for 127.0.0.1 at 2015-05-21 00:00:27 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "8"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered articles/show.html.haml within layouts/application (1.0ms)
+  Rendered layouts/_navigation_links.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (2.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 77ms (Views: 71.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 00:00:27 +0200
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-21 00:00:28 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" LIMIT 8 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (6.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (3.0ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 72ms (Views: 69.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-21 00:00:30 +0200
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered articles/_form.html.haml (8.3ms)
+  Rendered articles/new.html.haml within layouts/application (9.8ms)
+  Rendered layouts/_navigation_links.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (1.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 75ms (Views: 72.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2015-05-21 00:00:35 +0200
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"URrIPgOrWo/6ZNgowWDlnsaQ3FmaQW2c+Hr1y8dGU6hEBW89iN1g2q69Dr9BbtX4wryKPIBrkZdmWe3GkPSvKg==", "article"=>{"title"=>"aaeazeaz", "body"=>"zeaezae", "price"=>"2", "image1_cache"=>"", "image2_cache"=>"", "image3_cache"=>"", "image4_cache"=>""}, "commit"=>"Save"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "articles" ("title", "body", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "aaeazeaz"], ["body", "zeaezae"], ["price", "2.0"], ["user_id", 5], ["created_at", "2015-05-20 22:00:35.324373"], ["updated_at", "2015-05-20 22:00:35.324373"]]
+  [1m[36m (81.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/9
+Completed 302 Found in 95ms (ActiveRecord: 82.4ms)
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2015-05-21 00:00:35 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "9"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered articles/show.html.haml within layouts/application (1.2ms)
+  Rendered layouts/_navigation_links.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (9.9ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+Completed 200 OK in 73ms (Views: 68.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 00:00:35 +0200
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-21 00:00:41 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 8 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (7.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (3.0ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 68ms (Views: 65.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2015-05-21 00:00:43 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 8 OFFSET 8[0m
+  Rendered articles/index.html.haml within layouts/application (4.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (3.1ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 69ms (Views: 66.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-21 00:00:44 +0200
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered articles/_form.html.haml (5.2ms)
+  Rendered articles/new.html.haml within layouts/application (6.9ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 71ms (Views: 68.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-21 00:00:45 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 8 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (7.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (3.1ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 82ms (Views: 79.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articles/5" for 127.0.0.1 at 2015-05-21 00:01:58 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "5"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered articles/show.html.haml within layouts/application (4.4ms)
+  Rendered layouts/_navigation_links.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 108ms (Views: 63.4ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/articles/5/edit" for 127.0.0.1 at 2015-05-21 00:02:00 +0200
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "5"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered articles/_form.html.haml (6.5ms)
+  Rendered articles/edit.html.haml within layouts/application (14.0ms)
+  Rendered layouts/_navigation_links.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (1.5ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 114ms (Views: 108.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articles/5/editezez" for 127.0.0.1 at 2015-05-21 00:02:52 +0200
+
+ActionController::RoutingError (No route matches [GET] "/articles/5/editezez"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.1ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (19.8ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (39.8ms)
+
+
+Started GET "/articles/5/editezez" for 127.0.0.1 at 2015-05-21 00:03:05 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/articles/5/editezez"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+
+Started GET "/articles/5/editezez" for 127.0.0.1 at 2015-05-21 00:03:06 +0200
+
+ActionController::RoutingError (No route matches [GET] "/articles/5/editezez"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+
+Started GET "/articles/5/editezez" for 127.0.0.1 at 2015-05-21 00:03:45 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/articles/5/editezez"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.9ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.0ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (39.3ms)
+
+
+Started GET "/articles/5/editezez" for 127.0.0.1 at 2015-05-21 00:03:45 +0200
+
+ActionController::RoutingError (No route matches [GET] "/articles/5/editezez"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.7ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (18.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (39.6ms)

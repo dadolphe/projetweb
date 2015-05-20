@@ -1,3 +1,22 @@
+
+
+qui semblait servir a empecher àce que luser peut voir les profils des autres, on autorise ou pas? meh? bleh? zawa?
+y a dse trucs qui saffichent pas (noir sur noir...) genre faire plein darticles ca arrivera
+ds edit on voit pas ce qu'on écrit aussi
+
+
+
+
+
+
+
+
+
+
+
+
+
+BLABLA:
 article supprimé si user delete ( a montrer : D)
 erreur si pas de page trouvé (mauvais lien), montré :D
 (cf http://easyactiverecord.com/blog/2014/08/19/redirecting-to-custom-404-and-500-pages-in-rails/ pour revert setting sinon, jai mis ca meme en mode development, donc pas de message derreur mais genre 500 ou 404.. ou autre) >> faire true pour   config.consider_all_requests_local       = false de development.rb ds environment
@@ -7,7 +26,6 @@ ds user controlelr jai commenté cache
 		#	redirect_to :back, :alert => "Access denied."
 		#end
 
-qui semblait servir a empecher àce que luser peut voir les profils des autres, on autorise ou pas? meh? bleh? zawa?
 
 ----
 a faire pour utiliser le programme :
@@ -18,6 +36,8 @@ de plus si on veut que cron fonctionne, comme lactionmailer semble avoir du mal 
 export PASSMAILSITE=LeMotDePasseCompteMail
 
 
+RQ : 
+  config.consider_all_requests_local       = true ds  donc si on veut voir les messages derreur faire false
 secrets ds config (mettre notre mail et tossa)
 
 
