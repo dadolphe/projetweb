@@ -1,10 +1,16 @@
-
-
-convert tout en haml
-
 article supprimé si user delete ( a montrer : D)
 ---------
 a fixer :
+
+---
+ds user controlelr jai commenté cache
+		#unless @user == current_user
+		#	redirect_to :back, :alert => "Access denied."
+		#end
+
+qui semblait servir a empecher àce que luser peut voir les profils des autres, on autorise ou pas? meh? bleh? zawa?
+
+----
 secrets ds config (mettre notre mail et tossa)
 
 

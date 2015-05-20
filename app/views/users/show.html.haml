@@ -1,0 +1,16 @@
+%h3 User
+%p
+  Firstname: #{@user.firstname if @user.firstname}
+%p
+  Name: #{@user.name if @user.name}
+%p
+  Promo: #{@user.promo if @user.promo}
+%p
+  Email: #{@user.email if @user.email}
+%p
+  Phone number: #{@user.phonenumber if @user.phonenumber}
+%p
+  Avatar:
+  - unless current_user.avatar_url.nil?
+    = image_tag @user.avatar_url
+    %br/
