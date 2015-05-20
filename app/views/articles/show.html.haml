@@ -21,7 +21,10 @@
   = Time.now.day.to_i - @article.updated_at.day
   jours.	
 %p
-  = image_tag @article.images_url  
+  = image_tag @article.image1_url :medium if @article.image1_url
+  = image_tag @article.image2_url :medium if @article.image2_url
+  = image_tag @article.image3_url :medium if @article.image3_url
+  = image_tag @article.image4_url :medium if @article.image4_url
 =======================
 %p 
   - if @pas_lauteur

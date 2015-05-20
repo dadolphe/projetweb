@@ -5,6 +5,9 @@ class Article < ActiveRecord::Base
 	validates :price, presence: true
 	validates :price, numericality: true
 	
-	mount_uploader :images, ImageUploader
+	mount_uploader :image1, ImageUploader
+	mount_uploader :image2, ImageUploader
+	mount_uploader :image3, ImageUploader
+	mount_uploader :image4, ImageUploader
 
 end

@@ -17,6 +17,13 @@
     = f.text_field :price
   .field
     = f.label :Images
-    = f.file_field :images, :multiple => true
+    = f.file_field :image1
+    = image_tag @article.image1_url :small
+    = f.file_field :image2
+    = image_tag @article.image2_url :small
+    = f.file_field :image3
+    = image_tag @article.image3_url :small
+    = f.file_field :image4
+    = image_tag @article.image4_url :small
   .actions
     = f.submit 'Save'

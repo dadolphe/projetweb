@@ -4,7 +4,11 @@ class CreateArticles < ActiveRecord::Migration
       t.string :title
       t.string :body
       t.decimal :price
-      t.string :images, :array => true, :length => 8
+      t.string :image1
+      t.string :image2
+      t.string :image3
+      t.string :image4
+
       t.integer :user_id	
 
       t.timestamps null: false
