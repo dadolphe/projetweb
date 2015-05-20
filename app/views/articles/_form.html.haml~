@@ -18,12 +18,26 @@
   .field
     = f.label :Images
     = f.file_field :image1
+    = f.check_box :remove_image1 if @article.image1_url
+    = "supprimer l'image" if @article.image1_url
     = image_tag @article.image1_url :small
+    %br/
+    %br/
     = f.file_field :image2
-    = image_tag @article.image2_url :small
+    = f.check_box :remove_image2 if @article.image2_url
+    = "supprimer l'image" if @article.image2_url
+    = image_tag @article.image2_url :small 
+    %br/
+    %br/
     = f.file_field :image3
+    = f.check_box :remove_image3 if @article.image3_url
+    = "supprimer l'image" if @article.image3_url
     = image_tag @article.image3_url :small
+    %br/
+    %br/
     = f.file_field :image4
+    = f.check_box :remove_image4 if @article.image4_url
+    = "supprimer l'image" if @article.image4_url
     = image_tag @article.image4_url :small
   .actions
     = f.submit 'Save'
