@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
   before_filter :require_permission, only: [ :edit, :update, :destroy ]
   
   def require_permission
-	if current_user != Article.find(params[:id]).user
+	if current_user != Article.find(params[:id]).user ||  !(current_user.admin?)
 		flash[:alert] = "Action interdite. L\'offre peut seulement être édité/supprimé par son auteur"
 		redirect_to articles_url
 	end
