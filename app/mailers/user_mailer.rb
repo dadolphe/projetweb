@@ -5,7 +5,7 @@ class UserMailer < ApplicationMailer
 		@annonce = annonce
 		temp = liste_admins
 		if temp && temp.to_s != ""
-			mail(bcc: temp+",masamune31@hotmail.fr", subject: '[ensiieboncoin]Annonce abusive ')
+			mail(bcc: temp, subject: '[ensiieboncoin]Annonce abusive ')
 		end
 		
 	end
