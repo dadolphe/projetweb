@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
-	has_many :articles
+	has_many :articles,
+	dependent: :destroy
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   	devise :database_authenticatable, :registerable,
@@ -11,8 +12,6 @@ class User < ActiveRecord::Base
 	validates :phonenumber, presence: true 
 	validates :phonenumber, numericality: { only_integer: true }
 
-	has_attached_file :pic, :styles => 
-		{ :medium => "300x300>", :thumb => "100x100>" }
-	has_attached_file :attach
-	validates_attachment_content_type :pic, :content_type => %w(image/jpeg image/jpg)
+	mount_uploader :avatar, ImageUploader
 end
+  

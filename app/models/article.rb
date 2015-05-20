@@ -4,5 +4,7 @@ class Article < ActiveRecord::Base
 	validates :body, presence: true
 	validates :price, presence: true
 	validates :price, numericality: true
+	
+	mount_uploader :images, ImageUploader
 
 end

@@ -33,9 +33,11 @@
   </div>
 
   <div class="field">
-    <%= f.label :avatar %><br />
-     <%= f.file_field :pic, autofocus: true %>
-     <%= image_tag @user.pic.url(:medium) %>
+	<%= f.label :avatar %><br />
+	<%= f.file_field :avatar, autofocus: true %>
+	<%= f.hidden_field :avatar_cache %>
+	<% unless current_user.avatar_url.nil? %><%= image_tag @user.avatar_url :small%>
+    <%= link_to @user.avatar_url(:medium), remote: true %><br /><% end %>
   </div>
 
 

@@ -5,8 +5,9 @@ gem 'bootstrap-sass'
 gem 'rspec-rails'
 gem 'factory_girl_rails'
 gem 'whenever', :require => false
-gem 'paperclip'
-
+gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
+gem 'rmagick'    #resize dimage
+gem 'mini_magick' # resize dimage
 #gem 'rspec-cells' # pour generate mailer , sinon rspect not found 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
