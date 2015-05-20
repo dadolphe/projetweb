@@ -14,7 +14,7 @@ class UserMailer < ApplicationMailer
 		@articles = articles
 		temp = liste_users
 		if temp && temp.to_s != ""
-			mail(to: temp, subject: '[ensiieboncoin]Recapitulatif des annonces')
+			mail(bcc: temp, subject: '[ensiieboncoin]Recapitulatif des annonces')
 		end
 	end
 
