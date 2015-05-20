@@ -33928,3 +33928,1798 @@ Content-Transfer-Encoding: 7bit
 
 ----==_mimepart_555cf7b3eb04f_31f4110d98885763--
 
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (16.7ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (3.0ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 239.7ms
+
+Sent mail to  (2540.0ms)
+Date: Wed, 20 May 2015 23:10:04 +0200
+From: from@example.com
+Message-ID: <555cf82c7f4af_32f7bbf99098346@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cf82c7db71_32f7bbf990982f8";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cf82c7db71_32f7bbf990982f8
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cf82c7db71_32f7bbf990982f8
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cf82c7db71_32f7bbf990982f8--
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:11:46 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (22.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (28.3ms)
+  Rendered layouts/_navigation.html.haml (32.5ms)
+  Rendered layouts/_messages.html.haml (2.2ms)
+Completed 200 OK in 337ms (Views: 309.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:11:47 +0200
+
+
+Started GET "/2" for 127.0.0.1 at 2015-05-20 23:11:50 +0200
+
+ActionController::RoutingError (No route matches [GET] "/2"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.7ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (83.1ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (25.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (47.9ms)
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (13.4ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (1.8ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 221.8ms
+
+Sent mail to  (2621.2ms)
+Date: Wed, 20 May 2015 23:12:03 +0200
+From: from@example.com
+Message-ID: <555cf8a3de1f3_3390131598880ae@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cf8a3dc916_3390131598879ad";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cf8a3dc916_3390131598879ad
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cf8a3dc916_3390131598879ad
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cf8a3dc916_3390131598879ad--
+
+
+
+Started GET "/4" for 127.0.0.1 at 2015-05-20 23:13:36 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/4"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (64.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (25.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (48.6ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (15.1ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (2.1ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 227.9ms
+
+Sent mail to  (2504.8ms)
+Date: Wed, 20 May 2015 23:14:04 +0200
+From: from@example.com
+Message-ID: <555cf91c71451_343011199904668a@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cf91c6fb37_34301119990465f4";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cf91c6fb37_34301119990465f4
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cf91c6fb37_34301119990465f4
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cf91c6fb37_34301119990465f4--
+
+
+
+Started GET "/4" for 127.0.0.1 at 2015-05-20 23:15:15 +0200
+
+ActionController::RoutingError (No route matches [GET] "/4"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.1ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (19.0ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (38.5ms)
+
+
+Started GET "/4" for 127.0.0.1 at 2015-05-20 23:15:16 +0200
+
+ActionController::RoutingError (No route matches [GET] "/4"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (19.1ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/masamune/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (38.9ms)
+
+
+Started GET "/4" for 127.0.0.1 at 2015-05-20 23:15:22 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/4"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+
+Started GET "/4" for 127.0.0.1 at 2015-05-20 23:15:24 +0200
+
+ActionController::RoutingError (No route matches [GET] "/4"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+
+Started GET "/4" for 127.0.0.1 at 2015-05-20 23:15:24 +0200
+
+ActionController::RoutingError (No route matches [GET] "/4"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+
+Started GET "/4543" for 127.0.0.1 at 2015-05-20 23:15:28 +0200
+
+ActionController::RoutingError (No route matches [GET] "/4543"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:15:31 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (22.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (26.1ms)
+  Rendered layouts/_navigation.html.haml (30.4ms)
+  Rendered layouts/_messages.html.haml (2.2ms)
+Completed 200 OK in 384ms (Views: 342.7ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:15:32 +0200
+
+
+Started GET "/2" for 127.0.0.1 at 2015-05-20 23:15:35 +0200
+
+ActionController::RoutingError (No route matches [GET] "/2"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+
+Started GET "/23" for 127.0.0.1 at 2015-05-20 23:15:37 +0200
+
+ActionController::RoutingError (No route matches [GET] "/23"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (13.2ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (2.8ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 226.1ms
+
+Sent mail to  (2616.1ms)
+Date: Wed, 20 May 2015 23:16:03 +0200
+From: from@example.com
+Message-ID: <555cf993e95f3_34d311f39883638c@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cf993e7bec_34d311f39883621c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cf993e7bec_34d311f39883621c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cf993e7bec_34d311f39883621c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cf993e7bec_34d311f39883621c--
+
+
+
+Started GET "/23zeoazeazea" for 127.0.0.1 at 2015-05-20 23:17:07 +0200
+
+ActionController::RoutingError (No route matches [GET] "/23zeoazeazea"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+
+Started GET "/23zeoazeazea/2" for 127.0.0.1 at 2015-05-20 23:17:09 +0200
+
+ActionController::RoutingError (No route matches [GET] "/23zeoazeazea/2"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+
+Started GET "/23zeoazeazea/2.html" for 127.0.0.1 at 2015-05-20 23:17:11 +0200
+
+ActionController::RoutingError (No route matches [GET] "/23zeoazeazea/2.html"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:17:15 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36m (3.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (6.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.5ms)
+  Rendered layouts/_navigation.html.haml (4.3ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 103ms (Views: 98.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:17:15 +0200
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (13.4ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (1.9ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 219.9ms
+
+Sent mail to  (2549.7ms)
+Date: Wed, 20 May 2015 23:18:04 +0200
+From: from@example.com
+Message-ID: <555cfa0c7a173_356b10a598c109ec@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cfa0c788bc_356b10a598c10898";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cfa0c788bc_356b10a598c10898
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cfa0c788bc_356b10a598c10898
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cfa0c788bc_356b10a598c10898--
+
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (13.8ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (1.9ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 226.8ms
+
+Sent mail to  (2536.3ms)
+Date: Wed, 20 May 2015 23:20:03 +0200
+From: from@example.com
+Message-ID: <555cfa83dcb84_3609d8f98c525b3@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cfa83db22b_3609d8f98c5244f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cfa83db22b_3609d8f98c5244f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cfa83db22b_3609d8f98c5244f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cfa83db22b_3609d8f98c5244f--
+
+  [1m[36mUser Load (3.8ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (13.7ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (1.8ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 220.8ms
+
+Sent mail to  (2521.2ms)
+Date: Wed, 20 May 2015 23:22:04 +0200
+From: from@example.com
+Message-ID: <555cfafc6f1ad_3693f1998876ca@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cfafc6d8e8_3693f1998875ab";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cfafc6d8e8_3693f1998875ab
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cfafc6d8e8_3693f1998875ab
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cfafc6d8e8_3693f1998875ab--
+
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (2.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (19.2ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (1.9ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 234.7ms
+
+Sent mail to  (8.4ms)
+Date: Wed, 20 May 2015 23:24:03 +0200
+From: from@example.com
+Message-ID: <555cfb73cd7b9_371fd139904717a@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cfb73cbe37_371fd13990470d0";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cfb73cbe37_371fd13990470d0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cfb73cbe37_371fd13990470d0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cfb73cbe37_371fd13990470d0--
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:25:17 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (22.9ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (30.1ms)
+  Rendered layouts/_navigation.html.haml (34.3ms)
+  Rendered layouts/_messages.html.haml (2.3ms)
+Completed 200 OK in 335ms (Views: 306.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:25:17 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-20 23:25:18 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-20 23:25:18 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-20 23:25:18 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-20 23:25:18 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:25:18 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:25:18 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:25:18 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-20 23:25:18 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-20 23:25:18 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:25:18 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-20 23:25:18 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:25:18 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:25:18 +0200
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2015-05-20 23:25:19 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered articles/show.html.haml within layouts/application (5.6ms)
+  Rendered layouts/_navigation_links.html.haml (2.3ms)
+  Rendered layouts/_navigation.html.haml (5.8ms)
+  Rendered layouts/_messages.html.haml (1.9ms)
+Completed 200 OK in 107ms (Views: 72.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-20 23:25:21 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (9.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.8ms)
+  Rendered layouts/_navigation.html.haml (4.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 98ms (Views: 95.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2015-05-20 23:25:22 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "2"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (15.8ms)
+  Rendered layouts/_navigation_links.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (2.2ms)
+  Rendered layouts/_messages.html.haml (0.6ms)
+Completed 200 OK in 114ms (Views: 108.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/articles/2/report" for 127.0.0.1 at 2015-05-20 23:25:24 +0200
+Processing by ArticlesController#report as HTML
+  Parameters: {"authenticity_token"=>"JMvlf49ZFNqu1dIfasUdQqWXwHgBDjxp6uw1Z548BKMx1EJ8BC8uj/oMBIjqyy0kobuWHRskwGJ0zy1qyY74IQ==", "id"=>"2"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+Redirected to http://localhost:3000/
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."admin" = 't'  ORDER BY "users"."id" ASC LIMIT 1000
+  Rendered user_mailer/report_email.html.haml within layouts/mailer (2.0ms)
+
+UserMailer#report_email: processed outbound mail in 159.7ms
+
+Sent mail to  (2419.3ms)
+Date: Wed, 20 May 2015 23:25:24 +0200
+From: from@example.com
+Message-ID: <555cfbc467cb8_375039702e01472@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Annonce abusive
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type'>
+      </head>
+      <body>
+        <p>
+          L'annonce ahahahezeze a ete signale par ab aba comme =C3=A9tant=
+ abusive.
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+Completed 302 Found in 2598ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:25:26 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36m (2.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (7.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.4ms)
+  Rendered layouts/_navigation.html.haml (3.5ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+Completed 200 OK in 65ms (Views: 61.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:25:27 +0200
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (13.9ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (2.0ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 232.8ms
+
+Sent mail to  (8.7ms)
+Date: Wed, 20 May 2015 23:26:04 +0200
+From: from@example.com
+Message-ID: <555cfbecb73d8_3897e7f98c22821@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cfbecb597d_3897e7f98c227d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cfbecb597d_3897e7f98c227d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cfbecb597d_3897e7f98c227d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cfbecb597d_3897e7f98c227d--
+
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (13.0ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (1.7ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 225.2ms
+
+Sent mail to  (9.0ms)
+Date: Wed, 20 May 2015 23:26:13 +0200
+From: from@example.com
+Message-ID: <555cfbf523448_390ae1799078872@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cfbf521aba_390ae1799078796";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cfbf521aba_390ae1799078796
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cfbf521aba_390ae1799078796
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cfbf521aba_390ae1799078796--
+
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (13.5ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (1.8ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 222.7ms
+
+Sent mail to  (8.2ms)
+Date: Wed, 20 May 2015 23:27:44 +0200
+From: from@example.com
+Message-ID: <555cfc5097c1_39a310f598c88174@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cfc507f47_39a310f598c8805f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cfc507f47_39a310f598c8805f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cfc507f47_39a310f598c8805f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cfc507f47_39a310f598c8805f--
+
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (14.1ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (1.8ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 223.9ms
+
+Sent mail to  (8.2ms)
+Date: Wed, 20 May 2015 23:32:04 +0200
+From: from@example.com
+Message-ID: <555cfd541cb6d_3a90539990994f3@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cfd541b2be_3a90539990993c7";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cfd541b2be_3a90539990993c7
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cfd541b2be_3a90539990993c7
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cfd541b2be_3a90539990993c7--
+
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (14.0ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (1.9ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 226.2ms
+
+Sent mail to  (8.5ms)
+Date: Wed, 20 May 2015 23:34:03 +0200
+From: from@example.com
+Message-ID: <555cfdcbf3ebe_3b207dd9947145c@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cfdcbf248e_3b207dd994713f0";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cfdcbf248e_3b207dd994713f0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cfdcbf248e_3b207dd994713f0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cfdcbf248e_3b207dd994713f0--
+
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (13.2ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (1.7ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 225.7ms
+
+Sent mail to  (8.5ms)
+Date: Wed, 20 May 2015 23:34:58 +0200
+From: from@example.com
+Message-ID: <555cfe02bbfa1_3c117299944237d@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cfe02ba5b4_3c11729994422c7";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cfe02ba5b4_3c11729994422c7
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cfe02ba5b4_3c11729994422c7
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cfe02ba5b4_3c11729994422c7--
+
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (13.5ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (1.9ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 222.9ms
+
+Sent mail to  (8.3ms)
+Date: Wed, 20 May 2015 23:36:03 +0200
+From: from@example.com
+Message-ID: <555cfe43d2abd_3c9b74f98c5958f@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cfe43d1211_3c9b74f98c594b";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cfe43d1211_3c9b74f98c594b
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cfe43d1211_3c9b74f98c594b
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cfe43d1211_3c9b74f98c594b--
+
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.6ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (13.1ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (1.7ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 225.7ms
+
+Sent mail to  (2833.3ms)
+Date: Wed, 20 May 2015 23:37:15 +0200
+From: from@example.com
+Message-ID: <555cfe8bfdd5_3d1fee7988409ad@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cfe8be4e0_3d1fee7988408f8";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cfe8be4e0_3d1fee7988408f8
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cfe8be4e0_3d1fee7988408f8
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cfe8be4e0_3d1fee7988408f8--
+
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (13.9ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (2.0ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 234.9ms
+
+Sent mail to  (8.4ms)
+Date: Wed, 20 May 2015 23:38:04 +0200
+From: from@example.com
+Message-ID: <555cfebcc8f3a_3da3831990536cd@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cfebcc7683_3da3831990535d0";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cfebcc7683_3da3831990535d0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cfebcc7683_3da3831990535d0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cfebcc7683_3da3831990535d0--
+
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (13.0ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (1.9ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 222.3ms
+
+Sent mail to  (8.3ms)
+Date: Wed, 20 May 2015 23:40:04 +0200
+From: from@example.com
+Message-ID: <555cff34c4166_3e2e45798c155e9@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_555cff34c287d_3e2e45798c1549d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_555cff34c287d_3e2e45798c1549d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+
+----==_mimepart_555cff34c287d_3e2e45798c1549d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_555cff34c287d_3e2e45798c1549d--
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:42:23 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (23.7ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (30.9ms)
+  Rendered layouts/_navigation.html.haml (35.1ms)
+  Rendered layouts/_messages.html.haml (2.3ms)
+Completed 200 OK in 339ms (Views: 309.5ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:42:23 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:42:23 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-20 23:42:23 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-20 23:42:23 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-20 23:42:23 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-20 23:42:23 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-20 23:42:23 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-20 23:42:23 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:42:23 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-20 23:42:23 +0200
+
+
+Started GET "/assets/application.self-e32c39a5601f56b35f0ae0369801e0c0552d0022b061f002f11bb626c8bb7042.js?body=1" for 127.0.0.1 at 2015-05-20 23:42:23 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:42:23 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-20 23:42:23 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:42:23 +0200
+
+
+Started GET "/articles/2/edit" for 127.0.0.1 at 2015-05-20 23:42:25 +0200
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/articles
+Filter chain halted as :require_permission rendered or redirected
+Completed 302 Found in 32ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-20 23:42:25 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (6.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (4.6ms)
+  Rendered layouts/_navigation.html.haml (8.8ms)
+  Rendered layouts/_messages.html.haml (2.6ms)
+Completed 200 OK in 83ms (Views: 81.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2015-05-20 23:42:26 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered articles/show.html.haml within layouts/application (5.7ms)
+  Rendered layouts/_navigation_links.html.haml (1.0ms)
+  Rendered layouts/_navigation.html.haml (2.0ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 100ms (Views: 95.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/articles/3/report" for 127.0.0.1 at 2015-05-20 23:42:27 +0200
+Processing by ArticlesController#report as HTML
+  Parameters: {"authenticity_token"=>"qNxNpAjZ9Pipbq+LiXSQX2oYc3cX9YaV8Qgm+2xUzaO9w+qng6/Orf23eRwJeqA5bjQlEg3fep5vKz72O+YxIQ==", "id"=>"3"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+Redirected to http://localhost:3000/
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."admin" = 't'  ORDER BY "users"."id" ASC LIMIT 1000
+  Rendered user_mailer/report_email.html.haml within layouts/mailer (2.7ms)
+
+UserMailer#report_email: processed outbound mail in 173.3ms
+
+Sent mail to  (2657.9ms)
+Date: Wed, 20 May 2015 23:42:28 +0200
+From: from@example.com
+Message-ID: <555cffc4180f4_3e833150fb0405a@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Annonce abusive
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type'>
+      </head>
+      <body>
+        <p>
+          L'annonce zeze a ete signale par ab aba comme =C3=A9tant abusiv=
+e.
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+Completed 302 Found in 2856ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-20 23:42:30 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (4.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_navigation_links.html.haml (2.1ms)
+  Rendered layouts/_navigation.html.haml (2.9ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-20 23:42:31 +0200

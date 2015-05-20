@@ -1,8 +1,7 @@
 article supprimé si user delete ( a montrer : D)
+erreur si pas de page trouvé (mauvais lien), montré :D
+(cf http://easyactiverecord.com/blog/2014/08/19/redirecting-to-custom-404-and-500-pages-in-rails/ pour revert setting sinon, jai mis ca meme en mode development, donc pas de message derreur mais genre 500 ou 404.. ou autre) >> faire true pour   config.consider_all_requests_local       = false de development.rb ds environment
 ---------
-a fixer :
-
----
 ds user controlelr jai commenté cache
 		#unless @user == current_user
 		#	redirect_to :back, :alert => "Access denied."
@@ -11,6 +10,14 @@ ds user controlelr jai commenté cache
 qui semblait servir a empecher àce que luser peut voir les profils des autres, on autorise ou pas? meh? bleh? zawa?
 
 ----
+a faire pour utiliser le programme :
+pr variable ENV['TESTPRO_DATABASE_PASSWORD'] faire : export TESTPRO_DATABASE_PASSWORD=MotDePasseDeLaDb
+pr variable ENV['PASSMAILSITE'] , faire : export PASSMAILSITE=LeMotDePasseCompteMail
+
+de plus si on veut que cron fonctionne, comme lactionmailer semble avoir du mal à une variable ENV, il faut faire
+export PASSMAILSITE=LeMotDePasseCompteMail
+
+
 secrets ds config (mettre notre mail et tossa)
 
 
@@ -35,6 +42,7 @@ pourquoi y a new et create dans articles_controller.rb, wut?
 
 text field pour les nombres, heu np? oO normal? pas vu de form for adapté pour number, et le number_field rajoute un truc bizarre à droite de la case
 
+trucmail c Japan6700
 pour cron:
 whenever --update-cron mail_recapitulatif
 cron -l

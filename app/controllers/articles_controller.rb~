@@ -45,7 +45,7 @@ class ArticlesController < ApplicationController
   def report
 	user = current_user
 	nomarticle = @article.title
-	flash[:alert] = "Merci de votre signalement."
+	flash[:alert] = "Merci du signalement."
 	redirect_to root_url
 	UserMailer.report_email(user,nomarticle).deliver_now
   end
@@ -98,6 +98,6 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:title, :body, :price, :image1,:image1_cache,:image2,:image2_cache,:image3,:image3_cache,:image4,:remove_image1,:remove_image2,:remove_image3,:remove_image4)
+      params.require(:article).permit(:title, :body, :price, :image1,:image1_cache,:image2,:image2_cache,:image3,:image3_cache,:image4,:image4_cache,:remove_image1,:remove_image2,:remove_image3,:remove_image4)
     end
 end
