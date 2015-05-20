@@ -8,7 +8,6 @@ gem 'whenever', :require => false
 gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
 gem 'rmagick'    #resize dimage
 gem 'mini_magick' # resize dimage
-gem 'erb2haml'
 #gem 'rspec-cells' # pour generate mailer , sinon rspect not found 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
