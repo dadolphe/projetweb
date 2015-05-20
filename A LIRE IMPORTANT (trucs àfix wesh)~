@@ -7,7 +7,7 @@ ds edit on voit pas ce qu'on écrit aussi
 
 
 
-
+trier article + recent en first?surement ez avec willpaginate
 
 
 
@@ -37,7 +37,7 @@ export PASSMAILSITE=LeMotDePasseCompteMail
 
 
 RQ : 
-  config.consider_all_requests_local       = true ds  donc si on veut voir les messages derreur faire false
+  config.consider_all_requests_local       = true ds development.rb du dossier environment donc si on veut voir les messages derreur faire false
 secrets ds config (mettre notre mail et tossa)
 
 
