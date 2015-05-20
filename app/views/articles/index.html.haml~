@@ -1,10 +1,10 @@
-%h3 Bienvenue dans le bon coin de l'ensiie
+%h1 Bienvenue dans le bon coin de l'ensiie
 %p
   = link_to 'Users:', users_path
   = User.count
   registered
   
-%h1 Liste des offres
+%h2 Liste des offres
 
 %table
   %thead
