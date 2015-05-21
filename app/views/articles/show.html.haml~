@@ -11,7 +11,7 @@
   = @article.price
 %p
   %b Images:
-  .fotorama{"data-keyboard" => "true", "data-alignment" => "center","data-nav" => "thumbs", "data-click" => "true", "data-allowfullscreen" => "true", "data-width" => "100%","data-ratio" => "800/600"}
+  .fotorama{"data-keyboard" => "true","data-nav" => "thumbs", "data-click" => "true", "data-allowfullscreen" => "true", "data-width" => "100%","data-ratio" => "800/600"}
     = image_tag @article.image1_url if @article.image1_url
     = image_tag @article.image2_url if @article.image2_url
     = image_tag @article.image3_url if @article.image3_url
@@ -20,6 +20,10 @@
   %b Auteur: 
   = @auteur.name 
   = @auteur.firstname
+%p
+  %b Date de création :
+  = @article.updated_at.to_formatted_s(:long_ordinal)
+
 %p
   %b Derniere update :
   = @article.updated_at.to_formatted_s(:long_ordinal)

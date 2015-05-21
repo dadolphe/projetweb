@@ -15,3 +15,5 @@
           Contenu: #{article.body}
           %br/
           Prix: #{article.price}
+          %br/
+          %br/

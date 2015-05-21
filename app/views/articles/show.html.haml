@@ -21,6 +21,10 @@
   = @auteur.name 
   = @auteur.firstname
 %p
+  %b Date de création :
+  = @article.created_at.to_formatted_s(:long_ordinal)
+
+%p
   %b Derniere update :
   = @article.updated_at.to_formatted_s(:long_ordinal)
 %p

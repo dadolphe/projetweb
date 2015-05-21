@@ -9,3 +9,5 @@ Voici les articles de la semaine :
   Contenu: #{article.body}
   %br/
   Prix: #{article.price}
+  %br/
+  %br/
