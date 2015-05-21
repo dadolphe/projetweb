@@ -3,6 +3,7 @@ nom: master
 mot de passe: master
 faire dans le terminal pour la variable ENV['TESTPRO_DATABASE_PASSWORD'](car le mot de passe est pas en clair dans le fichier database.yml):  export TESTPRO_DATABASE_PASSWORD=master
 
+->Lancer rake db:drop db:create db:migrate db:seed pour la database
 
 ->Pour l'envoie des mails, pour régler la variable de mot de passe du compte mail du site ENV['PASSMAILSITE'], écrire :
 export PASSMAILSITE=Japan6700 
@@ -18,3 +19,5 @@ Pour tester facilement les mails périodiques, on peut forcer l'envoie du mail e
 
 ->Pour afficher les messages d'erreur (par exemple voir le message d'erreur lorsqu'on entre une adresse qui n'existe pas), dans development.rb du dossier config/environments:
 config.consider_all_requests_local       = true
+
+ATTENTION ERREUR 500 AU LIEU DE 404
