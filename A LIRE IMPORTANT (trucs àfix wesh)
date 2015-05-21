@@ -1,19 +1,6 @@
-
-
-qui semblait servir a empecher àce que luser peut voir les profils des autres, on autorise ou pas? meh? bleh? zawa?
-y a dse trucs qui saffichent pas (noir sur noir...) genre faire plein darticles ca arrivera
+ a dse trucs qui saffichent pas (noir sur noir...) genre faire plein darticles ca arrivera
 ds edit on voit pas ce qu'on écrit aussi
-
-
-
-
 trier article + recent en first?surement ez avec willpaginate
-
-
-
-
-
-
 
 
 BLABLA:
@@ -25,48 +12,12 @@ ds user controlelr jai commenté cache
 		#unless @user == current_user
 		#	redirect_to :back, :alert => "Access denied."
 		#end
-
-
-----
-a faire pour utiliser le programme :
-pr variable ENV['TESTPRO_DATABASE_PASSWORD'] faire : export TESTPRO_DATABASE_PASSWORD=MotDePasseDeLaDb
-pr variable ENV['PASSMAILSITE'] , faire : export PASSMAILSITE=LeMotDePasseCompteMail
-
-de plus si on veut que cron fonctionne, comme lactionmailer semble avoir du mal à une variable ENV, il faut faire
-export PASSMAILSITE=LeMotDePasseCompteMail
-
-
-RQ : 
-  config.consider_all_requests_local       = true ds development.rb du dossier environment donc si on veut voir les messages derreur faire false
-secrets ds config (mettre notre mail et tossa)
-
-
-framework_and_overrides.css ds app  assets stylesheet (jai juste copy pasta)
-
-
-mail ds config environment
- 
-
 regler size image:  imposer taille
  bcc mail : cache adresse?
-
 service admin : wtf is dat shit
-
 change port production.rb de 5000 à 3000 /!\ mail
-
 = @article.report(current_user,@article.title)
 attention y a le mdp sur git...trololo
-
-
 pourquoi y a new et create dans articles_controller.rb, wut?
 
-text field pour les nombres, heu np? oO normal? pas vu de form for adapté pour number, et le number_field rajoute un truc bizarre à droite de la case
 
-trucmail c Japan6700
-pour cron:
-whenever --update-cron mail_recapitulatif
-cron -l
-sudo service cron restart (ou status)
-remarque : quand cron -l, c'est en mode prod (ce qui est pas quand on fait rails server sur notre machine car on est en mode development, donc faut editer manuellement (crontab -e?) pour changer production en development.
-
-un mec peut spam signaler pour envoyer masse mail x) (tard one !)
