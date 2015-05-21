@@ -11,11 +11,11 @@
   = @article.price
 %p
   %b Images:
-  .fotorama
-    = image_tag @article.image1_url :big if @article.image1_url
-    = image_tag @article.image2_url :big if @article.image2_url
-    = image_tag @article.image3_url :big if @article.image3_url
-    = image_tag @article.image4_url :big if @article.image4_url
+  .fotorama{"data-keyboard" => "true", "data-alignment" => "center","data-nav" => "thumbs", "data-click" => "true", "data-allowfullscreen" => "true", "data-width" => "100%","data-ratio" => "800/600"}
+    = image_tag @article.image1_url if @article.image1_url
+    = image_tag @article.image2_url if @article.image2_url
+    = image_tag @article.image3_url if @article.image3_url
+    = image_tag @article.image4_url if @article.image4_url
 %p
   %b Auteur: 
   = @auteur.name 
