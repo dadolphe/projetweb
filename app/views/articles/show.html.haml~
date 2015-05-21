@@ -22,15 +22,15 @@
   = @auteur.firstname
 %p
   %b Date de création :
-  = @article.updated_at.to_formatted_s(:long_ordinal)
+  = @article.created_at.to_formatted_s(:long_ordinal)
 
 %p
   %b Derniere update :
+  Il y a
+  = ((Time.now - @article.updated_at) / 86400).to_i
+  jours.
+  %br/
   = @article.updated_at.to_formatted_s(:long_ordinal)
-%p
-  Il y a 
-  = Time.now.day.to_i - @article.updated_at.day
-  jours.	
 =======================
 %p 
   - if @pas_lauteur
