@@ -39680,3 +39680,1317 @@ Completed 200 OK in 92ms (Views: 79.2ms | ActiveRecord: 1.1ms)
 
 
 Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 11:53:38 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-21 17:55:47 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (85.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35m (30.5ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (47.5ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 8 OFFSET 0[0m
+  Rendered articles/index.html.haml within layouts/application (301.4ms)
+  Rendered layouts/_navigation_links.html.haml (7.1ms)
+  Rendered layouts/_navigation.html.haml (14.2ms)
+  Rendered layouts/_messages.html.haml (2.4ms)
+Completed 200 OK in 3423ms (Views: 3092.5ms | ActiveRecord: 267.8ms)
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-21 17:55:51 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-21 17:55:52 +0200
+
+
+Started GET "/assets/application.self-a27dc19563f73ad9a2cd18b5d8a527157ddab847c405c84e39554b49b455b7e4.js?body=1" for 127.0.0.1 at 2015-05-21 17:55:52 +0200
+
+
+Started GET "/assets/sf/sf_archery_black-webfont.woff" for 127.0.0.1 at 2015-05-21 17:55:52 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 17:55:52 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 17:55:54 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 401 Unauthorized in 39ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-05-21 17:55:54 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (3.2ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (50.8ms)
+  Rendered layouts/_navigation_links.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+Completed 200 OK in 147ms (Views: 120.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-05-21 17:56:00 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"brmoasTb0tlbitUeAu14Vtm+strJb58C9zvpcvXbbw2oLBy/vEhzBi4uzjbDqYiSdfqK9Fq6y3zjdzFhbRnlUA==", "user"=>{"email"=>"mathieu@yopmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "mathieu@yopmail.com"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (45.1ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2015-05-21 12:10:40.899816"], ["current_sign_in_at", "2015-05-21 15:56:01.090196"], ["sign_in_count", 3], ["updated_at", "2015-05-21 15:56:01.091411"], ["id", 1]]
+  [1m[35m (10.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 224ms (ActiveRecord: 55.7ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 17:56:01 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (44.8ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 145ms (Views: 113.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 17:56:01 +0200
+
+
+Started GET "/assets/fotorama-b94efaf1044e2ba8fc2fb41f5ab2022410086fe50b729b8c95321573b88e8a78.png" for 127.0.0.1 at 2015-05-21 17:56:01 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 17:56:16 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (11.2ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 98ms (Views: 88.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-21 17:56:17 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-21 17:56:17 +0200
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-21 17:56:17 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 17:56:17 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 17:56:17 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-21 17:56:17 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-21 17:56:17 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-21 17:56:17 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-21 17:56:17 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-21 17:56:17 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 17:56:17 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 17:56:17 +0200
+
+
+Started GET "/assets/application.self-a27dc19563f73ad9a2cd18b5d8a527157ddab847c405c84e39554b49b455b7e4.js?body=1" for 127.0.0.1 at 2015-05-21 17:56:17 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 17:56:17 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 17:56:17 +0200
+
+
+Started GET "/assets/fotorama-b94efaf1044e2ba8fc2fb41f5ab2022410086fe50b729b8c95321573b88e8a78.png" for 127.0.0.1 at 2015-05-21 17:56:17 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (1.5ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (7.4ms)
+  Rendered layouts/_navigation_links.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 89ms (Views: 80.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+
+
+Started GET "/assets/application.self-a27dc19563f73ad9a2cd18b5d8a527157ddab847c405c84e39554b49b455b7e4.js?body=1" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+
+
+Started GET "/assets/fotorama-b94efaf1044e2ba8fc2fb41f5ab2022410086fe50b729b8c95321573b88e8a78.png" for 127.0.0.1 at 2015-05-21 17:56:57 +0200
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2015-05-21 17:57:28 +0200
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/_form.html.haml (22.4ms)
+  Rendered articles/edit.html.haml within layouts/application (25.2ms)
+  Rendered layouts/_navigation_links.html.haml (2.1ms)
+  Rendered layouts/_navigation.html.haml (5.4ms)
+  Rendered layouts/_messages.html.haml (1.7ms)
+Completed 200 OK in 104ms (Views: 100.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 17:57:29 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (6.2ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 78ms (Views: 70.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (13.1ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (3.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 129ms (Views: 122.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+
+
+Started GET "/assets/application.self-a27dc19563f73ad9a2cd18b5d8a527157ddab847c405c84e39554b49b455b7e4.js?body=1" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+
+
+Started GET "/assets/fotorama-b94efaf1044e2ba8fc2fb41f5ab2022410086fe50b729b8c95321573b88e8a78.png" for 127.0.0.1 at 2015-05-21 17:57:35 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 17:57:46 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (Version big doesn't exist!):
+    31:   jours.	
+    32: %p
+    33: .fotorama
+    34:   = image_tag @article.image1_url :big if @article.image1_url
+    35:   %img{:src => "http://s.fotorama.io/2.jpg"}
+    36:   %img{:src => "http://s.fotorama.io/2.jpg"}
+    37: =======================
+  app/views/articles/show.html.haml:34:in `_app_views_articles_show_html_haml__1255957897632242065_70312299860540'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-21 17:59:19 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT  "articles".* FROM "articles" LIMIT 8 OFFSET 0[0m
+  Rendered articles/index.html.haml within layouts/application (32.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_navigation_links.html.haml (27.7ms)
+  Rendered layouts/_navigation.html.haml (31.4ms)
+  Rendered layouts/_messages.html.haml (2.1ms)
+Completed 200 OK in 411ms (Views: 375.4ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 17:59:21 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (20.6ms)
+  Rendered layouts/_navigation_links.html.haml (2.5ms)
+  Rendered layouts/_navigation.html.haml (6.7ms)
+  Rendered layouts/_messages.html.haml (1.8ms)
+Completed 200 OK in 159ms (Views: 131.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/uploads/article/image1/1/big_Shin_colored_portrait.png" for 127.0.0.1 at 2015-05-21 17:59:21 +0200
+
+ActionController::RoutingError (No route matches [GET] "/uploads/article/image1/1/big_Shin_colored_portrait.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (8.8ms)
+  Rendered layouts/_navigation_links.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (1.8ms)
+  Rendered layouts/_messages.html.haml (19.0ms)
+Completed 200 OK in 182ms (Views: 134.0ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+
+
+Started GET "/assets/application.self-a27dc19563f73ad9a2cd18b5d8a527157ddab847c405c84e39554b49b455b7e4.js?body=1" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+
+
+Started GET "/assets/fotorama-b94efaf1044e2ba8fc2fb41f5ab2022410086fe50b729b8c95321573b88e8a78.png" for 127.0.0.1 at 2015-05-21 17:59:32 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (7.9ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 100ms (Views: 93.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+
+Started GET "/assets/application.self-a27dc19563f73ad9a2cd18b5d8a527157ddab847c405c84e39554b49b455b7e4.js?body=1" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+
+Started GET "/uploads/article/image1/1/big_Shin_colored_portrait.png" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+ActionController::RoutingError (No route matches [GET] "/uploads/article/image1/1/big_Shin_colored_portrait.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+
+Started GET "/uploads/article/image1/1/big_Shin_colored_portrait.png" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+ActionController::RoutingError (No route matches [GET] "/uploads/article/image1/1/big_Shin_colored_portrait.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/masamune/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+
+Started GET "/assets/fotorama-b94efaf1044e2ba8fc2fb41f5ab2022410086fe50b729b8c95321573b88e8a78.png" for 127.0.0.1 at 2015-05-21 17:59:43 +0200
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2015-05-21 18:00:20 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.5ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered articles/_form.html.haml (64.6ms)
+  Rendered articles/edit.html.haml within layouts/application (70.9ms)
+  Rendered layouts/_navigation_links.html.haml (2.4ms)
+  Rendered layouts/_navigation.html.haml (6.1ms)
+  Rendered layouts/_messages.html.haml (1.9ms)
+Completed 200 OK in 427ms (Views: 359.7ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-21 18:00:21 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-21 18:00:21 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-21 18:00:21 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:00:21 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-21 18:00:21 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:00:21 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-21 18:00:21 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-21 18:00:21 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-21 18:00:21 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-21 18:00:21 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:00:21 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:00:21 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:00:21 +0200
+
+
+Started GET "/assets/application.self-a27dc19563f73ad9a2cd18b5d8a527157ddab847c405c84e39554b49b455b7e4.js?body=1" for 127.0.0.1 at 2015-05-21 18:00:21 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 18:00:21 +0200
+
+
+Started PATCH "/articles/1" for 127.0.0.1 at 2015-05-21 18:00:36 +0200
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FNwDAOxhqBOstMXfnRSiUA0S/VqZxhqBJ7NCBpWWDwX5Wo0gR9CJPM4BMipZlvDQ8aHfyxKF0uyh9rHwItM5wQ==", "article"=>{"title"=>"first", "body"=>"doude", "price"=>"2323.0", "image1"=>#<ActionDispatch::Http::UploadedFile:0x007fbec82d1d40 @tempfile=#<Tempfile:/tmp/RackMultipart20150521-4450-r8zvww.png>, @original_filename="Shin_colored_portrait.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"article[image1]\"; filename=\"Shin_colored_portrait.png\"\r\nContent-Type: image/png\r\n">, "image1_cache"=>"", "remove_image1"=>"0", "image2"=>#<ActionDispatch::Http::UploadedFile:0x007fbec82d1c00 @tempfile=#<Tempfile:/tmp/RackMultipart20150521-4450-ycjgo.png>, @original_filename="z.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"article[image2]\"; filename=\"z.png\"\r\nContent-Type: image/png\r\n">, "image2_cache"=>"", "image3"=>#<ActionDispatch::Http::UploadedFile:0x007fbec82d1b38 @tempfile=#<Tempfile:/tmp/RackMultipart20150521-4450-roaqyh.png>, @original_filename="GenreDylanDebuggeur.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"article[image3]\"; filename=\"GenreDylanDebuggeur.png\"\r\nContent-Type: image/png\r\n">, "image3_cache"=>"", "image4"=>#<ActionDispatch::Http::UploadedFile:0x007fbec82d1a20 @tempfile=#<Tempfile:/tmp/RackMultipart20150521-4450-fc3tqy.png>, @original_filename="test3.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"article[image4]\"; filename=\"test3.png\"\r\nContent-Type: image/png\r\n">, "image4_cache"=>""}, "commit"=>"Save", "id"=>"1"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "articles" SET "image1" = $1, "image2" = $2, "image3" = $3, "image4" = $4, "updated_at" = $5 WHERE "articles"."id" = $6[0m  [["image1", "Shin_colored_portrait.png"], ["image2", "z.png"], ["image3", "GenreDylanDebuggeur.png"], ["image4", "test3.png"], ["updated_at", "2015-05-21 16:00:40.503851"], ["id", 1]]
+  [1m[35m (40.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 3743ms (ActiveRecord: 41.3ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 18:00:40 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (14.0ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 176ms (Views: 156.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 18:00:41 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-21 18:01:59 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36m (5.8ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (5.7ms)[0m  SELECT  "articles".* FROM "articles" LIMIT 8 OFFSET 0
+  Rendered articles/index.html.haml within layouts/application (27.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_navigation_links.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (2.7ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 127ms (Views: 114.5ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 18:01:59 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 18:02:00 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (11.4ms)
+  Rendered layouts/_navigation_links.html.haml (2.1ms)
+  Rendered layouts/_navigation.html.haml (5.5ms)
+  Rendered layouts/_messages.html.haml (1.6ms)
+Completed 200 OK in 92ms (Views: 86.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 18:02:13 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (12.4ms)
+  Rendered layouts/_navigation_links.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 104ms (Views: 98.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:14 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:14 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:14 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:14 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:14 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:14 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:14 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:14 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:14 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:14 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:14 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:14 +0200
+
+
+Started GET "/assets/application.self-a27dc19563f73ad9a2cd18b5d8a527157ddab847c405c84e39554b49b455b7e4.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:14 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:14 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 18:02:14 +0200
+
+
+Started GET "/assets/fotorama-b94efaf1044e2ba8fc2fb41f5ab2022410086fe50b729b8c95321573b88e8a78.png" for 127.0.0.1 at 2015-05-21 18:02:14 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 18:02:18 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (7.4ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 82ms (Views: 75.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:19 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:19 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:19 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:19 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:19 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:19 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:19 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:19 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:19 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:19 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:19 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:19 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:19 +0200
+
+
+Started GET "/assets/application.self-a27dc19563f73ad9a2cd18b5d8a527157ddab847c405c84e39554b49b455b7e4.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:19 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 18:02:19 +0200
+
+
+Started GET "/assets/fotorama-b94efaf1044e2ba8fc2fb41f5ab2022410086fe50b729b8c95321573b88e8a78.png" for 127.0.0.1 at 2015-05-21 18:02:19 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (14.5ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 88ms (Views: 83.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+
+
+Started GET "/assets/application.self-a27dc19563f73ad9a2cd18b5d8a527157ddab847c405c84e39554b49b455b7e4.js?body=1" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+
+
+Started GET "/assets/fotorama-b94efaf1044e2ba8fc2fb41f5ab2022410086fe50b729b8c95321573b88e8a78.png" for 127.0.0.1 at 2015-05-21 18:02:58 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 18:03:49 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (1.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (9.3ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 105ms (Views: 94.3ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-21 18:03:49 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-21 18:03:49 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-21 18:03:49 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:03:49 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:03:49 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-21 18:03:49 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-21 18:03:49 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-21 18:03:49 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-21 18:03:49 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:03:49 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:03:49 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-21 18:03:49 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:03:49 +0200
+
+
+Started GET "/assets/application.self-a27dc19563f73ad9a2cd18b5d8a527157ddab847c405c84e39554b49b455b7e4.js?body=1" for 127.0.0.1 at 2015-05-21 18:03:49 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 18:03:49 +0200
+
+
+Started GET "/assets/fotorama-b94efaf1044e2ba8fc2fb41f5ab2022410086fe50b729b8c95321573b88e8a78.png" for 127.0.0.1 at 2015-05-21 18:03:50 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 18:04:33 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (11.5ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 93ms (Views: 88.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-21 18:04:34 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-21 18:04:34 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-21 18:04:34 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:04:34 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:04:34 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-21 18:04:34 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-21 18:04:34 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-21 18:04:34 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-21 18:04:34 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:04:34 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:04:34 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:04:34 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-21 18:04:34 +0200
+
+
+Started GET "/assets/application.self-a27dc19563f73ad9a2cd18b5d8a527157ddab847c405c84e39554b49b455b7e4.js?body=1" for 127.0.0.1 at 2015-05-21 18:04:34 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 18:04:34 +0200
+
+
+Started GET "/assets/fotorama-b94efaf1044e2ba8fc2fb41f5ab2022410086fe50b729b8c95321573b88e8a78.png" for 127.0.0.1 at 2015-05-21 18:04:34 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 18:04:44 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (10.4ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 88ms (Views: 83.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-21 18:04:44 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-21 18:04:44 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-21 18:04:44 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:04:44 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:04:44 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-21 18:04:44 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-21 18:04:44 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-21 18:04:44 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-21 18:04:44 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-21 18:04:44 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:04:44 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:04:44 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:04:44 +0200
+
+
+Started GET "/assets/application.self-a27dc19563f73ad9a2cd18b5d8a527157ddab847c405c84e39554b49b455b7e4.js?body=1" for 127.0.0.1 at 2015-05-21 18:04:44 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 18:04:45 +0200
+
+
+Started GET "/assets/fotorama-b94efaf1044e2ba8fc2fb41f5ab2022410086fe50b729b8c95321573b88e8a78.png" for 127.0.0.1 at 2015-05-21 18:04:45 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (9.8ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 83ms (Views: 78.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+
+
+Started GET "/assets/application.self-a27dc19563f73ad9a2cd18b5d8a527157ddab847c405c84e39554b49b455b7e4.js?body=1" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+
+
+Started GET "/assets/fotorama-b94efaf1044e2ba8fc2fb41f5ab2022410086fe50b729b8c95321573b88e8a78.png" for 127.0.0.1 at 2015-05-21 18:05:01 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 18:05:27 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (5.7ms)
+  Rendered layouts/_navigation_links.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (1.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 127ms (Views: 88.1ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-21 18:05:27 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-21 18:05:27 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:05:27 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:05:27 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-21 18:05:28 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-21 18:05:28 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-21 18:05:28 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-21 18:05:28 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-21 18:05:28 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-21 18:05:28 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:05:28 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:05:28 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:05:28 +0200
+
+
+Started GET "/assets/application.self-a27dc19563f73ad9a2cd18b5d8a527157ddab847c405c84e39554b49b455b7e4.js?body=1" for 127.0.0.1 at 2015-05-21 18:05:28 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 18:05:28 +0200
+
+
+Started GET "/assets/fotorama-b94efaf1044e2ba8fc2fb41f5ab2022410086fe50b729b8c95321573b88e8a78.png" for 127.0.0.1 at 2015-05-21 18:05:28 +0200
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2015-05-21 18:05:35 +0200
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered articles/_form.html.haml (18.5ms)
+  Rendered articles/edit.html.haml within layouts/application (21.5ms)
+  Rendered layouts/_navigation_links.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 109ms (Views: 104.8ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/articles/1" for 127.0.0.1 at 2015-05-21 18:05:39 +0200
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wb5X2ZYyYvWppMyaM4YFHBkrHBCalku6i/XbZQjWu120ONn5PYND2ssRO2/3BFec5Zg+gRHVg9cNsCiTv5ONmQ==", "article"=>{"title"=>"first", "body"=>"doude", "price"=>"2323.0", "image1_cache"=>"", "remove_image1"=>"0", "image2_cache"=>"", "remove_image2"=>"0", "image3_cache"=>"", "remove_image3"=>"1", "image4_cache"=>"", "remove_image4"=>"0"}, "commit"=>"Save", "id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "articles" SET "image1" = $1, "image2" = $2, "image3" = $3, "image4" = $4, "updated_at" = $5 WHERE "articles"."id" = $6[0m  [["image1", "Shin_colored_portrait.png"], ["image2", "z.png"], ["image3", nil], ["image4", "test3.png"], ["updated_at", "2015-05-21 16:05:39.379741"], ["id", 1]]
+  [1m[35m (30.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 55ms (ActiveRecord: 32.0ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 18:05:39 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (7.0ms)
+  Rendered layouts/_navigation_links.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (2.4ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 102ms (Views: 93.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 18:05:39 +0200
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (3.5ms)
+  Rendered layouts/_navigation_links.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 146ms (Views: 100.8ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a4cbc7fe8b7ba2b30138251d2df434d86eda7c2ea7300c6c491caf9b2e42e491.css?body=1" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+
+
+Started GET "/assets/scaffolds.self-3b05be2867c6d379de0d7dc55e5bf78a5a55ef153a183f87b17dcb3efab243c6.css?body=1" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+
+
+Started GET "/assets/application.self-a27dc19563f73ad9a2cd18b5d8a527157ddab847c405c84e39554b49b455b7e4.js?body=1" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+
+
+Started GET "/assets/fotorama-b94efaf1044e2ba8fc2fb41f5ab2022410086fe50b729b8c95321573b88e8a78.png" for 127.0.0.1 at 2015-05-21 18:06:26 +0200
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2015-05-21 18:07:23 +0200
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered articles/_form.html.haml (11.2ms)
+  Rendered articles/edit.html.haml within layouts/application (12.5ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 82ms (Views: 78.7ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/articles/1" for 127.0.0.1 at 2015-05-21 18:08:10 +0200
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/OD6cBFw/ZvvLfP/TqpJPXKApU5Uq8fxtkInFBxyiLcRZnRQusHctI2YBAqKKBu9jjOH39/oD5wwB9Tiqze+cw==", "article"=>{"title"=>"first", "body"=>"Homines enim eruditos et sobrios ut infaustos et inutiles vitant, eo quoque accedente quod et nomenclatores adsueti haec et talia venditare, mercede accepta lucris quosdam et prandiis inserunt subditicios ignobiles et obscuros.\r\nMetuentes igitur idem latrones Lycaoniam magna parte campestrem cum se inpares nostris fore congressione stataria documentis frequentibus scirent, tramitibus deviis petivere Pamphyliam diu quidem intactam sed timore populationum et caedium, milite per omnia diffuso propinqua, magnis undique praesidiis conmunitam.\r\nSaepissime igitur mihi de amicitia cogitanti maxime illud considerandum videri solet, utrum propter imbecillitatem atque inopiam desiderata sit amicitia, ut dandis recipiendisque meritis quod quisque minus per se ipse posset, id acciperet ab alio vicissimque redderet, an esset hoc quidem proprium amicitiae, sed antiquior et pulchrior et magis a natura ipsa profecta alia causa. Amor enim, ex quo amicitia nominata est, princeps est ad benevolentiam coniungendam. Nam utilitates quidem etiam ab iis percipiuntur saepe qui simulatione amicitiae coluntur et observantur temporis causa, in amicitia autem nihil fictum est, nihil simulatum et, quidquid est, id est verum et voluntarium.\r\nEmensis itaque difficultatibus multis et nive obrutis callibus plurimis ubi prope Rauracum ventum est ad supercilia fluminis Rheni, resistente multitudine Alamanna pontem suspendere navium conpage Romani vi nimia vetabantur ritu grandinis undique convolantibus telis, et cum id inpossibile videretur, imperator cogitationibus magnis attonitus, quid capesseret ambigebat.\r\nSed maximum est in amicitia parem esse inferiori. Saepe enim excellentiae quaedam sunt, qualis erat Scipionis in nostro, ut ita dicam, grege. Numquam se ille Philo, numquam Rupilio, numquam Mummio anteposuit, numquam inferioris ordinis amicis, Q. vero Maximum fratrem, egregium virum omnino, sibi nequaquam parem, quod is anteibat aetate, tamquam superiorem colebat suosque omnes per se posse esse ampliores volebat.\r\nConstituendi autem sunt qui sint in amicitia fines et quasi termini diligendi. De quibus tres video sententias ferri, quarum nullam probo, unam, ut eodem modo erga amicum adfecti simus, quo erga nosmet ipsos, alteram, ut nostra in amicos benevolentia illorum erga nos benevolentiae pariter aequaliterque respondeat, tertiam, ut, quanti quisque se ipse facit, tanti fiat ab amicis.\r\nEius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur fere trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae discessit.\r\nQuam quidem partem accusationis admiratus sum et moleste tuli potissimum esse Atratino datam. Neque enim decebat neque aetas illa postulabat neque, id quod animadvertere poteratis, pudor patiebatur optimi adulescentis in tali illum oratione versari. Vellem aliquis ex vobis robustioribus hunc male dicendi locum suscepisset; aliquanto liberius et fortius et magis more nostro refutaremus istam male dicendi licentiam. Tecum, Atratine, agam lenius, quod et pudor tuus moderatur orationi meae et meum erga te parentemque tuum beneficium tueri debeo.\r\nCuius acerbitati uxor grave accesserat incentivum, germanitate Augusti turgida supra modum, quam Hannibaliano regi fratris filio antehac Constantinus iunxerat pater, Megaera quaedam mortalis, inflammatrix saevientis adsidua, humani cruoris avida nihil mitius quam maritus; qui paulatim eruditiores facti processu temporis ad nocendum per clandestinos versutosque rumigerulos conpertis leviter addere quaedam male suetos falsa et placentia sibi discentes, adfectati regni vel artium nefandarum calumnias insontibus adfligebant.\r\nSed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis. Ergo ille cumulus dierum hominis est dignitati tributus.\r\nSed cautela nimia in peiores haeserat plagas, ut narrabimus postea, aemulis consarcinantibus insidias graves apud Constantium, cetera medium principem sed siquid auribus eius huius modi quivis infudisset ignotus, acerbum et inplacabilem et in hoc causarum titulo dissimilem sui.\r\nUnde Rufinus ea tempestate praefectus praetorio ad discrimen trusus est ultimum. ire enim ipse compellebatur ad militem, quem exagitabat inopia simul et feritas, et alioqui coalito more in ordinarias dignitates asperum semper et saevum, ut satisfaceret atque monstraret, quam ob causam annonae convectio sit impedita.\r\nIdeo urbs venerabilis post superbas efferatarum gentium cervices oppressas latasque leges fundamenta libertatis et retinacula sempiterna velut frugi parens et prudens et dives Caesaribus tamquam liberis suis regenda patrimonii iura permisit.\r\nVbi curarum abiectis ponderibus aliis tamquam nodum et codicem difficillimum Caesarem convellere nisu valido cogitabat, eique deliberanti cum proximis clandestinis conloquiis et nocturnis qua vi, quibusve commentis id fieret, antequam effundendis rebus pertinacius incumberet confidentia, acciri mollioribus scriptis per simulationem tractatus publici nimis urgentis eundem placuerat Gallum, ut auxilio destitutus sine ullo interiret obstaculo.\r\nNihil morati post haec militares avidi saepe turbarum adorti sunt Montium primum, qui divertebat in proximo, levi corpore senem atque morbosum, et hirsutis resticulis cruribus eius innexis divaricaturn sine spiramento ullo ad usque praetorium traxere praefecti.\r\n", "price"=>"2323.0", "image1_cache"=>"", "remove_image1"=>"0", "image2_cache"=>"", "remove_image2"=>"0", "image3_cache"=>"", "image4_cache"=>"", "remove_image4"=>"0"}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mArticle Load (1.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (1.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (18.2ms)[0m  UPDATE "articles" SET "body" = $1, "image1" = $2, "image2" = $3, "image4" = $4, "updated_at" = $5 WHERE "articles"."id" = $6  [["body", "Homines enim eruditos et sobrios ut infaustos et inutiles vitant, eo quoque accedente quod et nomenclatores adsueti haec et talia venditare, mercede accepta lucris quosdam et prandiis inserunt subditicios ignobiles et obscuros.\r\nMetuentes igitur idem latrones Lycaoniam magna parte campestrem cum se inpares nostris fore congressione stataria documentis frequentibus scirent, tramitibus deviis petivere Pamphyliam diu quidem intactam sed timore populationum et caedium, milite per omnia diffuso propinqua, magnis undique praesidiis conmunitam.\r\nSaepissime igitur mihi de amicitia cogitanti maxime illud considerandum videri solet, utrum propter imbecillitatem atque inopiam desiderata sit amicitia, ut dandis recipiendisque meritis quod quisque minus per se ipse posset, id acciperet ab alio vicissimque redderet, an esset hoc quidem proprium amicitiae, sed antiquior et pulchrior et magis a natura ipsa profecta alia causa. Amor enim, ex quo amicitia nominata est, princeps est ad benevolentiam coniungendam. Nam utilitates quidem etiam ab iis percipiuntur saepe qui simulatione amicitiae coluntur et observantur temporis causa, in amicitia autem nihil fictum est, nihil simulatum et, quidquid est, id est verum et voluntarium.\r\nEmensis itaque difficultatibus multis et nive obrutis callibus plurimis ubi prope Rauracum ventum est ad supercilia fluminis Rheni, resistente multitudine Alamanna pontem suspendere navium conpage Romani vi nimia vetabantur ritu grandinis undique convolantibus telis, et cum id inpossibile videretur, imperator cogitationibus magnis attonitus, quid capesseret ambigebat.\r\nSed maximum est in amicitia parem esse inferiori. Saepe enim excellentiae quaedam sunt, qualis erat Scipionis in nostro, ut ita dicam, grege. Numquam se ille Philo, numquam Rupilio, numquam Mummio anteposuit, numquam inferioris ordinis amicis, Q. vero Maximum fratrem, egregium virum omnino, sibi nequaquam parem, quod is anteibat aetate, tamquam superiorem colebat suosque omnes per se posse esse ampliores volebat.\r\nConstituendi autem sunt qui sint in amicitia fines et quasi termini diligendi. De quibus tres video sententias ferri, quarum nullam probo, unam, ut eodem modo erga amicum adfecti simus, quo erga nosmet ipsos, alteram, ut nostra in amicos benevolentia illorum erga nos benevolentiae pariter aequaliterque respondeat, tertiam, ut, quanti quisque se ipse facit, tanti fiat ab amicis.\r\nEius populus ab incunabulis primis ad usque pueritiae tempus extremum, quod annis circumcluditur fere trecentis, circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae discessit.\r\nQuam quidem partem accusationis admiratus sum et moleste tuli potissimum esse Atratino datam. Neque enim decebat neque aetas illa postulabat neque, id quod animadvertere poteratis, pudor patiebatur optimi adulescentis in tali illum oratione versari. Vellem aliquis ex vobis robustioribus hunc male dicendi locum suscepisset; aliquanto liberius et fortius et magis more nostro refutaremus istam male dicendi licentiam. Tecum, Atratine, agam lenius, quod et pudor tuus moderatur orationi meae et meum erga te parentemque tuum beneficium tueri debeo.\r\nCuius acerbitati uxor grave accesserat incentivum, germanitate Augusti turgida supra modum, quam Hannibaliano regi fratris filio antehac Constantinus iunxerat pater, Megaera quaedam mortalis, inflammatrix saevientis adsidua, humani cruoris avida nihil mitius quam maritus; qui paulatim eruditiores facti processu temporis ad nocendum per clandestinos versutosque rumigerulos conpertis leviter addere quaedam male suetos falsa et placentia sibi discentes, adfectati regni vel artium nefandarum calumnias insontibus adfligebant.\r\nSed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis. Ergo ille cumulus dierum hominis est dignitati tributus.\r\nSed cautela nimia in peiores haeserat plagas, ut narrabimus postea, aemulis consarcinantibus insidias graves apud Constantium, cetera medium principem sed siquid auribus eius huius modi quivis infudisset ignotus, acerbum et inplacabilem et in hoc causarum titulo dissimilem sui.\r\nUnde Rufinus ea tempestate praefectus praetorio ad discrimen trusus est ultimum. ire enim ipse compellebatur ad militem, quem exagitabat inopia simul et feritas, et alioqui coalito more in ordinarias dignitates asperum semper et saevum, ut satisfaceret atque monstraret, quam ob causam annonae convectio sit impedita.\r\nIdeo urbs venerabilis post superbas efferatarum gentium cervices oppressas latasque leges fundamenta libertatis et retinacula sempiterna velut frugi parens et prudens et dives Caesaribus tamquam liberis suis regenda patrimonii iura permisit.\r\nVbi curarum abiectis ponderibus aliis tamquam nodum et codicem difficillimum Caesarem convellere nisu valido cogitabat, eique deliberanti cum proximis clandestinis conloquiis et nocturnis qua vi, quibusve commentis id fieret, antequam effundendis rebus pertinacius incumberet confidentia, acciri mollioribus scriptis per simulationem tractatus publici nimis urgentis eundem placuerat Gallum, ut auxilio destitutus sine ullo interiret obstaculo.\r\nNihil morati post haec militares avidi saepe turbarum adorti sunt Montium primum, qui divertebat in proximo, levi corpore senem atque morbosum, et hirsutis resticulis cruribus eius innexis divaricaturn sine spiramento ullo ad usque praetorium traxere praefecti.\r\n"], ["image1", "Shin_colored_portrait.png"], ["image2", "z.png"], ["image4", "test3.png"], ["updated_at", "2015-05-21 16:08:10.476358"], ["id", 1]]
+  [1m[36m (32.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 71ms (ActiveRecord: 54.4ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2015-05-21 18:08:10 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered articles/show.html.haml within layouts/application (7.2ms)
+  Rendered layouts/_navigation_links.html.haml (0.4ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 93ms (Views: 88.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-21 18:08:10 +0200

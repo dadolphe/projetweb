@@ -11,10 +11,11 @@
   = @article.price
 %p
   %b Images:
-  = image_tag @article.image1_url :medium if @article.image1_url
-  = image_tag @article.image2_url :medium if @article.image2_url
-  = image_tag @article.image3_url :medium if @article.image3_url
-  = image_tag @article.image4_url :medium if @article.image4_url
+  .fotorama
+    = image_tag @article.image1_url :big if @article.image1_url
+    = image_tag @article.image2_url :big if @article.image2_url
+    = image_tag @article.image3_url :big if @article.image3_url
+    = image_tag @article.image4_url :big if @article.image4_url
 %p
   %b Auteur: 
   = @auteur.name 
@@ -26,7 +27,6 @@
   Il y a 
   = Time.now.day.to_i - @article.updated_at.day
   jours.	
-%p
 =======================
 %p 
   - if @pas_lauteur
