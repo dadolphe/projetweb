@@ -8,7 +8,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :firstname
       t.integer :promo
       t.string :mail
-      t.integer :phonenumber
+      t.bigint :phonenumber
       t.string :avatar
 
       ## Recoverable
