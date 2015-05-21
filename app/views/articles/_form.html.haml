@@ -1,19 +1,19 @@
 = form_for @article do |f|
   - if @article.errors.any?
     #error_explanation
-      %h2= "#{pluralize(@article.errors.count, "error")} prohibited this article from being saved:"
+      %h2= "#{pluralize(@article.errors.count, "error")}, ce qui empêche de sauvegarder l'article:"
       %ul
         - @article.errors.full_messages.each do |msg|
           %li= msg
 
   .field
-    = f.label :title
+    = f.label :Titre
     = f.text_field :title
   .field
-    = f.label :body
+    = f.label :Description
     = f.text_area :body
   .field
-    = f.label :price
+    = f.label :Prix
     = f.text_field :price
   .field
     = f.label :Images

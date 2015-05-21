@@ -1,7 +1,8 @@
 class UserMailer < ApplicationMailer
-	def report_email(user,annonce)
+	def report_email(user,annonce,auteur)
 		@user = user
-		
+		@name = auteur.name	
+		@firstname = auteur.firstname
 		@annonce = annonce
 		temp = liste_admins
 		if temp && temp.to_s != ""

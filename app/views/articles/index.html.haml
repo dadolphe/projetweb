@@ -2,14 +2,14 @@
 %p
   = link_to 'Users:', users_path
   = User.count
-  registered
+  enregistrées
   
-%h2 Liste des offres
+%h2 Liste des annonces
 
 %table
   %thead
     %tr
-      %th Titre des offres
+      %th Titre des annonces
       %th
       %th
       %th
@@ -18,10 +18,10 @@
     - @articles.each do |article|
       %tr
         %td= article.title
-        %td= link_to 'Show', article
-        %td= link_to 'Edit', edit_article_path(article)
-        %td= link_to 'Destroy', article, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to 'Afficher', article
+        %td= link_to 'Modifier', edit_article_path(article)
+        %td= link_to 'Supprimer', article, :method => :delete, :data => { :confirm => 'Etes vous sûr?' }
 
 %br
   = will_paginate @articles
-= link_to 'New Article', new_article_path
+= link_to 'Nouveau article', new_article_path

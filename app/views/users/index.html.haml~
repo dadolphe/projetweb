@@ -1,6 +1,6 @@
 .container
   .row
-    %h3 Utilisateurs
+    %h3 Users
     .column
       %table.table
         %tbody

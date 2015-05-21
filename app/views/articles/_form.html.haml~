@@ -1,19 +1,19 @@
 = form_for @article do |f|
   - if @article.errors.any?
     #error_explanation
-      %h2= "#{pluralize(@article.errors.count, "error")} prohibited this article from being saved:"
+      %h2= "#{pluralize(@article.errors.count, "error")}, ce qui empêche de sauvegarder l'article:"
       %ul
         - @article.errors.full_messages.each do |msg|
           %li= msg
 
   .field
-    = f.label :title
+    = f.label :Titre
     = f.text_field :title
   .field
-    = f.label :body
+    = f.label :Description
     = f.text_area :body
   .field
-    = f.label :price
+    = f.label :Prix
     = f.text_field :price
   .field
     = f.label :Images
@@ -39,7 +39,7 @@
     %br/
     %br/
     = f.file_field :image4
-    = f.hidden_field :image1_cache
+    = f.hidden_field :image4_cache
     = f.check_box :remove_image4 if @article.image4_url
     = "supprimer l'image" if @article.image4_url
     = image_tag @article.image4_url :small

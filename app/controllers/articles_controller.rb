@@ -44,9 +44,10 @@ class ArticlesController < ApplicationController
   def report
 	user = current_user
 	nomarticle = @article.title
+	auteur = User.find(@article.user_id)
 	flash[:alert] = "Merci du signalement."
 	redirect_to root_url
-	UserMailer.report_email(user,nomarticle).deliver_now
+	UserMailer.report_email(user,nomarticle,auteur).deliver_now
   end
 
   # POST /articles

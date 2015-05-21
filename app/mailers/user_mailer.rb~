@@ -1,11 +1,12 @@
 class UserMailer < ApplicationMailer
-	def report_email(user,annonce)
+	def report_email(user,annonce,auteur)
 		@user = user
-		
+		@name = auteur.name	
+		@firstname = auteur.firstn
 		@annonce = annonce
 		temp = liste_admins
 		if temp && temp.to_s != ""
-			mail(bcc: temp", subject: '[ensiieboncoin]Annonce abusive ')
+			mail(bcc: temp, subject: '[ensiieboncoin]Annonce abusive ')
 		end
 		
 	end

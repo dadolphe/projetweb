@@ -25,7 +25,7 @@
   = @article.created_at.to_formatted_s(:long_ordinal)
 
 %p
-  %b Derniere update :
+  %b Dernière mise à jour :
   Il y a
   = ((Time.now - @article.updated_at) / 86400).to_i
   jours.
@@ -35,7 +35,7 @@
 %p 
   - if @pas_lauteur
     %b Signaler l'annonce comme étant abusive:
-    = button_to "Send Email", report_article_path(@article)
+    = button_to "Send Email", report_article_path(@article), :data => { :confirm => 'Etes vous sûr?' }
 
 
 = link_to 'Edit', edit_article_path(@article)

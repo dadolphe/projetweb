@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
   # GET /articles.json
   def index
     #beforepaginate @articles = Article.all
-    @articles = Article.order('created_at DESC').paginate(:page => params[:page], :per_page => 12)
+    @articles = Article.order('created_at DESC').paginate(:page => params[:page], :per_page => 8)
 	
   end
 
@@ -44,9 +44,10 @@ class ArticlesController < ApplicationController
   def report
 	user = current_user
 	nomarticle = @article.title
+	auteur = User.find(@article.user_id)
 	flash[:alert] = "Merci du signalement."
 	redirect_to root_url
-	UserMailer.report_email(user,nomarticle).deliver_now
+	UserMailer.report_email(user,nomarticle,auteur).deliver_now
   end
 
   # POST /articles

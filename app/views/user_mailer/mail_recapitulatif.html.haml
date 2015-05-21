@@ -9,7 +9,7 @@
       Voici les articles de la semaine :
       %br/
       - @articles.each do |article|
-        - if ( Time.now.day.to_i - article.updated_at.day > 6 ) || ( Time.now.day.to_i - article.created_at.day > 6)
+        - if ( ((Time.now - article.updated_at) / 86400)).to_i ) > 6  || ( Time.now.day.to_i - article.created_at.day > 6)
           Titre: #{article.title}
           %br/
           Contenu: #{article.body}
