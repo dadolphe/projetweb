@@ -1,14 +1,14 @@
 %h3 User
 %p
-  Prénom: #{@user.firstname if @user.firstname}
+  Prénom: #{@user.firstname if (@user && @user.firstname)}
 %p
-  Nom: #{@user.name if @user.name}
+  Nom: #{@user.name if (@user && @user.name)}
 %p
-  Promotion: #{@user.promo if @user.promo}
+  Promotion: #{@user.promo if (@user && @user.promo)}
 %p
-  Email: #{@user.email if @user.email}
+  Email: #{@user.email if (@user && @user.email)}
 %p
-  Numéro de téléphone: #{@user.phonenumber if @user.phonenumber}
+  Numéro de téléphone: #{@user.phonenumber if (@user && @user.phonenumber)}
 %p
   Avatar:
   - unless current_user.avatar_url.nil?

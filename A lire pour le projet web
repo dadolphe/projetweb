@@ -44,7 +44,7 @@ change port production.rb de 5000 à 3000 /!\ mail
 = @article.report(current_user,@article.title)
 pourquoi y a new et create dans articles_controller.rb, wut?
 
-
+enlever @user de user controller dans show... vu que ca servait à rien il semblerait
 ensiieboncoin@gmail.com
 
 mdp(#thibault): J

@@ -1,0 +1,51 @@
+->Créer un utilisateur postgresql ayant (ou alors adapter les fichiers pour accéder à la database):
+nom: master
+mot de passe: master
+faire dans le terminal pour la variable ENV['TESTPRO_DATABASE_PASSWORD'](car le mot de passe est pas en clair dans le fichier database.yml):  export TESTPRO_DATABASE_PASSWORD=master
+
+->Lancer rake db:drop db:create db:migrate db:seed pour la database
+
+->Pour l'envoie des mails, pour régler la variable de mot de passe du compte mail du site ENV['PASSMAILSITE'], écrire :
+export PASSMAILSITE=Japan6700 
+et peut-être export $PASSMAILSITE=Japan6700
+Si jamais le problème de mail persiste, lancer le serveur rails depuis le terminal où la commande a été écrite, modifier directement le mot de passe dans les fichiers pour mettre Japan6700
+
+->Pour avoir les mails périodiques :
+whenever --update-cron mail_recapitulatif
+crontab -e puis changer production en development (car on est en mode dévelopment, sinon l'envoie de mail périodique ne fonctionne pas)
+sudo service cron restart
+crontab -l pour voir que le changement a bien été fait
+Pour tester facilement les mails périodiques, on peut forcer l'envoie du mail en copiant collant la commande de crontab -l
+
+->voir les seeds situés dans db/ pour voir les emails ainsi que leur mot de passe
+
+->Pour afficher les messages d'erreur (par exemple voir le message d'erreur lorsqu'on entre une adresse qui n'existe pas), dans development.rb du dossier config/environments:
+config.consider_all_requests_local       = true
+
+
+
+
+----------------
+si les users peuvent pas se troll, voir si les adresse mail recoivent le mail (mathieu@yopmail.com, test@yopmail.com)
+voir si periodique envoie juste ceux de 7j, verifier aucun oublie de trad
+
+
+ATTENTION agrandir case description par exemple
+
+
+
+BLABLA:
+article supprimé si user delete ( a montrer : D)
+erreur si pas de page trouvé (mauvais lien), montré :D
+(cf http://easyactiverecord.com/blog/2014/08/19/redirecting-to-custom-404-and-500-pages-in-rails/ pour revert setting sinon, jai mis ca meme en mode development, donc pas de message derreur mais genre 500 ou 404.. ou autre) >> faire true pour   config.consider_all_requests_local       = false de development.rb ds environment
+attention y a le mdp sur git...trololo
+service admin : wtf is dat shit
+change port production.rb de 5000 à 3000 /!\ mail
+= @article.report(current_user,@article.title)
+pourquoi y a new et create dans articles_controller.rb, wut?
+
+
+ensiieboncoin@gmail.com
+
+mdp(#thibault): J
+info port : 6700
