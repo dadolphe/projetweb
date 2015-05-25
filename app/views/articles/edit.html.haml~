@@ -1,4 +1,4 @@
-%h1 Modifier un article	
+%h5 Modifier un article	
 
 = render 'form'
 
