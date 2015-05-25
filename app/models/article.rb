@@ -1,6 +1,7 @@
 class Article < ActiveRecord::Base
 	belongs_to :user
 	validates :title, presence: true
+	validates_length_of :title, maximum: 30
 	validates :body, presence: true
 	validates :price, presence: true
 	validates :price, numericality: true
