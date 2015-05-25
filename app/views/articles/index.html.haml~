@@ -1,8 +1,4 @@
 %h1 Bienvenue dans le bon coin de l'ENSIIE
-%p
-  = link_to 'Users:', users_path
-  = User.count
-  enregistrées
   
 %h2 Liste des annonces
 
@@ -25,3 +21,8 @@
 %br
   = will_paginate @articles
 = link_to 'Nouveau article', new_article_path
+
+%p
+  = link_to 'Users:', users_path
+  = User.count
+  enregistrées
