@@ -44,8 +44,20 @@ change port production.rb de 5000 à 3000 /!\ mail
 = @article.report(current_user,@article.title)
 pourquoi y a new et create dans articles_controller.rb, wut?
 
-
+enlever @user de user controller dans show... vu que ca servait à rien il semblerait
 ensiieboncoin@gmail.com
 
 mdp(#thibault): J
 info port : 6700
+
+
+------
+irb
+require 'securerandom'
+SecureRandom.hex(64)
+export SECRET_KEY_BASE=clegenerepar securerandom
+------
+bin/rake assets:precompile
+export RAILS_ENV=production
+bin/rake assets:precompile CRASH
+et deconnecter  crash aussi lorsque je lance en prod, mais pas en development. WUT
