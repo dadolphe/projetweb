@@ -39,7 +39,7 @@ article supprimé si user delete ( a montrer : D)
 erreur si pas de page trouvé (mauvais lien), montré :D
 (cf http://easyactiverecord.com/blog/2014/08/19/redirecting-to-custom-404-and-500-pages-in-rails/ pour revert setting sinon, jai mis ca meme en mode development, donc pas de message derreur mais genre 500 ou 404.. ou autre) >> faire true pour   config.consider_all_requests_local       = false de development.rb ds environment enfin non c'est true
 attention y a le mdp sur git...trololo
-service admin : wtf is dat shit
+service admin : wut is dat
 change port production.rb de 5000 à 3000 /!\ mail
 = @article.report(current_user,@article.title)
 pourquoi y a new et create dans articles_controller.rb, wut?

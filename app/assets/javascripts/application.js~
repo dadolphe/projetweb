@@ -16,7 +16,6 @@
 //= require_tree .
 
 
-#= require fotorama
 
 def upload
   uploaded_io = params[:person][:picture]
