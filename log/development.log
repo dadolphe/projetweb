@@ -70,3 +70,173 @@ Processing by ArticlesController#index as HTML
   Rendered layouts/_navigation.html.haml (7.1ms)
   Rendered layouts/_messages.html.haml (1.8ms)
 Completed 200 OK in 111ms (Views: 109.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-25 14:32:29 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (1.0ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY created_at DESC LIMIT 8 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (46.2ms)
+  Rendered layouts/_navigation_links.html.haml (7.9ms)
+  Rendered layouts/_navigation.html.haml (14.0ms)
+  Rendered layouts/_messages.html.haml (2.8ms)
+Completed 200 OK in 677ms (Views: 646.4ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-25 14:32:30 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY created_at DESC LIMIT 8 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (11.4ms)
+  Rendered layouts/_navigation_links.html.haml (0.8ms)
+  Rendered layouts/_navigation.html.haml (1.8ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 143ms (Views: 132.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-25 14:32:30 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a95b891a232548d5e9d63b51f6f9fb97511e9b68e7a5a0bc10a1d224517530a8.css?body=1" for 127.0.0.1 at 2015-05-25 14:32:30 +0200
+
+
+Started GET "/assets/scaffolds.self-f839c74d1d4d4441f1039a4ed54085a4f852bb8b1a3586bf1634030451d63759.css?body=1" for 127.0.0.1 at 2015-05-25 14:32:30 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-25 14:32:30 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-25 14:32:30 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-25 14:32:30 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-25 14:32:30 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-25 14:32:30 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-25 14:32:30 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-25 14:32:30 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-05-25 14:32:30 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-25 14:32:30 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-25 14:32:30 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-25 14:32:30 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-25 14:32:30 +0200
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2015-05-25 14:32:32 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY created_at DESC LIMIT 8 OFFSET 8[0m
+  Rendered articles/index.html.haml within layouts/application (11.0ms)
+  Rendered layouts/_navigation_links.html.haml (2.2ms)
+  Rendered layouts/_navigation.html.haml (5.6ms)
+  Rendered layouts/_messages.html.haml (1.7ms)
+Completed 200 OK in 93ms (Views: 91.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2015-05-25 14:32:33 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.9ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY created_at DESC LIMIT 8 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (9.3ms)
+  Rendered layouts/_navigation_links.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (1.8ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 95ms (Views: 91.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2015-05-25 14:32:35 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY created_at DESC LIMIT 8 OFFSET 8
+  Rendered articles/index.html.haml within layouts/application (4.0ms)
+  Rendered layouts/_navigation_links.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (1.5ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 80ms (Views: 78.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-05-25 14:32:37 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (3.0ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (18.1ms)
+  Rendered layouts/_navigation_links.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 107ms (Views: 89.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-05-25 14:32:40 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2lTtI1nHa+KtOkRhwhM0+53q3qk6Z0nTizoP2A8xqExgqrN6nfFe7/cO6NhjYq8OdyCt5ILKvwxq5iKZCf9/Tw==", "user"=>{"email"=>"test@yopmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Se connecter"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "test@yopmail.com"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2015-05-25 12:19:26.524388"], ["current_sign_in_at", "2015-05-25 12:32:40.408909"], ["sign_in_count", 10], ["updated_at", "2015-05-25 12:32:40.410145"], ["id", 3]]
+  [1m[35m (75.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 202ms (ActiveRecord: 77.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-25 14:32:40 +0200
+Processing by ArticlesController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY created_at DESC LIMIT 8 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  Rendered articles/index.html.haml within layouts/application (7.7ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered layouts/_navigation_links.html.haml (2.3ms)
+  Rendered layouts/_navigation.html.haml (3.1ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+Completed 200 OK in 80ms (Views: 77.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-25 14:32:40 +0200
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2015-05-25 14:32:49 +0200
+Processing by ArticlesController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY created_at DESC LIMIT 8 OFFSET 8
+  Rendered articles/index.html.haml within layouts/application (4.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_navigation_links.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (3.0ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 79ms (Views: 77.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-25 14:32:52 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles"  ORDER BY created_at DESC LIMIT 8 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "articles"
+  Rendered articles/index.html.haml within layouts/application (8.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_navigation_links.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (2.9ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 80ms (Views: 77.7ms | ActiveRecord: 1.5ms)
