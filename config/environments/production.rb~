@@ -85,7 +85,7 @@ Rails.application.configure do
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: "ensiieboncoin@gmail.com",
-    password: ENV['TESTPRO_DATABASE_PASSWORD']
+    password: ENV['PASSMAILSITE']
     #domain: Rails.application.secrets.domain_name,
     #user_name: Rails.application.secrets.email_provider_username,
     #password: Rails.application.secrets.email_provider_password
