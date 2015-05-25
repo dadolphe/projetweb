@@ -1,0 +1,4 @@
+TESTPRO_DATABASE_PASSWORD=master
+export TESTPRO_DATABASE_PASSWORD
+echo $TESTPRO_DATABASE_PASSWORD
+rake db:drop db:create db:migrate
