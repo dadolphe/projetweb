@@ -1,4 +1,5 @@
 Projet réalisé par Adolphe Dylan et Mathieu Bergnes
+Déployé sur https://guarded-sea-3816.herokuapp.com/
 
 ------------Probleme lors du lancement du site (variable ou autre)----------
 Probleme de lecture->Créer un utilisateur postgresql ayant (ou alors adapter les fichiers pour accéder à la database):
@@ -47,13 +48,3 @@ depuis le site)
 mais il faut valider son compte par les informations de sa cb) au lieu de cron.
 
 ------------
-
-
-si les users peuvent pas se troll, voir si les adresse mail recoivent le mail (mathieu@yopmail.com, test@yopmail.com)
-voir si periodique envoie juste ceux de 7j, verifier aucun oublie de trad
-
-
-service admin : wut is dat
-
-------
-------
