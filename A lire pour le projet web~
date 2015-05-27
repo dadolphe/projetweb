@@ -15,9 +15,8 @@ Si jamais le problème de mail persiste, lancer le serveur rails depuis le termi
 
 ->Pour avoir les mails périodiques :
 whenever --update-cron mail_recapitulatif
-crontab -e puis changer production en development (car on est en mode dévelopment, sinon l'envoie de mail périodique ne fonctionne pas)
-sudo service cron restart
 crontab -l pour voir que le changement a bien été fait
+sudo service cron restart
 Pour tester facilement les mails périodiques, on peut forcer l'envoie du mail en copiant collant la commande de crontab -l
 
 
@@ -58,5 +57,3 @@ service admin : wut is dat
 
 ------
 ------
-bin/rake assets:precompile
-export RAILS_ENV=production
