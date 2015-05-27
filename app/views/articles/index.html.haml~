@@ -15,7 +15,7 @@
       %tr
         %td= article.title
         %td= link_to 'Afficher', article
-        %td= link_to 'Modifier', edit_article_path(article) if User.find(article.user_id) == current_user
+        %td= link_to 'Modifier', edit_article_path(article) if User.find(article.user_id) == current_user || current_user.admin
         %td= link_to 'Supprimer', article, :method => :delete, :data => { :confirm => 'Etes vous sûr?' } if User.find(article.user_id) == current_user
 %br
   = will_paginate @articles
