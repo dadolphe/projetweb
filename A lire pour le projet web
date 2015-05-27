@@ -28,6 +28,12 @@ SecureRandom.hex(64)
 Ecrire ça dans le terminal
 export SECRET_KEY_BASE=clegenerepar securerandom
 
+->Si probleme à cause de carrierwave(refit ou resize fait crash, on l'avait installé il y a longtemps
+mais on a oublié lesquels paquets exactement c'étaient)
+sudo apt-get install imagemagick libmagickwand-dev
+et peut-être sudo apt-get install graphicsmagick-libmagick-dev-compat
+ou peut-être 
+sudo apt-get install libmagickwand-dev libmagickcore-dev libmagickcore4-extra libgraphviz-dev libgvc5
 ----------------
 
 -----------Remarques:
