@@ -1,4 +1,4 @@
-%h2
+%h3
   Edit #{resource_name.to_s.humanize}
 = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
   = devise_error_messages!
@@ -48,7 +48,7 @@
     = f.password_field :current_password, autocomplete: "off"
   .actions
     = f.submit "Mettre à jour"
-%h3 Supprimer son compte
+%h2 Supprimer son compte
 %p
   #{button_to "Supprimer son compte", registration_path(resource_name), data: { confirm: "Etes vous sûr?" }, method: :delete}
 = link_to "Back", :back
