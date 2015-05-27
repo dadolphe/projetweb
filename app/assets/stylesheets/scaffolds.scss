@@ -1,5 +1,4 @@
 /* line 1, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
-
 @font-face {
   font-family: 'Aldo';
   src: url(/assets/Aldo/Aldo_Open-7ca0413c891ba8fcf618927256d8f6cab483d8e9b49c31f46ce24f61d8e4ec1f.otf);
@@ -11,61 +10,111 @@
   font-weight: normal;
   font-style: normal;
 }
-
-
+/* line 17, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 15, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 16, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 body {
   background-image: url(./fd1.jpg);
   color: #008080;
   font-family: sf_archery_blackregular,verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-} 
- tbody td a{
-   padding-left: 10px;
- }
-.pagination{
+}
+
+/* line 24, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 24, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 26, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+tbody td a {
+  padding-left: 10px;
+}
+
+/* line 27, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 29, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 32, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+.pagination {
   position: relative;
   left: 60px;
 }
-main p{
+
+/* line 31, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 35, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 39, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+main p {
   position: relative;
   top: 10px;
 }
 
+/* line 36, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 41, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 46, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 main h1 {
   font-family: Aldo,sf_archery_blackregular,verdana, arial, helvetica, sans-serif;
   text-align: center;
   color: #fff;
 }
 
+/* line 47, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 53, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+main h2 {
+  font-size: 1.5em;
+}
+
+/* line 42, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 52, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 59, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 main h3 {
   font-family: Aldo,sf_archery_blackregular,verdana, arial, helvetica, sans-serif;
   text-align: center;
   color: #fff;
+  font-size: 3em;
 }
 
+/* line 66, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+main .row {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+/* line 74, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+main .container {
+  display: inline;
+}
+
+/* line 48, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 60, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 81, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 main input {
   color: #008080;
 }
 
-
+/* line 53, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 65, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 87, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 main textarea {
   color: #008080;
 }
 
-
+/* line 58, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 70, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 93, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 a:hover {
   color: #008080;
 }
 
-
+/* line 63, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 75, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 99, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 main a {
   color: #008080;
   position: relative;
-  padding-right: 10px;
 }
 
-
+/* line 70, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 82, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 107, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 main {
   border: #008080 solid 5px;
   margin: 0px;
@@ -77,47 +126,72 @@ main {
   margin-left: 25%;
 }
 
-
+/* line 82, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 94, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 120, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 p, ol, ul, td {
   font-family: sf_archery_blackregular,verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
+/* line 88, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 101, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 128, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 pre {
   background-color: #fff;
   padding: 10px;
   font-size: 11px;
 }
 
-
+/* line 95, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 108, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 136, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 a {
   color: #000;
 }
 
+/* line 99, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 113, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 142, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 a:visited {
   color: #666;
 }
 
+/* line 103, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 118, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 148, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 a:hover {
   color: #fff;
   background-color: #000;
 }
 
+/* line 108, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 124, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 155, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 div.field, div.actions {
   margin-bottom: 10px;
 }
 
+/* line 112, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 129, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 161, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 #notice {
   color: green;
 }
 
+/* line 116, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 134, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 167, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 .field_with_errors {
   padding: 2px;
   background-color: red;
   display: table;
 }
 
+/* line 122, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 141, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 175, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 #error_explanation {
   width: 450px;
   border: 2px solid red;
@@ -127,7 +201,9 @@ div.field, div.actions {
   background-color: #f0f0f0;
 }
 
-
+/* line 132, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 151, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 186, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 #error_explanation h2 {
   text-align: left;
   font-weight: bold;
@@ -139,6 +215,9 @@ div.field, div.actions {
   color: #fff;
 }
 
+/* line 143, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 163, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
+/* line 199, /home/dadolphe/projetweb/app/assets/stylesheets/scaffolds.scss */
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;

@@ -1,8 +1,9 @@
 .container
   .row
-    %h3 Utilisateurs
     .column
       %table.table
+        %thead
+          %h3 Utilisateurs
         %tbody
           - @users.each do |user|
             %tr
