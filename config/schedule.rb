@@ -19,6 +19,6 @@
 
 # Learn more: http://github.com/javan/whenever
 #7.days
-every 1.minutes do
+every 2.minutes do
 	runner "Periodictask.mail_recapitulatif"
 end
