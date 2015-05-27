@@ -574,3 +574,150 @@ Completed 200 OK in 118ms (Views: 113.7ms | ActiveRecord: 2.7ms)
 
 
 Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-27 19:03:50 +0200
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (3.2ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 90.1ms
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered user_mailer/mail_recapitulatif.html.haml within layouts/mailer (14.8ms)
+  Rendered user_mailer/mail_recapitulatif.text.haml within layouts/mailer (2.3ms)
+
+UserMailer#mail_recapitulatif: processed outbound mail in 255.6ms
+
+Sent mail to  (4351.2ms)
+Date: Wed, 27 May 2015 19:25:46 +0200
+From: from@example.com
+Message-ID: <5565fe1aa79d9_1130f0f988298bb@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Recapitulatif des annonces
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5565fe1aa5e14_1130f0f9882973f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5565fe1aa5e14_1130f0f9882973f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Bonjour,
+<br>
+Voici les articles de la semaine :
+<br>
+Titre: FirstArticle
+<br>
+Contenu:  Je suis dans le corps de llarticle
+<br>
+Prix: 500.0
+<br>
+<br>
+Titre: Omni
+<br>
+Contenu:  Surrender to the Omniscience.
+<br>
+Prix: 6000.0
+<br>
+<br>
+Titre: LeSecond
+<br>
+Contenu:   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at quam sodales, egestas dolor nec, efficitur ipsum. Nulla eget urna sagittis, pulvinar leo in, aliquet nulla. Quisque posuere massa nunc, luctus eleifend dolor mattis ut. Pellentesque vestibulum magna lorem, vitae commodo ex rhoncus id. Nunc placerat interdum gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vitae efficitur purus. Vestibulum a consectetur eros. Morbi ullamcorper ex quis ex tincidunt, in suscipit lectus cursus. Proin a laoreet purus. Donec dapibus sem sed vulputate venenatis. Aliquam scelerisque fermentum diam, semper commodo erat commodo sed. Phasellus vulputate dapibus tempus. Nunc ac faucibus diam. Donec ullamcorper vitae libero ut efficitur.
+
+Ut arcu risus, tempor non convallis a, dignissim vitae turpis. Morbi euismod nunc vel pharetra sodales. Praesent vel varius tortor, sit amet pretium velit. Ut eu tempor risus, vitae semper libero. Nam nisl eros, fringilla nec egestas ut, lacinia id ex. Integer convallis quis erat in gravida. Nunc ac urna vitae leo fringilla gravida eget lacinia dolor. Suspendisse faucibus varius odio, id condimentum ante feugiat rutrum. Nullam vitae sem ac risus consectetur gravida. Aenean eu magna nulla. Sed posuere eget tellus vitae convallis.
+<br>
+Prix: 30.0
+<br>
+<br>
+Titre: The truth
+<br>
+Contenu:  Doto is doto, agar is agar.
+<br>
+Prix: 1500.0
+<br>
+<br>
+Titre: Japan
+<br>
+Contenu:  Japan and cafe are great.
+<br>
+Prix: 7777.0
+<br>
+<br>
+Titre: Lesh
+<br>
+Contenu:  A thousand of your kind have fallen before me.
+<br>
+Prix: 8000.0
+<br>
+<br>
+
+----==_mimepart_5565fe1aa5e14_1130f0f9882973f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+      </head>
+      <body>
+        <p>
+          Bonjour,
+          <br>
+          Voici les articles de la semaine :
+          <br>
+          Titre: FirstArticle
+          <br>
+          Contenu: Je suis dans le corps de llarticle
+          <br>
+          Prix: 500.0
+          <br>
+          <br>
+          Titre: Omni
+          <br>
+          Contenu: Surrender to the Omniscience.
+          <br>
+          Prix: 6000.0
+          <br>
+          <br>
+          Titre: LeSecond
+          <br>
+          Contenu:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at quam sodales, egestas dolor nec, efficitur ipsum. Nulla eget urna sagittis, pulvinar leo in, aliquet nulla. Quisque posuere massa nunc, luctus eleifend dolor mattis ut. Pellentesque vestibulum magna lorem, vitae commodo ex rhoncus id. Nunc placerat interdum gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vitae efficitur purus. Vestibulum a consectetur eros. Morbi ullamcorper ex quis ex tincidunt, in suscipit lectus cursus. Proin a laoreet purus. Donec dapibus sem sed vulputate venenatis. Aliquam scelerisque fermentum diam, semper commodo erat commodo sed. Phasellus vulputate dapibus tempus. Nunc ac faucibus diam. Donec ullamcorper vitae libero ut efficitur.
+          
+          Ut arcu risus, tempor non convallis a, dignissim vitae turpis. Morbi euismod nunc vel pharetra sodales. Praesent vel varius tortor, sit amet pretium velit. Ut eu tempor risus, vitae semper libero. Nam nisl eros, fringilla nec egestas ut, lacinia id ex. Integer convallis quis erat in gravida. Nunc ac urna vitae leo fringilla gravida eget lacinia dolor. Suspendisse faucibus varius odio, id condimentum ante feugiat rutrum. Nullam vitae sem ac risus consectetur gravida. Aenean eu magna nulla. Sed posuere eget tellus vitae convallis.
+          <br>
+          Prix: 30.0
+          <br>
+          <br>
+          Titre: The truth
+          <br>
+          Contenu: Doto is doto, agar is agar.
+          <br>
+          Prix: 1500.0
+          <br>
+          <br>
+          Titre: Japan
+          <br>
+          Contenu: Japan and cafe are great.
+          <br>
+          Prix: 7777.0
+          <br>
+          <br>
+          Titre: Lesh
+          <br>
+          Contenu: A thousand of your kind have fallen before me.
+          <br>
+          Prix: 8000.0
+          <br>
+          <br>
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+----==_mimepart_5565fe1aa5e14_1130f0f9882973f--
+

@@ -1,9 +1,12 @@
-->Créer un utilisateur postgresql ayant (ou alors adapter les fichiers pour accéder à la database):
+Projet réalisé par Adolphe Dylan et Mathieu Bergnes
+
+------------Probleme lors du lancement du site (variable ou autre)----------
+Probleme de lecture->Créer un utilisateur postgresql ayant (ou alors adapter les fichiers pour accéder à la database):
 nom: master
 mot de passe: master
-faire dans le terminal pour la variable ENV['TESTPRO_DATABASE_PASSWORD'](car le mot de passe est pas en clair dans le fichier database.yml):  export TESTPRO_DATABASE_PASSWORD=master
+faire dans le terminal pour la variable ENV['TESTPRO_DATABASE_PASSWORD'](car le mot de passe est pas en clair dans le fichier database.yml): 
+export TESTPRO_DATABASE_PASSWORD=master
 
-->Lancer rake db:drop db:create db:migrate db:seed pour la database
 
 ->Pour l'envoie des mails, pour régler la variable de mot de passe du compte mail du site ENV['PASSMAILSITE'], écrire :
 export PASSMAILSITE=Japan6700 
@@ -17,6 +20,18 @@ sudo service cron restart
 crontab -l pour voir que le changement a bien été fait
 Pour tester facilement les mails périodiques, on peut forcer l'envoie du mail en copiant collant la commande de crontab -l
 
+
+->En production, si probleme de secret key :
+Lancer irb
+require 'securerandom'
+SecureRandom.hex(64)
+Ecrire ça dans le terminal
+export SECRET_KEY_BASE=clegenerepar securerandom
+
+->Lancer rake db:drop db:create db:migrate db:seed pour la database
+----------------
+
+-----------Remarques:
 ->voir les seeds situés dans db/ pour voir les emails ainsi que leur mot de passe(tous ont pour mdp: testtest)
 -Admin:
 mathieu@yopmail.com
@@ -26,16 +41,11 @@ test@yopmail.com
 marie2@yopmail.com
 pierre56@yopmail.com
 
-->En production, si probleme de secret key :
-Lancer irb
-require 'securerandom'
-SecureRandom.hex(64)
-Ecrire ça dans le terminal
-export SECRET_KEY_BASE=clegenerepar securerandom
-
 ->Pour créer un admin, créer un utilisateur, et après modifier dans la db et mettre true pour admin(impossible de créer un admin
 depuis le site)
-----------------
+------------
+
+
 si les users peuvent pas se troll, voir si les adresse mail recoivent le mail (mathieu@yopmail.com, test@yopmail.com)
 voir si periodique envoie juste ceux de 7j, verifier aucun oublie de trad
 
