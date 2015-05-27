@@ -1,0 +1,576 @@
+  [1m[36m (81.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (61.2ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (91.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (69.8ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20150504131237)
+  [1m[35m (0.2ms)[0m  BEGIN
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/masamune/etudiant/IPW/projetweb/db/migrate/20150504131237_devise_create_users.rb:40)
+  [1m[36m (147.9ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "firstname" character varying, "promo" integer, "mail" character varying, "phonenumber" bigint, "avatar" character varying, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (48.2ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (48.2ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150504131237"]]
+  [1m[36m (33.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateArticles (20150504133116)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (105.5ms)[0m  [1mCREATE TABLE "articles" ("id" serial primary key, "title" character varying, "body" character varying, "price" decimal, "image1" character varying, "image2" character varying, "image3" character varying, "image4" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150504133116"]]
+  [1m[36m (17.2ms)[0m  [1mCOMMIT[0m
+Migrating to AddNameToUsers (20150513144807)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "name" character varying[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150513144807"]]
+  [1m[36m (24.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreatePeriodictasks (20150518191255)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (56.6ms)[0m  [1mCREATE TABLE "periodictasks" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150518191255"]]
+  [1m[36m (19.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddAdminToUsers (20150520091055)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (187.8ms)[0m  [1mALTER TABLE "users" ADD "admin" boolean DEFAULT 'f'[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150520091055"]]
+  [1m[36m (18.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'articles'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'periodictasks'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (4.1ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'mathieu@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("email", "firstname", "name", "promo", "phonenumber", "encrypted_password", "admin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "mathieu@yopmail.com"], ["firstname", "Mathieu"], ["name", "Ber"], ["promo", 2017], ["phonenumber", 101010101], ["encrypted_password", "$2a$10$Kb2.Zc0D7XHlPlxJ.dRiXenyB72aTBBeklflSMDZ7gu0zH0a9.xsO"], ["admin", "t"], ["created_at", "2015-05-27 16:53:58.450494"], ["updated_at", "2015-05-27 16:53:58.450494"]]
+  [1m[35m (27.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'dylan@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "firstname", "name", "promo", "phonenumber", "encrypted_password", "admin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["email", "dylan@yopmail.com"], ["firstname", "Dylan"], ["name", "Adol"], ["promo", 2012], ["phonenumber", 5101010105], ["encrypted_password", "$2a$10$GUCNp7O.F9I8M6TI3UYaC.RsSqu17n1ImJb26I37t3eZ9wR7pRuti"], ["admin", "t"], ["created_at", "2015-05-27 16:53:58.587960"], ["updated_at", "2015-05-27 16:53:58.587960"]]
+  [1m[35m (24.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'test@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "firstname", "name", "promo", "phonenumber", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "test@yopmail.com"], ["firstname", "Test"], ["name", "Testname"], ["promo", 2014], ["phonenumber", 123010101], ["encrypted_password", "$2a$10$iu3A7L0f/k8dBbBPUlJBsegusDrs16SMv9ZqyryWtqaDkZdJ.OrT6"], ["created_at", "2015-05-27 16:53:58.721329"], ["updated_at", "2015-05-27 16:53:58.721329"]]
+  [1m[35m (32.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'marie2@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "firstname", "name", "promo", "phonenumber", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "marie2@yopmail.com"], ["firstname", "Marie"], ["name", "Mariename"], ["promo", 2015], ["phonenumber", 142010101], ["encrypted_password", "$2a$10$HAONhe/AyWirL4CXLmNRWug5SbImPCBpwVNsKU6t/O7SiZ7RMh34i"], ["created_at", "2015-05-27 16:53:58.858320"], ["updated_at", "2015-05-27 16:53:58.858320"]]
+  [1m[35m (29.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'pierre56@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "firstname", "name", "promo", "phonenumber", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "pierre56@yopmail.com"], ["firstname", "Pierre"], ["name", "Pierrename"], ["promo", 2016], ["phonenumber", 105010101], ["encrypted_password", "$2a$10$39/Y3F1KcO31.96XuEiRZ.i1aF65KavgNGKuULv7.tWcovZ7ZXZku"], ["created_at", "2015-05-27 16:53:58.991549"], ["updated_at", "2015-05-27 16:53:58.991549"]]
+  [1m[35m (29.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "articles" ("title", "body", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "FirstArticle"], ["body", "Je suis dans le corps de llarticle"], ["price", "500.0"], ["user_id", 1], ["created_at", "2015-05-10 14:00:00.416760"], ["updated_at", "2015-05-10 14:00:00.416760"]]
+  [1m[36m (18.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "body", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Omni"], ["body", "Surrender to the Omniscience."], ["price", "6000.0"], ["user_id", 2], ["created_at", "2015-04-20 14:00:00.416760"], ["updated_at", "2015-04-20 14:00:00.416760"]]
+  [1m[35m (4.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "body", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "LeSecond"], ["body", " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at quam sodales, egestas dolor nec, efficitur ipsum. Nulla eget urna sagittis, pulvinar leo in, aliquet nulla. Quisque posuere massa nunc, luctus eleifend dolor mattis ut. Pellentesque vestibulum magna lorem, vitae commodo ex rhoncus id. Nunc placerat interdum gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vitae efficitur purus. Vestibulum a consectetur eros. Morbi ullamcorper ex quis ex tincidunt, in suscipit lectus cursus. Proin a laoreet purus. Donec dapibus sem sed vulputate venenatis. Aliquam scelerisque fermentum diam, semper commodo erat commodo sed. Phasellus vulputate dapibus tempus. Nunc ac faucibus diam. Donec ullamcorper vitae libero ut efficitur.\n\nUt arcu risus, tempor non convallis a, dignissim vitae turpis. Morbi euismod nunc vel pharetra sodales. Praesent vel varius tortor, sit amet pretium velit. Ut eu tempor risus, vitae semper libero. Nam nisl eros, fringilla nec egestas ut, lacinia id ex. Integer convallis quis erat in gravida. Nunc ac urna vitae leo fringilla gravida eget lacinia dolor. Suspendisse faucibus varius odio, id condimentum ante feugiat rutrum. Nullam vitae sem ac risus consectetur gravida. Aenean eu magna nulla. Sed posuere eget tellus vitae convallis. "], ["price", "30.0"], ["user_id", 2], ["created_at", "2015-05-15 14:00:00.416760"], ["updated_at", "2015-05-15 14:00:00.416760"]]
+  [1m[36m (4.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "body", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "The truth"], ["body", "Doto is doto, agar is agar."], ["price", "1500.0"], ["user_id", 4], ["created_at", "2015-05-20 14:00:00.416760"], ["updated_at", "2015-05-20 14:00:00.416760"]]
+  [1m[35m (4.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("title", "body", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "Strong omni"], ["body", "I am ashamed before the Omniscience. "], ["price", "700.0"], ["user_id", 4], ["created_at", "2015-05-21 14:00:00.416760"], ["updated_at", "2015-05-21 14:00:00.416760"]]
+  [1m[36m (4.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("title", "body", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "This article"], ["body", "Its an article."], ["price", "7.0"], ["user_id", 4], ["created_at", "2015-05-21 14:00:00.416760"], ["updated_at", "2015-05-21 14:00:00.416760"]]
+  [1m[35m (4.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "body", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "Leshrac"], ["body", "Leshrac the Tormented Soul is an intelligence hero who is known for his destructive spells which can easily destroy Creeps, Heroes and Towers at the expense of Mana. His strong damaging power is balanced by his lack of an escape mechanism, while his only disable, Split Earth, takes time to cast and needs good planning to land successfully.\nWithout expert positioning and powerful items, Leshrac is an easy target for physical attackers late-game, but he can easily hamper those same enemies by destroying towers and dealing damage in the midgame. If Leshrac is encountered outside the lanes early on, there are very few opponents who can stand against the power of Diabolic Edict and live."], ["price", "10000.0"], ["user_id", 5], ["created_at", "2015-05-21 14:00:00.416760"], ["updated_at", "2015-05-21 14:00:00.416760"]]
+  [1m[36m (4.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("title", "body", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Japan"], ["body", "Japan and cafe are great."], ["price", "7777.0"], ["user_id", 5], ["created_at", "2015-05-20 14:00:00.416760"], ["updated_at", "2015-05-20 14:00:00.416760"]]
+  [1m[35m (5.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "articles" ("title", "body", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["title", "Lesh"], ["body", "A thousand of your kind have fallen before me."], ["price", "8000.0"], ["user_id", 3], ["created_at", "2015-05-04 14:00:00.416760"], ["updated_at", "2015-05-04 14:00:00.416760"]]
+  [1m[36m (4.6ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-27 18:54:05 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.9ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY created_at DESC LIMIT 8 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered articles/index.html.haml within layouts/application (195.1ms)
+  Rendered layouts/_navigation_links.html.haml (6.8ms)
+  Rendered layouts/_navigation.html.haml (17.6ms)
+  Rendered layouts/_messages.html.haml (1.7ms)
+Completed 200 OK in 1267ms (Views: 1186.5ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/scaffolds.self-de1ba9b6201752bd7c7bc65b0a9ae435e1e250d316d510f0bf3047ed7aba555b.css?body=1" for 127.0.0.1 at 2015-05-27 18:54:06 +0200
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-27 18:54:06 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a95b891a232548d5e9d63b51f6f9fb97511e9b68e7a5a0bc10a1d224517530a8.css?body=1" for 127.0.0.1 at 2015-05-27 18:54:06 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-27 18:54:06 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-27 18:54:07 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-27 18:54:07 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-27 18:54:07 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-27 18:54:07 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-27 18:54:07 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-27 18:54:07 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-27 18:54:07 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-27 18:54:07 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-27 18:54:07 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-05-27 18:54:07 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-27 18:54:07 +0200
+
+
+Started GET "/assets/sf/sf_archery_black-webfont.woff" for 127.0.0.1 at 2015-05-27 18:54:07 +0200
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2015-05-27 18:54:09 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1[0m  [["id", 6]]
+Completed 401 Unauthorized in 39ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-05-27 18:54:09 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.haml (5.6ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (91.4ms)
+  Rendered layouts/_navigation_links.html.haml (0.5ms)
+  Rendered layouts/_navigation.html.haml (1.4ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+Completed 200 OK in 226ms (Views: 197.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-05-27 18:54:13 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VAD0vvkGrgha1uXytz6LWooBeAwz24jS1qmuhKYbnKZy0i1pWfHksosK32tJ9it1593RyFUvgp/G8JahkElKvQ==", "user"=>{"email"=>"test@yopmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Se connecter"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "test@yopmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7  [["last_sign_in_at", "2015-05-27 16:54:13.194284"], ["current_sign_in_at", "2015-05-27 16:54:13.194284"], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2015-05-27 16:54:13.195504"], ["id", 3]]
+  [1m[36m (71.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 232ms (ActiveRecord: 72.2ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2015-05-27 18:54:13 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mArticle Load (0.6ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered articles/show.html.haml within layouts/application (6.2ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 286ms (Views: 88.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-27 18:54:13 +0200
+
+
+Started GET "/users" for 127.0.0.1 at 2015-05-27 18:54:15 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/_user.html.haml (1.8ms)
+  Rendered users/_user.html.haml (0.4ms)
+  Rendered users/_user.html.haml (0.4ms)
+  Rendered users/_user.html.haml (0.5ms)
+  Rendered users/_user.html.haml (0.4ms)
+  Rendered users/index.html.haml within layouts/application (14.0ms)
+  Rendered layouts/_navigation_links.html.haml (2.4ms)
+  Rendered layouts/_navigation.html.haml (6.2ms)
+  Rendered layouts/_messages.html.haml (1.6ms)
+Completed 200 OK in 134ms (Views: 130.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-27 18:54:28 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.6ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY created_at DESC LIMIT 8 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered articles/index.html.haml within layouts/application (13.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_navigation_links.html.haml (2.1ms)
+  Rendered layouts/_navigation.html.haml (3.1ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 85ms (Views: 81.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-05-27 18:54:29 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/_user.html.haml (0.5ms)
+  Rendered users/_user.html.haml (0.3ms)
+  Rendered users/_user.html.haml (0.3ms)
+  Rendered users/_user.html.haml (0.3ms)
+  Rendered users/_user.html.haml (0.3ms)
+  Rendered users/index.html.haml within layouts/application (7.3ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.3ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 80ms (Views: 76.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-27 18:54:53 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY created_at DESC LIMIT 8 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered articles/index.html.haml within layouts/application (7.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_navigation_links.html.haml (2.0ms)
+  Rendered layouts/_navigation.html.haml (3.0ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 87ms (Views: 84.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-05-27 18:54:54 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/_user.html.haml (0.7ms)
+  Rendered users/_user.html.haml (0.8ms)
+  Rendered users/_user.html.haml (0.4ms)
+  Rendered users/_user.html.haml (0.4ms)
+  Rendered users/_user.html.haml (0.4ms)
+  Rendered users/index.html.haml within layouts/application (13.6ms)
+  Rendered layouts/_navigation_links.html.haml (0.6ms)
+  Rendered layouts/_navigation.html.haml (2.1ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 107ms (Views: 104.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-27 18:56:00 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.5ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY created_at DESC LIMIT 8 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered articles/index.html.haml within layouts/application (8.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_navigation_links.html.haml (1.9ms)
+  Rendered layouts/_navigation.html.haml (3.0ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 93ms (Views: 90.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-27 19:02:05 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.9ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY created_at DESC LIMIT 8 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered articles/index.html.haml within layouts/application (41.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_navigation_links.html.haml (33.3ms)
+  Rendered layouts/_navigation.html.haml (37.5ms)
+  Rendered layouts/_messages.html.haml (2.3ms)
+Completed 200 OK in 383ms (Views: 352.3ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-27 19:02:06 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a95b891a232548d5e9d63b51f6f9fb97511e9b68e7a5a0bc10a1d224517530a8.css?body=1" for 127.0.0.1 at 2015-05-27 19:02:06 +0200
+
+
+Started GET "/assets/scaffolds.self-de1ba9b6201752bd7c7bc65b0a9ae435e1e250d316d510f0bf3047ed7aba555b.css?body=1" for 127.0.0.1 at 2015-05-27 19:02:06 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-27 19:02:06 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-27 19:02:06 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-27 19:02:06 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-27 19:02:06 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-27 19:02:06 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-27 19:02:06 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-27 19:02:06 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-27 19:02:06 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-27 19:02:06 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-05-27 19:02:06 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-27 19:02:06 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-27 19:02:06 +0200
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2015-05-27 19:02:08 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered articles/show.html.haml within layouts/application (12.0ms)
+  Rendered layouts/_navigation_links.html.haml (3.1ms)
+  Rendered layouts/_navigation.html.haml (7.6ms)
+  Rendered layouts/_messages.html.haml (2.4ms)
+Completed 200 OK in 165ms (Views: 132.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2015-05-27 19:03:09 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "6"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered articles/show.html.haml within layouts/application (10.6ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.1ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 121ms (Views: 115.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/articles.self-488896b808449221e197363b94d7f2ad7114f4992442da3ccaf09bdf00fc53cf.css?body=1" for 127.0.0.1 at 2015-05-27 19:03:09 +0200
+
+
+Started GET "/assets/framework_and_overrides.self-a95b891a232548d5e9d63b51f6f9fb97511e9b68e7a5a0bc10a1d224517530a8.css?body=1" for 127.0.0.1 at 2015-05-27 19:03:09 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-27 19:03:09 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-27 19:03:09 +0200
+
+
+Started GET "/assets/scaffolds.self-de1ba9b6201752bd7c7bc65b0a9ae435e1e250d316d510f0bf3047ed7aba555b.css?body=1" for 127.0.0.1 at 2015-05-27 19:03:09 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-27 19:03:09 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-05-27 19:03:09 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-27 19:03:09 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-27 19:03:09 +0200
+
+
+Started GET "/assets/fotorama.self-4402e6170cd7a9dc1299497888d68f347d5c8b41f8b0b3b5a067c16aa376004e.js?body=1" for 127.0.0.1 at 2015-05-27 19:03:09 +0200
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-27 19:03:09 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-27 19:03:09 +0200
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-27 19:03:09 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-05-27 19:03:09 +0200
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-27 19:03:09 +0200
+
+
+Started POST "/articles/6/report" for 127.0.0.1 at 2015-05-27 19:03:11 +0200
+Processing by ArticlesController#report as HTML
+  Parameters: {"authenticity_token"=>"i1D3OZ64rPHYOITpbsbesuO2H3a5IW1tN06g8UxzPu72kc3C95RM/aU7EP599b3aMVLwxjMj9MfiM/C+DcPiHQ==", "id"=>"6"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+Redirected to http://localhost:3000/
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."admin" = 't'  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  Rendered user_mailer/report_email.html.haml within layouts/mailer (2.9ms)
+
+UserMailer#report_email: processed outbound mail in 235.4ms
+
+Sent mail to  (3509.1ms)
+Date: Wed, 27 May 2015 19:03:11 +0200
+From: from@example.com
+Message-ID: <5565f8cfbb611_c30374685c245f6@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Annonce abusive
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type'>
+      </head>
+      <body>
+        <p>
+          L'annonce This article de Marie Mariename a ete signale par Tes=
+t Testname comme =C3=A9tant abusive.
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+Completed 302 Found in 3805ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-27 19:03:15 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.5ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY created_at DESC LIMIT 8 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered articles/index.html.haml within layouts/application (9.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_navigation_links.html.haml (1.8ms)
+  Rendered layouts/_navigation.html.haml (2.6ms)
+  Rendered layouts/_messages.html.haml (0.2ms)
+Completed 200 OK in 77ms (Views: 74.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-27 19:03:15 +0200
+
+
+Started GET "/articles/8" for 127.0.0.1 at 2015-05-27 19:03:44 +0200
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mArticle Load (0.5ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", "8"]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered articles/show.html.haml within layouts/application (1.6ms)
+  Rendered layouts/_navigation_links.html.haml (0.3ms)
+  Rendered layouts/_navigation.html.haml (1.2ms)
+  Rendered layouts/_messages.html.haml (0.1ms)
+Completed 200 OK in 74ms (Views: 66.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/articles/8/report" for 127.0.0.1 at 2015-05-27 19:03:46 +0200
+Processing by ArticlesController#report as HTML
+  Parameters: {"authenticity_token"=>"CaEMTLNJijEeB47woXWU0eafXwz+mgWGahRB57eNkVN0YDa32mVqPWMEGueyRve5NHuwvHSYnCy/aRGo9j1NoA==", "id"=>"8"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+Redirected to http://localhost:3000/
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."admin" = 't'  ORDER BY "users"."id" ASC LIMIT 1000[0m
+  Rendered user_mailer/report_email.html.haml within layouts/mailer (0.3ms)
+
+UserMailer#report_email: processed outbound mail in 12.7ms
+
+Sent mail to  (3487.7ms)
+Date: Wed, 27 May 2015 19:03:46 +0200
+From: from@example.com
+Message-ID: <5565f8f27dca0_c30374685c246d5@masamune-HP-ProBook-650-G1.mail>
+Subject: [ensiieboncoin]Annonce abusive
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<hmtl>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta content=3D'text/html; charset=3DUTF-8' http-equiv=3D'Conten=
+t-Type'>
+      </head>
+      <body>
+        <p>
+          L'annonce Japan de Pierre Pierrename a ete signale par Test Tes=
+tname comme =C3=A9tant abusive.
+        </p>
+      </body>
+    </html>
+  </body>
+</hmtl>
+
+Completed 302 Found in 3507ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-27 19:03:50 +0200
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.5ms)[0m  SELECT  "articles".* FROM "articles"  ORDER BY created_at DESC LIMIT 8 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "articles"[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered articles/index.html.haml within layouts/application (16.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_navigation_links.html.haml (2.4ms)
+  Rendered layouts/_navigation.html.haml (3.6ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+Completed 200 OK in 118ms (Views: 113.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/fd1.jpg" for 127.0.0.1 at 2015-05-27 19:03:50 +0200
