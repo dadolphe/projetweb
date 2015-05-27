@@ -43,6 +43,10 @@ pierre56@yopmail.com
 
 ->Pour créer un admin, créer un utilisateur, et après modifier dans la db et mettre true pour admin(impossible de créer un admin
 depuis le site)
+
+->Les mails périodiques ne fonctionnent pas sous heroku car il faut utiliser heroku scheduler(gratuit
+mais il faut valider son compte par les informations de sa cb) au lieu de cron.
+
 ------------
 
 
